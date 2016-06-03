@@ -1,0 +1,766 @@
+[1;32mvirtualbox-iso output will be in this color.[0m
+
+[1;32m==> virtualbox-iso: Downloading or copying ISO[0m
+[0;32m    virtualbox-iso: Downloading or copying: file:///home/jorge/proyectos/plantillas-entice/ISO/CentOS-7-x86_64-Minimal-1511.iso[0m
+[1;32m==> virtualbox-iso: Starting HTTP server on port 8490[0m
+[1;32m==> virtualbox-iso: Creating virtual machine...[0m
+[1;32m==> virtualbox-iso: Creating hard drive...[0m
+[1;32m==> virtualbox-iso: Creating forwarded port mapping for communicator (SSH, WinRM, etc) (host port 4436)[0m
+[1;32m==> virtualbox-iso: Executing custom VBoxManage commands...[0m
+[0;32m    virtualbox-iso: Executing: modifyvm docker-host --memory 1024[0m
+[0;32m    virtualbox-iso: Executing: modifyvm docker-host --cpus 1[0m
+[1;32m==> virtualbox-iso: Starting the virtual machine...[0m
+[1;32m==> virtualbox-iso: Waiting 10s for boot...[0m
+[1;32m==> virtualbox-iso: Typing the boot command...[0m
+[1;32m==> virtualbox-iso: Waiting for SSH to become available...[0m
+[1;32m==> virtualbox-iso: Connected to SSH![0m
+[1;32m==> virtualbox-iso: Uploading VirtualBox version info (5.0.20)[0m
+[1;32m==> virtualbox-iso: Provisioning with shell script: scripts/base.sh[0m
+[0;32m    virtualbox-iso: Created symlink from /etc/systemd/system/firewalld.service to /dev/null.[0m
+[1;32m==> virtualbox-iso: Provisioning with shell script: scripts/docker-install.sh[0m
+[0;32m    virtualbox-iso: Complementos cargados:fastestmirror[0m
+[0;32m    virtualbox-iso: Loading mirror speeds from cached hostfile[0m
+[0;32m    virtualbox-iso: * base: sunsite.rediris.es[0m
+[0;32m    virtualbox-iso: * extras: sunsite.rediris.es[0m
+[0;32m    virtualbox-iso: * updates: sunsite.rediris.es[0m
+[0;32m    virtualbox-iso: Resolviendo dependencias[0m
+[0;32m    virtualbox-iso: --> Ejecutando prueba de transacción[0m
+[0;32m    virtualbox-iso: ---> Paquete NetworkManager.x86_64 1:1.0.6-27.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete NetworkManager.x86_64 1:1.0.6-29.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete NetworkManager-libnm.x86_64 1:1.0.6-27.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete NetworkManager-libnm.x86_64 1:1.0.6-29.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete NetworkManager-tui.x86_64 1:1.0.6-27.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete NetworkManager-tui.x86_64 1:1.0.6-29.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete NetworkManager-wifi.x86_64 1:1.0.6-27.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete NetworkManager-wifi.x86_64 1:1.0.6-29.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete avahi-autoipd.x86_64 0:0.6.31-15.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete avahi-autoipd.x86_64 0:0.6.31-15.el7_2.1 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete avahi-libs.x86_64 0:0.6.31-15.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete avahi-libs.x86_64 0:0.6.31-15.el7_2.1 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete bind-libs-lite.x86_64 32:9.9.4-29.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete bind-libs-lite.x86_64 32:9.9.4-29.el7_2.3 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete bind-license.noarch 32:9.9.4-29.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete bind-license.noarch 32:9.9.4-29.el7_2.3 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete ca-certificates.noarch 0:2015.2.4-71.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete ca-certificates.noarch 0:2015.2.6-70.1.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete chkconfig.x86_64 0:1.3.61-5.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete chkconfig.x86_64 0:1.3.61-5.el7_2.1 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete coreutils.x86_64 0:8.22-15.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete coreutils.x86_64 0:8.22-15.el7_2.1 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete cronie.x86_64 0:1.4.11-14.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete cronie.x86_64 0:1.4.11-14.el7_2.1 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete cronie-anacron.x86_64 0:1.4.11-14.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete cronie-anacron.x86_64 0:1.4.11-14.el7_2.1 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete cyrus-sasl-lib.x86_64 0:2.1.26-19.2.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete cyrus-sasl-lib.x86_64 0:2.1.26-20.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete device-mapper.x86_64 7:1.02.107-5.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete device-mapper.x86_64 7:1.02.107-5.el7_2.2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete device-mapper-event.x86_64 7:1.02.107-5.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete device-mapper-event.x86_64 7:1.02.107-5.el7_2.2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete device-mapper-event-libs.x86_64 7:1.02.107-5.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete device-mapper-event-libs.x86_64 7:1.02.107-5.el7_2.2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete device-mapper-libs.x86_64 7:1.02.107-5.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete device-mapper-libs.x86_64 7:1.02.107-5.el7_2.2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete dracut.x86_64 0:033-359.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete dracut.x86_64 0:033-360.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete dracut-config-rescue.x86_64 0:033-359.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete dracut-config-rescue.x86_64 0:033-360.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete dracut-network.x86_64 0:033-359.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete dracut-network.x86_64 0:033-360.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete glibc.x86_64 0:2.17-105.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete glibc.x86_64 0:2.17-106.el7_2.6 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete glibc-common.x86_64 0:2.17-105.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete glibc-common.x86_64 0:2.17-106.el7_2.6 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete gmp.x86_64 1:6.0.0-11.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete gmp.x86_64 1:6.0.0-12.el7_1 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete gnutls.x86_64 0:3.3.8-12.el7_1.1 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete gnutls.x86_64 0:3.3.8-14.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete grub2.x86_64 1:2.02-0.29.el7.centos debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete grub2.x86_64 1:2.02-0.34.el7.centos debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete grub2-tools.x86_64 1:2.02-0.29.el7.centos debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete grub2-tools.x86_64 1:2.02-0.34.el7.centos debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete initscripts.x86_64 0:9.49.30-1.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete initscripts.x86_64 0:9.49.30-1.el7_2.2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete kernel.x86_64 0:3.10.0-327.18.2.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete kernel-tools.x86_64 0:3.10.0-327.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete kernel-tools.x86_64 0:3.10.0-327.18.2.el7 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete kernel-tools-libs.x86_64 0:3.10.0-327.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete kernel-tools-libs.x86_64 0:3.10.0-327.18.2.el7 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete kexec-tools.x86_64 0:2.0.7-38.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete kexec-tools.x86_64 0:2.0.7-38.el7_2.1 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete kpartx.x86_64 0:0.4.9-85.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete kpartx.x86_64 0:0.4.9-85.el7_2.4 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete krb5-libs.x86_64 0:1.13.2-10.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete krb5-libs.x86_64 0:1.13.2-12.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete libblkid.x86_64 0:2.23.2-26.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete libblkid.x86_64 0:2.23.2-26.el7_2.2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete libgudev1.x86_64 0:219-19.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete libgudev1.x86_64 0:219-19.el7_2.9 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete libmount.x86_64 0:2.23.2-26.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete libmount.x86_64 0:2.23.2-26.el7_2.2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete libndp.x86_64 0:1.2-4.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete libndp.x86_64 0:1.2-6.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete libssh2.x86_64 0:1.4.3-10.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete libssh2.x86_64 0:1.4.3-10.el7_2.1 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete libuuid.x86_64 0:2.23.2-26.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete libuuid.x86_64 0:2.23.2-26.el7_2.2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete libxml2.x86_64 0:2.9.1-5.el7_1.2 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete libxml2.x86_64 0:2.9.1-6.el7_2.2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete logrotate.x86_64 0:3.8.6-6.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete logrotate.x86_64 0:3.8.6-7.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete lvm2.x86_64 7:2.02.130-5.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete lvm2.x86_64 7:2.02.130-5.el7_2.2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete lvm2-libs.x86_64 7:2.02.130-5.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete lvm2-libs.x86_64 7:2.02.130-5.el7_2.2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete mariadb-libs.x86_64 1:5.5.44-2.el7.centos debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete mariadb-libs.x86_64 1:5.5.47-1.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete nspr.x86_64 0:4.10.8-2.el7_1 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete nspr.x86_64 0:4.11.0-1.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete nss.x86_64 0:3.19.1-18.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete nss.x86_64 0:3.21.0-9.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete nss-softokn.x86_64 0:3.16.2.3-13.el7_1 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete nss-softokn.x86_64 0:3.16.2.3-14.2.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete nss-softokn-freebl.x86_64 0:3.16.2.3-13.el7_1 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete nss-softokn-freebl.x86_64 0:3.16.2.3-14.2.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete nss-sysinit.x86_64 0:3.19.1-18.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete nss-sysinit.x86_64 0:3.21.0-9.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete nss-tools.x86_64 0:3.19.1-18.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete nss-tools.x86_64 0:3.21.0-9.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete nss-util.x86_64 0:3.19.1-4.el7_1 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete nss-util.x86_64 0:3.21.0-2.2.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete numactl-libs.x86_64 0:2.0.9-5.el7_1 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete numactl-libs.x86_64 0:2.0.9-6.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete openldap.x86_64 0:2.4.40-8.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete openldap.x86_64 0:2.4.40-9.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete openssh.x86_64 0:6.6.1p1-22.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete openssh.x86_64 0:6.6.1p1-25.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete openssh-clients.x86_64 0:6.6.1p1-22.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete openssh-clients.x86_64 0:6.6.1p1-25.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete openssh-server.x86_64 0:6.6.1p1-22.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete openssh-server.x86_64 0:6.6.1p1-25.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete openssl.x86_64 1:1.0.1e-42.el7.9 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete openssl.x86_64 1:1.0.1e-51.el7_2.5 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete openssl-libs.x86_64 1:1.0.1e-42.el7.9 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete openssl-libs.x86_64 1:1.0.1e-51.el7_2.5 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete pcre.x86_64 0:8.32-15.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete pcre.x86_64 0:8.32-15.el7_2.1 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete polkit.x86_64 0:0.112-5.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete polkit.x86_64 0:0.112-6.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete procps-ng.x86_64 0:3.3.10-3.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete procps-ng.x86_64 0:3.3.10-5.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete python-perf.x86_64 0:3.10.0-327.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete python-perf.x86_64 0:3.10.0-327.18.2.el7 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete python-pyudev.noarch 0:0.15-7.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete python-pyudev.noarch 0:0.15-7.el7_2.1 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete selinux-policy.noarch 0:3.13.1-60.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete selinux-policy.noarch 0:3.13.1-60.el7_2.3 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete selinux-policy-targeted.noarch 0:3.13.1-60.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete selinux-policy-targeted.noarch 0:3.13.1-60.el7_2.3 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete systemd.x86_64 0:219-19.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete systemd.x86_64 0:219-19.el7_2.9 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete systemd-libs.x86_64 0:219-19.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete systemd-libs.x86_64 0:219-19.el7_2.9 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete systemd-sysv.x86_64 0:219-19.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete systemd-sysv.x86_64 0:219-19.el7_2.9 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete tuned.noarch 0:2.5.1-4.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete tuned.noarch 0:2.5.1-4.el7_2.3 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete tzdata.noarch 0:2015g-1.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete tzdata.noarch 0:2016d-1.el7 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete util-linux.x86_64 0:2.23.2-26.el7 debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete util-linux.x86_64 0:2.23.2-26.el7_2.2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: --> Resolución de dependencias finalizada[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Dependencias resueltas[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: ================================================================================[0m
+[0;32m    virtualbox-iso: Package                    Arquitectura[0m
+[0;32m    virtualbox-iso: Versión                    Repositorio[0m
+[0;32m    virtualbox-iso: Tamaño[0m
+[0;32m    virtualbox-iso: ================================================================================[0m
+[0;32m    virtualbox-iso: Instalando:[0m
+[0;32m    virtualbox-iso: kernel                     x86_64   3.10.0-327.18.2.el7        updates    33 M[0m
+[0;32m    virtualbox-iso: Actualizando:[0m
+[0;32m    virtualbox-iso: NetworkManager             x86_64   1:1.0.6-29.el7_2           updates   2.0 M[0m
+[0;32m    virtualbox-iso: NetworkManager-libnm       x86_64   1:1.0.6-29.el7_2           updates   498 k[0m
+[0;32m    virtualbox-iso: NetworkManager-tui         x86_64   1:1.0.6-29.el7_2           updates   212 k[0m
+[0;32m    virtualbox-iso: NetworkManager-wifi        x86_64   1:1.0.6-29.el7_2           updates   160 k[0m
+[0;32m    virtualbox-iso: avahi-autoipd              x86_64   0.6.31-15.el7_2.1          updates    39 k[0m
+[0;32m    virtualbox-iso: avahi-libs                 x86_64   0.6.31-15.el7_2.1          updates    61 k[0m
+[0;32m    virtualbox-iso: bind-libs-lite             x86_64   32:9.9.4-29.el7_2.3        updates   724 k[0m
+[0;32m    virtualbox-iso: bind-license               noarch   32:9.9.4-29.el7_2.3        updates    82 k[0m
+[0;32m    virtualbox-iso: ca-certificates            noarch   2015.2.6-70.1.el7_2        updates   428 k[0m
+[0;32m    virtualbox-iso: chkconfig                  x86_64   1.3.61-5.el7_2.1           updates   173 k[0m
+[0;32m    virtualbox-iso: coreutils                  x86_64   8.22-15.el7_2.1            updates   3.2 M[0m
+[0;32m    virtualbox-iso: cronie                     x86_64   1.4.11-14.el7_2.1          updates    90 k[0m
+[0;32m    virtualbox-iso: cronie-anacron             x86_64   1.4.11-14.el7_2.1          updates    35 k[0m
+[0;32m    virtualbox-iso: cyrus-sasl-lib             x86_64   2.1.26-20.el7_2            updates   155 k[0m
+[0;32m    virtualbox-iso: device-mapper              x86_64   7:1.02.107-5.el7_2.2       updates   252 k[0m
+[0;32m    virtualbox-iso: device-mapper-event        x86_64   7:1.02.107-5.el7_2.2       updates   167 k[0m
+[0;32m    virtualbox-iso: device-mapper-event-libs   x86_64   7:1.02.107-5.el7_2.2       updates   169 k[0m
+[0;32m    virtualbox-iso: device-mapper-libs         x86_64   7:1.02.107-5.el7_2.2       updates   305 k[0m
+[0;32m    virtualbox-iso: dracut                     x86_64   033-360.el7_2              updates   311 k[0m
+[0;32m    virtualbox-iso: dracut-config-rescue       x86_64   033-360.el7_2              updates    49 k[0m
+[0;32m    virtualbox-iso: dracut-network             x86_64   033-360.el7_2              updates    90 k[0m
+[0;32m    virtualbox-iso: glibc                      x86_64   2.17-106.el7_2.6           updates   3.6 M[0m
+[0;32m    virtualbox-iso: glibc-common               x86_64   2.17-106.el7_2.6           updates    11 M[0m
+[0;32m    virtualbox-iso: gmp                        x86_64   1:6.0.0-12.el7_1           updates   280 k[0m
+[0;32m    virtualbox-iso: gnutls                     x86_64   3.3.8-14.el7_2             updates   662 k[0m
+[0;32m    virtualbox-iso: grub2                      x86_64   1:2.02-0.34.el7.centos     updates   1.5 M[0m
+[0;32m    virtualbox-iso: grub2-tools                x86_64   1:2.02-0.34.el7.centos     updates   3.3 M[0m
+[0;32m    virtualbox-iso: initscripts                x86_64   9.49.30-1.el7_2.2          updates   429 k[0m
+[0;32m    virtualbox-iso: kernel-tools               x86_64   3.10.0-327.18.2.el7        updates   2.4 M[0m
+[0;32m    virtualbox-iso: kernel-tools-libs          x86_64   3.10.0-327.18.2.el7        updates   2.3 M[0m
+[0;32m    virtualbox-iso: kexec-tools                x86_64   2.0.7-38.el7_2.1           updates   306 k[0m
+[0;32m    virtualbox-iso: kpartx                     x86_64   0.4.9-85.el7_2.4           updates    60 k[0m
+[0;32m    virtualbox-iso: krb5-libs                  x86_64   1.13.2-12.el7_2            updates   843 k[0m
+[0;32m    virtualbox-iso: libblkid                   x86_64   2.23.2-26.el7_2.2          updates   166 k[0m
+[0;32m    virtualbox-iso: libgudev1                  x86_64   219-19.el7_2.9             updates    66 k[0m
+[0;32m    virtualbox-iso: libmount                   x86_64   2.23.2-26.el7_2.2          updates   169 k[0m
+[0;32m    virtualbox-iso: libndp                     x86_64   1.2-6.el7_2                updates    31 k[0m
+[0;32m    virtualbox-iso: libssh2                    x86_64   1.4.3-10.el7_2.1           updates   134 k[0m
+[0;32m    virtualbox-iso: libuuid                    x86_64   2.23.2-26.el7_2.2          updates    74 k[0m
+[0;32m    virtualbox-iso: libxml2                    x86_64   2.9.1-6.el7_2.2            updates   666 k[0m
+[0;32m    virtualbox-iso: logrotate                  x86_64   3.8.6-7.el7_2              updates    66 k[0m
+[0;32m    virtualbox-iso: lvm2                       x86_64   7:2.02.130-5.el7_2.2       updates   1.0 M[0m
+[0;32m    virtualbox-iso: lvm2-libs                  x86_64   7:2.02.130-5.el7_2.2       updates   872 k[0m
+[0;32m    virtualbox-iso: mariadb-libs               x86_64   1:5.5.47-1.el7_2           updates   755 k[0m
+[0;32m    virtualbox-iso: nspr                       x86_64   4.11.0-1.el7_2             updates   126 k[0m
+[0;32m    virtualbox-iso: nss                        x86_64   3.21.0-9.el7_2             updates   850 k[0m
+[0;32m    virtualbox-iso: nss-softokn                x86_64   3.16.2.3-14.2.el7_2        updates   305 k[0m
+[0;32m    virtualbox-iso: nss-softokn-freebl         x86_64   3.16.2.3-14.2.el7_2        updates   204 k[0m
+[0;32m    virtualbox-iso: nss-sysinit                x86_64   3.21.0-9.el7_2             updates    55 k[0m
+[0;32m    virtualbox-iso: nss-tools                  x86_64   3.21.0-9.el7_2             updates   487 k[0m
+[0;32m    virtualbox-iso: nss-util                   x86_64   3.21.0-2.2.el7_2           updates    72 k[0m
+[0;32m    virtualbox-iso: numactl-libs               x86_64   2.0.9-6.el7_2              updates    29 k[0m
+[0;32m    virtualbox-iso: openldap                   x86_64   2.4.40-9.el7_2             updates   348 k[0m
+[0;32m    virtualbox-iso: openssh                    x86_64   6.6.1p1-25.el7_2           updates   435 k[0m
+[0;32m    virtualbox-iso: openssh-clients            x86_64   6.6.1p1-25.el7_2           updates   639 k[0m
+[0;32m    virtualbox-iso: openssh-server             x86_64   6.6.1p1-25.el7_2           updates   436 k[0m
+[0;32m    virtualbox-iso: openssl                    x86_64   1:1.0.1e-51.el7_2.5        updates   712 k[0m
+[0;32m    virtualbox-iso: openssl-libs               x86_64   1:1.0.1e-51.el7_2.5        updates   952 k[0m
+[0;32m    virtualbox-iso: pcre                       x86_64   8.32-15.el7_2.1            updates   420 k[0m
+[0;32m    virtualbox-iso: polkit                     x86_64   0.112-6.el7_2              updates   166 k[0m
+[0;32m    virtualbox-iso: procps-ng                  x86_64   3.3.10-5.el7_2             updates   287 k[0m
+[0;32m    virtualbox-iso: python-perf                x86_64   3.10.0-327.18.2.el7        updates   2.4 M[0m
+[0;32m    virtualbox-iso: python-pyudev              noarch   0.15-7.el7_2.1             updates    54 k[0m
+[0;32m    virtualbox-iso: selinux-policy             noarch   3.13.1-60.el7_2.3          updates   375 k[0m
+[0;32m    virtualbox-iso: selinux-policy-targeted    noarch   3.13.1-60.el7_2.3          updates   3.9 M[0m
+[0;32m    virtualbox-iso: systemd                    x86_64   219-19.el7_2.9             updates   5.1 M[0m
+[0;32m    virtualbox-iso: systemd-libs               x86_64   219-19.el7_2.9             updates   358 k[0m
+[0;32m    virtualbox-iso: systemd-sysv               x86_64   219-19.el7_2.9             updates    53 k[0m
+[0;32m    virtualbox-iso: tuned                      noarch   2.5.1-4.el7_2.3            updates   193 k[0m
+[0;32m    virtualbox-iso: tzdata                     noarch   2016d-1.el7                updates   439 k[0m
+[0;32m    virtualbox-iso: util-linux                 x86_64   2.23.2-26.el7_2.2          updates   1.9 M[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Resumen de la transacción[0m
+[0;32m    virtualbox-iso: ================================================================================[0m
+[0;32m    virtualbox-iso: Instalar     1 Paquete[0m
+[0;32m    virtualbox-iso: Actualizar  71 Paquetes[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Tamaño total de la descarga: 94 M[0m
+[0;32m    virtualbox-iso: Downloading packages:[0m
+[0;32m    virtualbox-iso: Delta RPMs disabled because /usr/bin/applydeltarpm not installed.[0m
+[0;32m    virtualbox-iso: (1/72): avahi-autoipd-0.6.31-15.el7_2.1.x86_64.rpm         |  39 kB   00:00[0m
+[0;32m    virtualbox-iso: (2/72): NetworkManager-wifi-1.0.6-29.el7_2.x86_64.rpm      | 160 kB   00:00[0m
+[0;32m    virtualbox-iso: (3/72): avahi-libs-0.6.31-15.el7_2.1.x86_64.rpm            |  61 kB   00:00[0m
+[0;32m    virtualbox-iso: (4/72): bind-license-9.9.4-29.el7_2.3.noarch.rpm           |  82 kB   00:00[0m
+[0;32m    virtualbox-iso: (5/72): NetworkManager-tui-1.0.6-29.el7_2.x86_64.rpm       | 212 kB   00:00[0m
+[0;32m    virtualbox-iso: (6/72): chkconfig-1.3.61-5.el7_2.1.x86_64.rpm              | 173 kB   00:00[0m
+[0;32m    virtualbox-iso: (7/72): NetworkManager-libnm-1.0.6-29.el7_2.x86_64.rpm     | 498 kB   00:01[0m
+[0;32m    virtualbox-iso: (8/72): bind-libs-lite-9.9.4-29.el7_2.3.x86_64.rpm         | 724 kB   00:00[0m
+[0;32m    virtualbox-iso: (9/72): cronie-1.4.11-14.el7_2.1.x86_64.rpm                |  90 kB   00:00[0m
+[0;32m    virtualbox-iso: (10/72): ca-certificates-2015.2.6-70.1.el7_2.noarch.rpm    | 428 kB   00:00[0m
+[0;32m    virtualbox-iso: (11/72): cronie-anacron-1.4.11-14.el7_2.1.x86_64.rpm       |  35 kB   00:00[0m
+[0;32m    virtualbox-iso: (12/72): cyrus-sasl-lib-2.1.26-20.el7_2.x86_64.rpm         | 155 kB   00:00[0m
+[0;32m    virtualbox-iso: (13/72): device-mapper-1.02.107-5.el7_2.2.x86_64.rpm       | 252 kB   00:00[0m
+[0;32m    virtualbox-iso: (14/72): device-mapper-event-libs-1.02.107-5.el7_2.2.x86_6 | 169 kB   00:00[0m
+[0;32m    virtualbox-iso: (15/72): device-mapper-event-1.02.107-5.el7_2.2.x86_64.rpm | 167 kB   00:00[0m
+[0;32m    virtualbox-iso: (16/72): device-mapper-libs-1.02.107-5.el7_2.2.x86_64.rpm  | 305 kB   00:00[0m
+[0;32m    virtualbox-iso: (17/72): NetworkManager-1.0.6-29.el7_2.x86_64.rpm          | 2.0 MB   00:02[0m
+[0;32m    virtualbox-iso: (18/72): dracut-network-033-360.el7_2.x86_64.rpm           |  90 kB   00:00[0m
+[0;32m    virtualbox-iso: (19/72): dracut-config-rescue-033-360.el7_2.x86_64.rpm     |  49 kB   00:00[0m
+[0;32m    virtualbox-iso: (20/72): dracut-033-360.el7_2.x86_64.rpm                   | 311 kB   00:00[0m
+[0;32m    virtualbox-iso: (21/72): gmp-6.0.0-12.el7_1.x86_64.rpm                     | 280 kB   00:00[0m
+[0;32m    virtualbox-iso: (22/72): gnutls-3.3.8-14.el7_2.x86_64.rpm                  | 662 kB   00:01[0m
+[0;32m    virtualbox-iso: (23/72): coreutils-8.22-15.el7_2.1.x86_64.rpm              | 3.2 MB   00:04[0m
+[0;32m    virtualbox-iso: (24/72): grub2-tools-2.02-0.34.el7.centos.x86_64.rpm       | 3.3 MB   00:02[0m
+[0;32m    virtualbox-iso: (25/72): grub2-2.02-0.34.el7.centos.x86_64.rpm             | 1.5 MB   00:03[0m
+[0;32m    virtualbox-iso: (26/72): initscripts-9.49.30-1.el7_2.2.x86_64.rpm          | 429 kB   00:05[0m
+[0;32m    virtualbox-iso: (27/72): glibc-common-2.17-106.el7_2.6.x86_64.rpm          |  11 MB   00:11[0m
+[0;32m    virtualbox-iso: (28/72): kexec-tools-2.0.7-38.el7_2.1.x86_64.rpm           | 306 kB   00:00[0m
+[0;32m    virtualbox-iso: (29/72): kpartx-0.4.9-85.el7_2.4.x86_64.rpm                |  60 kB   00:00[0m
+[0;32m    virtualbox-iso: (30/72): krb5-libs-1.13.2-12.el7_2.x86_64.rpm              | 843 kB   00:00[0m
+[0;32m    virtualbox-iso: (31/72): libblkid-2.23.2-26.el7_2.2.x86_64.rpm             | 166 kB   00:00[0m
+[0;32m    virtualbox-iso: (32/72): libgudev1-219-19.el7_2.9.x86_64.rpm               |  66 kB   00:00[0m
+[0;32m    virtualbox-iso: (33/72): libmount-2.23.2-26.el7_2.2.x86_64.rpm             | 169 kB   00:00[0m
+[0;32m    virtualbox-iso: (34/72): libndp-1.2-6.el7_2.x86_64.rpm                     |  31 kB   00:00[0m
+[0;32m    virtualbox-iso: (35/72): libssh2-1.4.3-10.el7_2.1.x86_64.rpm               | 134 kB   00:00[0m
+[0;32m    virtualbox-iso: (36/72): libuuid-2.23.2-26.el7_2.2.x86_64.rpm              |  74 kB   00:00[0m
+[0;32m    virtualbox-iso: (37/72): glibc-2.17-106.el7_2.6.x86_64.rpm                 | 3.6 MB   00:15[0m
+[0;32m    virtualbox-iso: (38/72): libxml2-2.9.1-6.el7_2.2.x86_64.rpm                | 666 kB   00:00[0m
+[0;32m    virtualbox-iso: (39/72): lvm2-2.02.130-5.el7_2.2.x86_64.rpm                | 1.0 MB   00:00[0m
+[0;32m    virtualbox-iso: (40/72): logrotate-3.8.6-7.el7_2.x86_64.rpm                |  66 kB   00:01[0m
+[0;32m    virtualbox-iso: (41/72): lvm2-libs-2.02.130-5.el7_2.2.x86_64.rpm           | 872 kB   00:00[0m
+[0;32m    virtualbox-iso: (42/72): nspr-4.11.0-1.el7_2.x86_64.rpm                    | 126 kB   00:00[0m
+[0;32m    virtualbox-iso: (43/72): nss-3.21.0-9.el7_2.x86_64.rpm                     | 850 kB   00:01[0m
+[0;32m    virtualbox-iso: (44/72): nss-softokn-3.16.2.3-14.2.el7_2.x86_64.rpm        | 305 kB   00:00[0m
+[0;32m    virtualbox-iso: (45/72): kernel-3.10.0-327.18.2.el7.x86_64.rpm             |  33 MB   00:16[0m
+[0;32m    virtualbox-iso: (46/72): nss-softokn-freebl-3.16.2.3-14.2.el7_2.x86_64.rpm | 204 kB   00:00[0m
+[0;32m    virtualbox-iso: (47/72): nss-tools-3.21.0-9.el7_2.x86_64.rpm               | 487 kB   00:00[0m
+[0;32m    virtualbox-iso: (48/72): nss-util-3.21.0-2.2.el7_2.x86_64.rpm              |  72 kB   00:00[0m
+[0;32m    virtualbox-iso: (49/72): nss-sysinit-3.21.0-9.el7_2.x86_64.rpm             |  55 kB   00:00[0m
+[0;32m    virtualbox-iso: (50/72): numactl-libs-2.0.9-6.el7_2.x86_64.rpm             |  29 kB   00:00[0m
+[0;32m    virtualbox-iso: (51/72): mariadb-libs-5.5.47-1.el7_2.x86_64.rpm            | 755 kB   00:03[0m
+[0;32m    virtualbox-iso: (52/72): openssh-6.6.1p1-25.el7_2.x86_64.rpm               | 435 kB   00:00[0m
+[0;32m    virtualbox-iso: (53/72): openssh-server-6.6.1p1-25.el7_2.x86_64.rpm        | 436 kB   00:00[0m
+[0;32m    virtualbox-iso: (54/72): openldap-2.4.40-9.el7_2.x86_64.rpm                | 348 kB   00:00[0m
+[0;32m    virtualbox-iso: (55/72): openssl-1.0.1e-51.el7_2.5.x86_64.rpm              | 712 kB   00:00[0m
+[0;32m    virtualbox-iso: (56/72): pcre-8.32-15.el7_2.1.x86_64.rpm                   | 420 kB   00:00[0m
+[0;32m    virtualbox-iso: (57/72): polkit-0.112-6.el7_2.x86_64.rpm                   | 166 kB   00:00[0m
+[0;32m    virtualbox-iso: (58/72): procps-ng-3.3.10-5.el7_2.x86_64.rpm               | 287 kB   00:00[0m
+[0;32m    virtualbox-iso: (59/72): openssl-libs-1.0.1e-51.el7_2.5.x86_64.rpm         | 952 kB   00:01[0m
+[0;32m    virtualbox-iso: (60/72): kernel-tools-3.10.0-327.18.2.el7.x86_64.rpm       | 2.4 MB   00:18[0m
+[0;32m    virtualbox-iso: (61/72): openssh-clients-6.6.1p1-25.el7_2.x86_64.rpm       | 639 kB   00:02[0m
+[0;32m    virtualbox-iso: (62/72): python-perf-3.10.0-327.18.2.el7.x86_64.rpm        | 2.4 MB   00:01[0m
+[0;32m    virtualbox-iso: (63/72): python-pyudev-0.15-7.el7_2.1.noarch.rpm           |  54 kB   00:01[0m
+[0;32m    virtualbox-iso: (64/72): systemd-libs-219-19.el7_2.9.x86_64.rpm            | 358 kB   00:01[0m
+[0;32m    virtualbox-iso: (65/72): selinux-policy-3.13.1-60.el7_2.3.noarch.rpm       | 375 kB   00:02[0m
+[0;32m    virtualbox-iso: (66/72): tuned-2.5.1-4.el7_2.3.noarch.rpm                  | 193 kB   00:00[0m
+[0;32m    virtualbox-iso: (67/72): systemd-219-19.el7_2.9.x86_64.rpm                 | 5.1 MB   00:02[0m
+[0;32m    virtualbox-iso: (68/72): systemd-sysv-219-19.el7_2.9.x86_64.rpm            |  53 kB   00:00[0m
+[0;32m    virtualbox-iso: (69/72): tzdata-2016d-1.el7.noarch.rpm                     | 439 kB   00:01[0m
+[0;32m    virtualbox-iso: (70/72): util-linux-2.23.2-26.el7_2.2.x86_64.rpm           | 1.9 MB   00:01[0m
+[0;32m    virtualbox-iso: (71/72): kernel-tools-libs-3.10.0-327.18.2.el7.x86_64.rpm  | 2.3 MB   00:20[0m
+[0;32m    virtualbox-iso: (72/72): selinux-policy-targeted-3.13.1-60.el7_2.3.noarch. | 3.9 MB   00:05[0m
+[0;32m    virtualbox-iso: --------------------------------------------------------------------------------[0m
+[0;32m    virtualbox-iso: Total                                              2.9 MB/s |  94 MB  00:32[0m
+[0;32m    virtualbox-iso: Running transaction check[0m
+[0;32m    virtualbox-iso: Running transaction test[0m
+[0;32m    virtualbox-iso: Transaction test succeeded[0m
+[0;32m    virtualbox-iso: Running transaction[0m
+[0;32m    virtualbox-iso:   Actualizando  : tzdata-2016d-1.el7.noarch                               1/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : nss-softokn-freebl-3.16.2.3-14.2.el7_2.x86_64           2/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : glibc-2.17-106.el7_2.6.x86_64                           3/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : glibc-common-2.17-106.el7_2.6.x86_64                    4/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : systemd-libs-219-19.el7_2.9.x86_64                      5/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : nspr-4.11.0-1.el7_2.x86_64                              6/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : nss-util-3.21.0-2.2.el7_2.x86_64                        7/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : libuuid-2.23.2-26.el7_2.2.x86_64                        8/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : libgudev1-219-19.el7_2.9.x86_64                         9/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : nss-softokn-3.16.2.3-14.2.el7_2.x86_64                 10/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : procps-ng-3.3.10-5.el7_2.x86_64                        11/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : chkconfig-1.3.61-5.el7_2.1.x86_64                      12/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : 1:gmp-6.0.0-12.el7_1.x86_64                            13/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : krb5-libs-1.13.2-12.el7_2.x86_64                       14/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : 1:openssl-libs-1.0.1e-51.el7_2.5.x86_64                15/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : coreutils-8.22-15.el7_2.1.x86_64                       16/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : ca-certificates-2015.2.6-70.1.el7_2.noarch             17/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : libblkid-2.23.2-26.el7_2.2.x86_64                      18/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : libmount-2.23.2-26.el7_2.2.x86_64                      19/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : systemd-219-19.el7_2.9.x86_64                          20/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : util-linux-2.23.2-26.el7_2.2.x86_64                    21/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : 7:device-mapper-libs-1.02.107-5.el7_2.2.x86_64         22/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : 7:device-mapper-1.02.107-5.el7_2.2.x86_64              23/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : 7:device-mapper-event-libs-1.02.107-5.el7_2.2.x86_6    24/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : 7:device-mapper-event-1.02.107-5.el7_2.2.x86_64        25/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : 7:lvm2-libs-2.02.130-5.el7_2.2.x86_64                  26/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : kpartx-0.4.9-85.el7_2.4.x86_64                         27/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : dracut-033-360.el7_2.x86_64                            28/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : dracut-network-033-360.el7_2.x86_64                    29/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : 1:grub2-tools-2.02-0.34.el7.centos.x86_64              30/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : initscripts-9.49.30-1.el7_2.2.x86_64                   31/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : systemd-sysv-219-19.el7_2.9.x86_64                     32/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : cronie-anacron-1.4.11-14.el7_2.1.x86_64                33/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : cronie-1.4.11-14.el7_2.1.x86_64                        34/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : polkit-0.112-6.el7_2.x86_64                            35/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : selinux-policy-3.13.1-60.el7_2.3.noarch                36/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : nss-3.21.0-9.el7_2.x86_64                              37/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : nss-sysinit-3.21.0-9.el7_2.x86_64                      38/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : 1:NetworkManager-libnm-1.0.6-29.el7_2.x86_64           39/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : nss-tools-3.21.0-9.el7_2.x86_64                        40/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : python-pyudev-0.15-7.el7_2.1.noarch                    41/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : avahi-libs-0.6.31-15.el7_2.1.x86_64                    42/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : avahi-autoipd-0.6.31-15.el7_2.1.x86_64                 43/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : kernel-tools-libs-3.10.0-327.18.2.el7.x86_64           44/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : cyrus-sasl-lib-2.1.26-20.el7_2.x86_64                  45/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : openldap-2.4.40-9.el7_2.x86_64                         46/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : openssh-6.6.1p1-25.el7_2.x86_64                        47/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : libxml2-2.9.1-6.el7_2.2.x86_64                         48/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : python-perf-3.10.0-327.18.2.el7.x86_64                 49/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : libndp-1.2-6.el7_2.x86_64                              50/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : 1:NetworkManager-1.0.6-29.el7_2.x86_64                 51/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : 32:bind-license-9.9.4-29.el7_2.3.noarch                52/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : 32:bind-libs-lite-9.9.4-29.el7_2.3.x86_64              53/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : 1:NetworkManager-tui-1.0.6-29.el7_2.x86_64             54/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : 1:NetworkManager-wifi-1.0.6-29.el7_2.x86_64            55/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : tuned-2.5.1-4.el7_2.3.noarch                           56/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : openssh-server-6.6.1p1-25.el7_2.x86_64                 57/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : openssh-clients-6.6.1p1-25.el7_2.x86_64                58/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : kernel-tools-3.10.0-327.18.2.el7.x86_64                59/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : selinux-policy-targeted-3.13.1-60.el7_2.3.noarch       60/143[0m
+[0;32m    virtualbox-iso:   Instalando    : kernel-3.10.0-327.18.2.el7.x86_64                      61/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : 1:grub2-2.02-0.34.el7.centos.x86_64                    62/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : kexec-tools-2.0.7-38.el7_2.1.x86_64                    63/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : dracut-config-rescue-033-360.el7_2.x86_64              64/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : 7:lvm2-2.02.130-5.el7_2.2.x86_64                       65/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : 1:openssl-1.0.1e-51.el7_2.5.x86_64                     66/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : logrotate-3.8.6-7.el7_2.x86_64                         67/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : libssh2-1.4.3-10.el7_2.1.x86_64                        68/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : 1:mariadb-libs-5.5.47-1.el7_2.x86_64                   69/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : gnutls-3.3.8-14.el7_2.x86_64                           70/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : pcre-8.32-15.el7_2.1.x86_64                            71/143[0m
+[0;32m    virtualbox-iso:   Actualizando  : numactl-libs-2.0.9-6.el7_2.x86_64                      72/143[0m
+[0;32m    virtualbox-iso: Limpieza      : 1:NetworkManager-tui-1.0.6-27.el7.x86_64               73/143[0m
+[0;32m    virtualbox-iso: Limpieza      : 7:lvm2-2.02.130-5.el7.x86_64                           74/143[0m
+[0;32m    virtualbox-iso: Limpieza      : 7:lvm2-libs-2.02.130-5.el7.x86_64                      75/143[0m
+[0;32m    virtualbox-iso: Limpieza      : openssh-server-6.6.1p1-22.el7.x86_64                   76/143[0m
+[0;32m    virtualbox-iso: Limpieza      : 32:bind-libs-lite-9.9.4-29.el7.x86_64                  77/143[0m
+[0;32m    virtualbox-iso: Limpieza      : tuned-2.5.1-4.el7.noarch                               78/143[0m
+[0;32m    virtualbox-iso: Limpieza      : openssh-clients-6.6.1p1-22.el7.x86_64                  79/143[0m
+[0;32m    virtualbox-iso: Limpieza      : 7:device-mapper-event-1.02.107-5.el7.x86_64            80/143[0m
+[0;32m    virtualbox-iso: Limpieza      : 1:openssl-1.0.1e-42.el7.9.x86_64                       81/143[0m
+[0;32m    virtualbox-iso: Limpieza      : openssh-6.6.1p1-22.el7.x86_64                          82/143[0m
+[0;32m    virtualbox-iso: Limpieza      : openldap-2.4.40-8.el7.x86_64                           83/143[0m
+[0;32m    virtualbox-iso: Limpieza      : nss-tools-3.19.1-18.el7.x86_64                         84/143[0m
+[0;32m    virtualbox-iso: Limpieza      : initscripts-9.49.30-1.el7.x86_64                       85/143[0m
+[0;32m    virtualbox-iso: Limpieza      : kexec-tools-2.0.7-38.el7.x86_64                        86/143[0m
+[0;32m    virtualbox-iso: Limpieza      : 1:mariadb-libs-5.5.44-2.el7.centos.x86_64              87/143[0m
+[0;32m    virtualbox-iso: Limpieza      : 1:NetworkManager-wifi-1.0.6-27.el7.x86_64              88/143[0m
+[0;32m    virtualbox-iso: Limpieza      : 1:NetworkManager-1.0.6-27.el7.x86_64                   89/143[0m
+[0;32m    virtualbox-iso: Limpieza      : 1:NetworkManager-libnm-1.0.6-27.el7.x86_64             90/143[0m
+[0;32m    virtualbox-iso: Limpieza      : nss-sysinit-3.19.1-18.el7.x86_64                       91/143[0m
+[0;32m    virtualbox-iso: Limpieza      : nss-3.19.1-18.el7.x86_64                               92/143[0m
+[0;32m    virtualbox-iso: Limpieza      : nss-softokn-3.16.2.3-13.el7_1.x86_64                   93/143[0m
+[0;32m    virtualbox-iso: Limpieza      : nss-util-3.19.1-4.el7_1.x86_64                         94/143[0m
+[0;32m    virtualbox-iso: Limpieza      : libgudev1-219-19.el7.x86_64                            95/143[0m
+[0;32m    virtualbox-iso: Limpieza      : polkit-0.112-5.el7.x86_64                              96/143[0m
+[0;32m    virtualbox-iso: Limpieza      : kernel-tools-3.10.0-327.el7.x86_64                     97/143[0m
+[0;32m    virtualbox-iso: Limpieza      : 7:device-mapper-event-libs-1.02.107-5.el7.x86_64       98/143[0m
+[0;32m    virtualbox-iso: Limpieza      : cronie-1.4.11-14.el7.x86_64                            99/143[0m
+[0;32m    virtualbox-iso: Limpieza      : cronie-anacron-1.4.11-14.el7.x86_64                   100/143[0m
+[0;32m    virtualbox-iso: Limpieza      : gnutls-3.3.8-12.el7_1.1.x86_64                        101/143[0m
+[0;32m    virtualbox-iso: Limpieza      : libssh2-1.4.3-10.el7.x86_64                           102/143[0m
+[0;32m    virtualbox-iso: Limpieza      : selinux-policy-targeted-3.13.1-60.el7.noarch          103/143[0m
+[0;32m    virtualbox-iso: Limpieza      : 1:grub2-2.02-0.29.el7.centos.x86_64                   104/143[0m
+[0;32m    virtualbox-iso: Limpieza      : selinux-policy-3.13.1-60.el7.noarch                   105/143[0m
+[0;32m    virtualbox-iso: Limpieza      : systemd-sysv-219-19.el7.x86_64                        106/143[0m
+[0;32m    virtualbox-iso: Limpieza      : dracut-network-033-359.el7.x86_64                     107/143[0m
+[0;32m    virtualbox-iso: Limpieza      : dracut-config-rescue-033-359.el7.x86_64               108/143[0m
+[0;32m    virtualbox-iso: Limpieza      : dracut-033-359.el7.x86_64                             109/143[0m
+[0;32m    virtualbox-iso: Limpieza      : 1:grub2-tools-2.02-0.29.el7.centos.x86_64             110/143[0m
+[0;32m    virtualbox-iso: Limpieza      : kpartx-0.4.9-85.el7.x86_64                            111/143[0m
+[0;32m    virtualbox-iso: Limpieza      : 7:device-mapper-1.02.107-5.el7.x86_64                 112/143[0m
+[0;32m    virtualbox-iso: Limpieza      : 7:device-mapper-libs-1.02.107-5.el7.x86_64            113/143[0m
+[0;32m    virtualbox-iso: Limpieza      : util-linux-2.23.2-26.el7.x86_64                       114/143[0m
+[0;32m    virtualbox-iso: Limpieza      : systemd-219-19.el7.x86_64                             115/143[0m
+[0;32m    virtualbox-iso: Limpieza      : libmount-2.23.2-26.el7.x86_64                         116/143[0m
+[0;32m    virtualbox-iso: Limpieza      : libblkid-2.23.2-26.el7.x86_64                         117/143[0m
+[0;32m    virtualbox-iso: Limpieza      : procps-ng-3.3.10-3.el7.x86_64                         118/143[0m
+[0;32m    virtualbox-iso: Limpieza      : avahi-autoipd-0.6.31-15.el7.x86_64                    119/143[0m
+[0;32m    virtualbox-iso: Limpieza      : logrotate-3.8.6-6.el7.x86_64                          120/143[0m
+[0;32m    virtualbox-iso: Limpieza      : ca-certificates-2015.2.4-71.el7.noarch                121/143[0m
+[0;32m    virtualbox-iso: Limpieza      : krb5-libs-1.13.2-10.el7.x86_64                        122/143[0m
+[0;32m    virtualbox-iso: Limpieza      : coreutils-8.22-15.el7.x86_64                          123/143[0m
+[0;32m    virtualbox-iso: Limpieza      : 1:openssl-libs-1.0.1e-42.el7.9.x86_64                 124/143[0m
+[0;32m    virtualbox-iso: Limpieza      : 1:gmp-6.0.0-11.el7.x86_64                             125/143[0m
+[0;32m    virtualbox-iso: Limpieza      : avahi-libs-0.6.31-15.el7.x86_64                       126/143[0m
+[0;32m    virtualbox-iso: Limpieza      : systemd-libs-219-19.el7.x86_64                        127/143[0m
+[0;32m    virtualbox-iso: Limpieza      : libuuid-2.23.2-26.el7.x86_64                          128/143[0m
+[0;32m    virtualbox-iso: Limpieza      : kernel-tools-libs-3.10.0-327.el7.x86_64               129/143[0m
+[0;32m    virtualbox-iso: Limpieza      : nspr-4.10.8-2.el7_1.x86_64                            130/143[0m
+[0;32m    virtualbox-iso: Limpieza      : chkconfig-1.3.61-5.el7.x86_64                         131/143[0m
+[0;32m    virtualbox-iso: Limpieza      : libndp-1.2-4.el7.x86_64                               132/143[0m
+[0;32m    virtualbox-iso: Limpieza      : cyrus-sasl-lib-2.1.26-19.2.el7.x86_64                 133/143[0m
+[0;32m    virtualbox-iso: Limpieza      : python-perf-3.10.0-327.el7.x86_64                     134/143[0m
+[0;32m    virtualbox-iso: Limpieza      : libxml2-2.9.1-5.el7_1.2.x86_64                        135/143[0m
+[0;32m    virtualbox-iso: Limpieza      : numactl-libs-2.0.9-5.el7_1.x86_64                     136/143[0m
+[0;32m    virtualbox-iso: Limpieza      : pcre-8.32-15.el7.x86_64                               137/143[0m
+[0;32m    virtualbox-iso: Limpieza      : python-pyudev-0.15-7.el7.noarch                       138/143[0m
+[0;32m    virtualbox-iso: Limpieza      : 32:bind-license-9.9.4-29.el7.noarch                   139/143[0m
+[0;32m    virtualbox-iso: Limpieza      : glibc-common-2.17-105.el7.x86_64                      140/143[0m
+[0;32m    virtualbox-iso: Limpieza      : nss-softokn-freebl-3.16.2.3-13.el7_1.x86_64           141/143[0m
+[0;32m    virtualbox-iso: Limpieza      : glibc-2.17-105.el7.x86_64                             142/143[0m
+[0;32m    virtualbox-iso: Limpieza      : tzdata-2015g-1.el7.noarch                             143/143[0m
+[0;32m    virtualbox-iso: Comprobando   : nspr-4.11.0-1.el7_2.x86_64                              1/143[0m
+[0;32m    virtualbox-iso: Comprobando   : kpartx-0.4.9-85.el7_2.4.x86_64                          2/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 32:bind-license-9.9.4-29.el7_2.3.noarch                 3/143[0m
+[0;32m    virtualbox-iso: Comprobando   : pcre-8.32-15.el7_2.1.x86_64                             4/143[0m
+[0;32m    virtualbox-iso: Comprobando   : libssh2-1.4.3-10.el7_2.1.x86_64                         5/143[0m
+[0;32m    virtualbox-iso: Comprobando   : gnutls-3.3.8-14.el7_2.x86_64                            6/143[0m
+[0;32m    virtualbox-iso: Comprobando   : ca-certificates-2015.2.6-70.1.el7_2.noarch              7/143[0m
+[0;32m    virtualbox-iso: Comprobando   : libmount-2.23.2-26.el7_2.2.x86_64                       8/143[0m
+[0;32m    virtualbox-iso: Comprobando   : nss-util-3.21.0-2.2.el7_2.x86_64                        9/143[0m
+[0;32m    virtualbox-iso: Comprobando   : selinux-policy-3.13.1-60.el7_2.3.noarch                10/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 32:bind-libs-lite-9.9.4-29.el7_2.3.x86_64              11/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 7:device-mapper-event-libs-1.02.107-5.el7_2.2.x86_6    12/143[0m
+[0;32m    virtualbox-iso: Comprobando   : numactl-libs-2.0.9-6.el7_2.x86_64                      13/143[0m
+[0;32m    virtualbox-iso: Comprobando   : cronie-anacron-1.4.11-14.el7_2.1.x86_64                14/143[0m
+[0;32m    virtualbox-iso: Comprobando   : coreutils-8.22-15.el7_2.1.x86_64                       15/143[0m
+[0;32m    virtualbox-iso: Comprobando   : openssh-6.6.1p1-25.el7_2.x86_64                        16/143[0m
+[0;32m    virtualbox-iso: Comprobando   : kernel-3.10.0-327.18.2.el7.x86_64                      17/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:NetworkManager-tui-1.0.6-29.el7_2.x86_64             18/143[0m
+[0;32m    virtualbox-iso: Comprobando   : tzdata-2016d-1.el7.noarch                              19/143[0m
+[0;32m    virtualbox-iso: Comprobando   : openldap-2.4.40-9.el7_2.x86_64                         20/143[0m
+[0;32m    virtualbox-iso: Comprobando   : avahi-libs-0.6.31-15.el7_2.1.x86_64                    21/143[0m
+[0;32m    virtualbox-iso: Comprobando   : dracut-config-rescue-033-360.el7_2.x86_64              22/143[0m
+[0;32m    virtualbox-iso: Comprobando   : tuned-2.5.1-4.el7_2.3.noarch                           23/143[0m
+[0;32m    virtualbox-iso: Comprobando   : dracut-network-033-360.el7_2.x86_64                    24/143[0m
+[0;32m    virtualbox-iso: Comprobando   : krb5-libs-1.13.2-12.el7_2.x86_64                       25/143[0m
+[0;32m    virtualbox-iso: Comprobando   : kernel-tools-3.10.0-327.18.2.el7.x86_64                26/143[0m
+[0;32m    virtualbox-iso: Comprobando   : systemd-219-19.el7_2.9.x86_64                          27/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:mariadb-libs-5.5.47-1.el7_2.x86_64                   28/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 7:lvm2-libs-2.02.130-5.el7_2.2.x86_64                  29/143[0m
+[0;32m    virtualbox-iso: Comprobando   : systemd-libs-219-19.el7_2.9.x86_64                     30/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 7:device-mapper-event-1.02.107-5.el7_2.2.x86_64        31/143[0m
+[0;32m    virtualbox-iso: Comprobando   : initscripts-9.49.30-1.el7_2.2.x86_64                   32/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 7:device-mapper-libs-1.02.107-5.el7_2.2.x86_64         33/143[0m
+[0;32m    virtualbox-iso: Comprobando   : kernel-tools-libs-3.10.0-327.18.2.el7.x86_64           34/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:NetworkManager-wifi-1.0.6-29.el7_2.x86_64            35/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:openssl-libs-1.0.1e-51.el7_2.5.x86_64                36/143[0m
+[0;32m    virtualbox-iso: Comprobando   : cyrus-sasl-lib-2.1.26-20.el7_2.x86_64                  37/143[0m
+[0;32m    virtualbox-iso: Comprobando   : nss-tools-3.21.0-9.el7_2.x86_64                        38/143[0m
+[0;32m    virtualbox-iso: Comprobando   : chkconfig-1.3.61-5.el7_2.1.x86_64                      39/143[0m
+[0;32m    virtualbox-iso: Comprobando   : procps-ng-3.3.10-5.el7_2.x86_64                        40/143[0m
+[0;32m    virtualbox-iso: Comprobando   : avahi-autoipd-0.6.31-15.el7_2.1.x86_64                 41/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:grub2-2.02-0.34.el7.centos.x86_64                    42/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 7:device-mapper-1.02.107-5.el7_2.2.x86_64              43/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:NetworkManager-libnm-1.0.6-29.el7_2.x86_64           44/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:openssl-1.0.1e-51.el7_2.5.x86_64                     45/143[0m
+[0;32m    virtualbox-iso: Comprobando   : libuuid-2.23.2-26.el7_2.2.x86_64                       46/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:NetworkManager-1.0.6-29.el7_2.x86_64                 47/143[0m
+[0;32m    virtualbox-iso: Comprobando   : kexec-tools-2.0.7-38.el7_2.1.x86_64                    48/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 7:lvm2-2.02.130-5.el7_2.2.x86_64                       49/143[0m
+[0;32m    virtualbox-iso: Comprobando   : logrotate-3.8.6-7.el7_2.x86_64                         50/143[0m
+[0;32m    virtualbox-iso: Comprobando   : systemd-sysv-219-19.el7_2.9.x86_64                     51/143[0m
+[0;32m    virtualbox-iso: Comprobando   : glibc-2.17-106.el7_2.6.x86_64                          52/143[0m
+[0;32m    virtualbox-iso: Comprobando   : selinux-policy-targeted-3.13.1-60.el7_2.3.noarch       53/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:grub2-tools-2.02-0.34.el7.centos.x86_64              54/143[0m
+[0;32m    virtualbox-iso: Comprobando   : libgudev1-219-19.el7_2.9.x86_64                        55/143[0m
+[0;32m    virtualbox-iso: Comprobando   : util-linux-2.23.2-26.el7_2.2.x86_64                    56/143[0m
+[0;32m    virtualbox-iso: Comprobando   : libxml2-2.9.1-6.el7_2.2.x86_64                         57/143[0m
+[0;32m    virtualbox-iso: Comprobando   : python-perf-3.10.0-327.18.2.el7.x86_64                 58/143[0m
+[0;32m    virtualbox-iso: Comprobando   : openssh-server-6.6.1p1-25.el7_2.x86_64                 59/143[0m
+[0;32m    virtualbox-iso: Comprobando   : glibc-common-2.17-106.el7_2.6.x86_64                   60/143[0m
+[0;32m    virtualbox-iso: Comprobando   : libblkid-2.23.2-26.el7_2.2.x86_64                      61/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:gmp-6.0.0-12.el7_1.x86_64                            62/143[0m
+[0;32m    virtualbox-iso: Comprobando   : nss-softokn-3.16.2.3-14.2.el7_2.x86_64                 63/143[0m
+[0;32m    virtualbox-iso: Comprobando   : nss-softokn-freebl-3.16.2.3-14.2.el7_2.x86_64          64/143[0m
+[0;32m    virtualbox-iso: Comprobando   : nss-3.21.0-9.el7_2.x86_64                              65/143[0m
+[0;32m    virtualbox-iso: Comprobando   : nss-sysinit-3.21.0-9.el7_2.x86_64                      66/143[0m
+[0;32m    virtualbox-iso: Comprobando   : python-pyudev-0.15-7.el7_2.1.noarch                    67/143[0m
+[0;32m    virtualbox-iso: Comprobando   : libndp-1.2-6.el7_2.x86_64                              68/143[0m
+[0;32m    virtualbox-iso: Comprobando   : cronie-1.4.11-14.el7_2.1.x86_64                        69/143[0m
+[0;32m    virtualbox-iso: Comprobando   : dracut-033-360.el7_2.x86_64                            70/143[0m
+[0;32m    virtualbox-iso: Comprobando   : openssh-clients-6.6.1p1-25.el7_2.x86_64                71/143[0m
+[0;32m    virtualbox-iso: Comprobando   : polkit-0.112-6.el7_2.x86_64                            72/143[0m
+[0;32m    virtualbox-iso: Comprobando   : dracut-config-rescue-033-359.el7.x86_64                73/143[0m
+[0;32m    virtualbox-iso: Comprobando   : gnutls-3.3.8-12.el7_1.1.x86_64                         74/143[0m
+[0;32m    virtualbox-iso: Comprobando   : openssh-6.6.1p1-22.el7.x86_64                          75/143[0m
+[0;32m    virtualbox-iso: Comprobando   : glibc-common-2.17-105.el7.x86_64                       76/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 7:device-mapper-event-libs-1.02.107-5.el7.x86_64       77/143[0m
+[0;32m    virtualbox-iso: Comprobando   : dracut-network-033-359.el7.x86_64                      78/143[0m
+[0;32m    virtualbox-iso: Comprobando   : avahi-autoipd-0.6.31-15.el7.x86_64                     79/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:NetworkManager-1.0.6-27.el7.x86_64                   80/143[0m
+[0;32m    virtualbox-iso: Comprobando   : selinux-policy-3.13.1-60.el7.noarch                    81/143[0m
+[0;32m    virtualbox-iso: Comprobando   : systemd-libs-219-19.el7.x86_64                         82/143[0m
+[0;32m    virtualbox-iso: Comprobando   : libblkid-2.23.2-26.el7.x86_64                          83/143[0m
+[0;32m    virtualbox-iso: Comprobando   : libndp-1.2-4.el7.x86_64                                84/143[0m
+[0;32m    virtualbox-iso: Comprobando   : kpartx-0.4.9-85.el7.x86_64                             85/143[0m
+[0;32m    virtualbox-iso: Comprobando   : python-pyudev-0.15-7.el7.noarch                        86/143[0m
+[0;32m    virtualbox-iso: Comprobando   : nss-util-3.19.1-4.el7_1.x86_64                         87/143[0m
+[0;32m    virtualbox-iso: Comprobando   : cronie-1.4.11-14.el7.x86_64                            88/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 32:bind-libs-lite-9.9.4-29.el7.x86_64                  89/143[0m
+[0;32m    virtualbox-iso: Comprobando   : kexec-tools-2.0.7-38.el7.x86_64                        90/143[0m
+[0;32m    virtualbox-iso: Comprobando   : kernel-tools-3.10.0-327.el7.x86_64                     91/143[0m
+[0;32m    virtualbox-iso: Comprobando   : procps-ng-3.3.10-3.el7.x86_64                          92/143[0m
+[0;32m    virtualbox-iso: Comprobando   : nss-softokn-3.16.2.3-13.el7_1.x86_64                   93/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:NetworkManager-tui-1.0.6-27.el7.x86_64               94/143[0m
+[0;32m    virtualbox-iso: Comprobando   : libuuid-2.23.2-26.el7.x86_64                           95/143[0m
+[0;32m    virtualbox-iso: Comprobando   : tzdata-2015g-1.el7.noarch                              96/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:grub2-tools-2.02-0.29.el7.centos.x86_64              97/143[0m
+[0;32m    virtualbox-iso: Comprobando   : systemd-sysv-219-19.el7.x86_64                         98/143[0m
+[0;32m    virtualbox-iso: Comprobando   : libgudev1-219-19.el7.x86_64                            99/143[0m
+[0;32m    virtualbox-iso: Comprobando   : numactl-libs-2.0.9-5.el7_1.x86_64                     100/143[0m
+[0;32m    virtualbox-iso: Comprobando   : nss-sysinit-3.19.1-18.el7.x86_64                      101/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:gmp-6.0.0-11.el7.x86_64                             102/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 7:device-mapper-event-1.02.107-5.el7.x86_64           103/143[0m
+[0;32m    virtualbox-iso: Comprobando   : kernel-tools-libs-3.10.0-327.el7.x86_64               104/143[0m
+[0;32m    virtualbox-iso: Comprobando   : cronie-anacron-1.4.11-14.el7.x86_64                   105/143[0m
+[0;32m    virtualbox-iso: Comprobando   : glibc-2.17-105.el7.x86_64                             106/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:grub2-2.02-0.29.el7.centos.x86_64                   107/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:NetworkManager-libnm-1.0.6-27.el7.x86_64            108/143[0m
+[0;32m    virtualbox-iso: Comprobando   : ca-certificates-2015.2.4-71.el7.noarch                109/143[0m
+[0;32m    virtualbox-iso: Comprobando   : util-linux-2.23.2-26.el7.x86_64                       110/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:openssl-1.0.1e-42.el7.9.x86_64                      111/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 7:lvm2-2.02.130-5.el7.x86_64                          112/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 32:bind-license-9.9.4-29.el7.noarch                   113/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:mariadb-libs-5.5.44-2.el7.centos.x86_64             114/143[0m
+[0;32m    virtualbox-iso: Comprobando   : selinux-policy-targeted-3.13.1-60.el7.noarch          115/143[0m
+[0;32m    virtualbox-iso: Comprobando   : cyrus-sasl-lib-2.1.26-19.2.el7.x86_64                 116/143[0m
+[0;32m    virtualbox-iso: Comprobando   : pcre-8.32-15.el7.x86_64                               117/143[0m
+[0;32m    virtualbox-iso: Comprobando   : nss-tools-3.19.1-18.el7.x86_64                        118/143[0m
+[0;32m    virtualbox-iso: Comprobando   : chkconfig-1.3.61-5.el7.x86_64                         119/143[0m
+[0;32m    virtualbox-iso: Comprobando   : logrotate-3.8.6-6.el7.x86_64                          120/143[0m
+[0;32m    virtualbox-iso: Comprobando   : initscripts-9.49.30-1.el7.x86_64                      121/143[0m
+[0;32m    virtualbox-iso: Comprobando   : polkit-0.112-5.el7.x86_64                             122/143[0m
+[0;32m    virtualbox-iso: Comprobando   : libmount-2.23.2-26.el7.x86_64                         123/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:openssl-libs-1.0.1e-42.el7.9.x86_64                 124/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 7:device-mapper-1.02.107-5.el7.x86_64                 125/143[0m
+[0;32m    virtualbox-iso: Comprobando   : coreutils-8.22-15.el7.x86_64                          126/143[0m
+[0;32m    virtualbox-iso: Comprobando   : nss-3.19.1-18.el7.x86_64                              127/143[0m
+[0;32m    virtualbox-iso: Comprobando   : tuned-2.5.1-4.el7.noarch                              128/143[0m
+[0;32m    virtualbox-iso: Comprobando   : openssh-clients-6.6.1p1-22.el7.x86_64                 129/143[0m
+[0;32m    virtualbox-iso: Comprobando   : systemd-219-19.el7.x86_64                             130/143[0m
+[0;32m    virtualbox-iso: Comprobando   : dracut-033-359.el7.x86_64                             131/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 7:device-mapper-libs-1.02.107-5.el7.x86_64            132/143[0m
+[0;32m    virtualbox-iso: Comprobando   : krb5-libs-1.13.2-10.el7.x86_64                        133/143[0m
+[0;32m    virtualbox-iso: Comprobando   : avahi-libs-0.6.31-15.el7.x86_64                       134/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 7:lvm2-libs-2.02.130-5.el7.x86_64                     135/143[0m
+[0;32m    virtualbox-iso: Comprobando   : openssh-server-6.6.1p1-22.el7.x86_64                  136/143[0m
+[0;32m    virtualbox-iso: Comprobando   : libxml2-2.9.1-5.el7_1.2.x86_64                        137/143[0m
+[0;32m    virtualbox-iso: Comprobando   : openldap-2.4.40-8.el7.x86_64                          138/143[0m
+[0;32m    virtualbox-iso: Comprobando   : libssh2-1.4.3-10.el7.x86_64                           139/143[0m
+[0;32m    virtualbox-iso: Comprobando   : nss-softokn-freebl-3.16.2.3-13.el7_1.x86_64           140/143[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:NetworkManager-wifi-1.0.6-27.el7.x86_64             141/143[0m
+[0;32m    virtualbox-iso: Comprobando   : nspr-4.10.8-2.el7_1.x86_64                            142/143[0m
+[0;32m    virtualbox-iso: Comprobando   : python-perf-3.10.0-327.el7.x86_64                     143/143[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Instalado:[0m
+[0;32m    virtualbox-iso: kernel.x86_64 0:3.10.0-327.18.2.el7[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Actualizado:[0m
+[0;32m    virtualbox-iso: NetworkManager.x86_64 1:1.0.6-29.el7_2[0m
+[0;32m    virtualbox-iso: NetworkManager-libnm.x86_64 1:1.0.6-29.el7_2[0m
+[0;32m    virtualbox-iso: NetworkManager-tui.x86_64 1:1.0.6-29.el7_2[0m
+[0;32m    virtualbox-iso: NetworkManager-wifi.x86_64 1:1.0.6-29.el7_2[0m
+[0;32m    virtualbox-iso: avahi-autoipd.x86_64 0:0.6.31-15.el7_2.1[0m
+[0;32m    virtualbox-iso: avahi-libs.x86_64 0:0.6.31-15.el7_2.1[0m
+[0;32m    virtualbox-iso: bind-libs-lite.x86_64 32:9.9.4-29.el7_2.3[0m
+[0;32m    virtualbox-iso: bind-license.noarch 32:9.9.4-29.el7_2.3[0m
+[0;32m    virtualbox-iso: ca-certificates.noarch 0:2015.2.6-70.1.el7_2[0m
+[0;32m    virtualbox-iso: chkconfig.x86_64 0:1.3.61-5.el7_2.1[0m
+[0;32m    virtualbox-iso: coreutils.x86_64 0:8.22-15.el7_2.1[0m
+[0;32m    virtualbox-iso: cronie.x86_64 0:1.4.11-14.el7_2.1[0m
+[0;32m    virtualbox-iso: cronie-anacron.x86_64 0:1.4.11-14.el7_2.1[0m
+[0;32m    virtualbox-iso: cyrus-sasl-lib.x86_64 0:2.1.26-20.el7_2[0m
+[0;32m    virtualbox-iso: device-mapper.x86_64 7:1.02.107-5.el7_2.2[0m
+[0;32m    virtualbox-iso: device-mapper-event.x86_64 7:1.02.107-5.el7_2.2[0m
+[0;32m    virtualbox-iso: device-mapper-event-libs.x86_64 7:1.02.107-5.el7_2.2[0m
+[0;32m    virtualbox-iso: device-mapper-libs.x86_64 7:1.02.107-5.el7_2.2[0m
+[0;32m    virtualbox-iso: dracut.x86_64 0:033-360.el7_2[0m
+[0;32m    virtualbox-iso: dracut-config-rescue.x86_64 0:033-360.el7_2[0m
+[0;32m    virtualbox-iso: dracut-network.x86_64 0:033-360.el7_2[0m
+[0;32m    virtualbox-iso: glibc.x86_64 0:2.17-106.el7_2.6[0m
+[0;32m    virtualbox-iso: glibc-common.x86_64 0:2.17-106.el7_2.6[0m
+[0;32m    virtualbox-iso: gmp.x86_64 1:6.0.0-12.el7_1[0m
+[0;32m    virtualbox-iso: gnutls.x86_64 0:3.3.8-14.el7_2[0m
+[0;32m    virtualbox-iso: grub2.x86_64 1:2.02-0.34.el7.centos[0m
+[0;32m    virtualbox-iso: grub2-tools.x86_64 1:2.02-0.34.el7.centos[0m
+[0;32m    virtualbox-iso: initscripts.x86_64 0:9.49.30-1.el7_2.2[0m
+[0;32m    virtualbox-iso: kernel-tools.x86_64 0:3.10.0-327.18.2.el7[0m
+[0;32m    virtualbox-iso: kernel-tools-libs.x86_64 0:3.10.0-327.18.2.el7[0m
+[0;32m    virtualbox-iso: kexec-tools.x86_64 0:2.0.7-38.el7_2.1[0m
+[0;32m    virtualbox-iso: kpartx.x86_64 0:0.4.9-85.el7_2.4[0m
+[0;32m    virtualbox-iso: krb5-libs.x86_64 0:1.13.2-12.el7_2[0m
+[0;32m    virtualbox-iso: libblkid.x86_64 0:2.23.2-26.el7_2.2[0m
+[0;32m    virtualbox-iso: libgudev1.x86_64 0:219-19.el7_2.9[0m
+[0;32m    virtualbox-iso: libmount.x86_64 0:2.23.2-26.el7_2.2[0m
+[0;32m    virtualbox-iso: libndp.x86_64 0:1.2-6.el7_2[0m
+[0;32m    virtualbox-iso: libssh2.x86_64 0:1.4.3-10.el7_2.1[0m
+[0;32m    virtualbox-iso: libuuid.x86_64 0:2.23.2-26.el7_2.2[0m
+[0;32m    virtualbox-iso: libxml2.x86_64 0:2.9.1-6.el7_2.2[0m
+[0;32m    virtualbox-iso: logrotate.x86_64 0:3.8.6-7.el7_2[0m
+[0;32m    virtualbox-iso: lvm2.x86_64 7:2.02.130-5.el7_2.2[0m
+[0;32m    virtualbox-iso: lvm2-libs.x86_64 7:2.02.130-5.el7_2.2[0m
+[0;32m    virtualbox-iso: mariadb-libs.x86_64 1:5.5.47-1.el7_2[0m
+[0;32m    virtualbox-iso: nspr.x86_64 0:4.11.0-1.el7_2[0m
+[0;32m    virtualbox-iso: nss.x86_64 0:3.21.0-9.el7_2[0m
+[0;32m    virtualbox-iso: nss-softokn.x86_64 0:3.16.2.3-14.2.el7_2[0m
+[0;32m    virtualbox-iso: nss-softokn-freebl.x86_64 0:3.16.2.3-14.2.el7_2[0m
+[0;32m    virtualbox-iso: nss-sysinit.x86_64 0:3.21.0-9.el7_2[0m
+[0;32m    virtualbox-iso: nss-tools.x86_64 0:3.21.0-9.el7_2[0m
+[0;32m    virtualbox-iso: nss-util.x86_64 0:3.21.0-2.2.el7_2[0m
+[0;32m    virtualbox-iso: numactl-libs.x86_64 0:2.0.9-6.el7_2[0m
+[0;32m    virtualbox-iso: openldap.x86_64 0:2.4.40-9.el7_2[0m
+[0;32m    virtualbox-iso: openssh.x86_64 0:6.6.1p1-25.el7_2[0m
+[0;32m    virtualbox-iso: openssh-clients.x86_64 0:6.6.1p1-25.el7_2[0m
+[0;32m    virtualbox-iso: openssh-server.x86_64 0:6.6.1p1-25.el7_2[0m
+[0;32m    virtualbox-iso: openssl.x86_64 1:1.0.1e-51.el7_2.5[0m
+[0;32m    virtualbox-iso: openssl-libs.x86_64 1:1.0.1e-51.el7_2.5[0m
+[0;32m    virtualbox-iso: pcre.x86_64 0:8.32-15.el7_2.1[0m
+[0;32m    virtualbox-iso: polkit.x86_64 0:0.112-6.el7_2[0m
+[0;32m    virtualbox-iso: procps-ng.x86_64 0:3.3.10-5.el7_2[0m
+[0;32m    virtualbox-iso: python-perf.x86_64 0:3.10.0-327.18.2.el7[0m
+[0;32m    virtualbox-iso: python-pyudev.noarch 0:0.15-7.el7_2.1[0m
+[0;32m    virtualbox-iso: selinux-policy.noarch 0:3.13.1-60.el7_2.3[0m
+[0;32m    virtualbox-iso: selinux-policy-targeted.noarch 0:3.13.1-60.el7_2.3[0m
+[0;32m    virtualbox-iso: systemd.x86_64 0:219-19.el7_2.9[0m
+[0;32m    virtualbox-iso: systemd-libs.x86_64 0:219-19.el7_2.9[0m
+[0;32m    virtualbox-iso: systemd-sysv.x86_64 0:219-19.el7_2.9[0m
+[0;32m    virtualbox-iso: tuned.noarch 0:2.5.1-4.el7_2.3[0m
+[0;32m    virtualbox-iso: tzdata.noarch 0:2016d-1.el7[0m
+[0;32m    virtualbox-iso: util-linux.x86_64 0:2.23.2-26.el7_2.2[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: ¡Listo![0m
+[0;32m    virtualbox-iso: Complementos cargados:fastestmirror[0m
+[0;32m    virtualbox-iso: Loading mirror speeds from cached hostfile[0m
+[0;32m    virtualbox-iso: * base: sunsite.rediris.es[0m
+[0;32m    virtualbox-iso: * extras: sunsite.rediris.es[0m
+[0;32m    virtualbox-iso: * updates: sunsite.rediris.es[0m
+[0;32m    virtualbox-iso: Resolviendo dependencias[0m
+[0;32m    virtualbox-iso: --> Ejecutando prueba de transacción[0m
+[0;32m    virtualbox-iso: ---> Paquete net-tools.x86_64 0:2.0-0.17.20131004git.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: --> Resolución de dependencias finalizada[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Dependencias resueltas[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: ================================================================================[0m
+[0;32m    virtualbox-iso: Package         Arquitectura Versión                          Repositorio[0m
+[0;32m    virtualbox-iso: Tamaño[0m
+[0;32m    virtualbox-iso: ================================================================================[0m
+[0;32m    virtualbox-iso: Instalando:[0m
+[0;32m    virtualbox-iso: net-tools       x86_64       2.0-0.17.20131004git.el7         base       304 k[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Resumen de la transacción[0m
+[0;32m    virtualbox-iso: ================================================================================[0m
+[0;32m    virtualbox-iso: Instalar  1 Paquete[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Tamaño total de la descarga: 304 k[0m
+[0;32m    virtualbox-iso: Tamaño instalado: 917 k[0m
+[0;32m    virtualbox-iso: Is this ok [y/d/N]: Is this ok [y/d/N]: Exiting on user command[0m
+[0;32m    virtualbox-iso: Su transacción fue guardada, vuelva a ejecutarla con:[0m
+[0;32m    virtualbox-iso: yum load-transaction /tmp/yum_save_tx.2016-05-28.12-12.QW0PjE.yumtx[0m
+[0;32m    virtualbox-iso: + sh -c 'sleep 3; yum -y -q install docker-engine'[0m
+[0;32m    virtualbox-iso: warning: /var/cache/yum/x86_64/7/docker-main-repo/packages/docker-engine-selinux-1.11.1-1.el7.centos.noarch.rpm: Header V4 RSA/SHA512 Signature, key ID 2c52609d: NOKEY[0m
+[0;32m    virtualbox-iso: No se ha instalado la llave pública de docker-engine-selinux-1.11.1-1.el7.centos.noarch.rpm[0m
+[0;32m    virtualbox-iso: Importando llave GPG 0x2C52609D:[0m
+[0;32m    virtualbox-iso: Usuarioid  : "Docker Release Tool (releasedocker) <docker@docker.com>"[0m
+[0;32m    virtualbox-iso: Huella       : 5811 8e89 f3a9 1289 7c07 0adb f762 2157 2c52 609d[0m
+[0;32m    virtualbox-iso: Desde      : https://yum.dockerproject.org/gpg[0m
+[0;32m    virtualbox-iso: setsebool:  SELinux is disabled.[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: If you would like to use Docker as a non-root user, you should now consider[0m
+[0;32m    virtualbox-iso: adding your user to the "docker" group with something like:[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: sudo usermod -aG docker your-user[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Remember that you will have to log out and back in for this to take effect![0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: groupadd: el grupo «docker» ya existe[0m
+[0;32m    virtualbox-iso: [1;31mWarning:[0m docker.service changed on disk. Run 'systemctl daemon-reload' to reload units.[0m
+[0;32m    virtualbox-iso: Created symlink from /etc/systemd/system/multi-user.target.wants/docker.service to /usr/lib/systemd/system/docker.service.[0m
+[1;32m==> virtualbox-iso: Provisioning with shell script: scripts/cleanup.sh[0m
+[0;32m    virtualbox-iso: Complementos cargados:fastestmirror[0m
+[0;32m    virtualbox-iso: Limpiando repositorios: base docker-main-repo extras updates[0m
+[0;32m    virtualbox-iso: Cleaning up everything[0m
+[0;32m    virtualbox-iso: Cleaning up list of fastest mirrors[0m
+[1;32m==> virtualbox-iso: Gracefully halting virtual machine...[0m
+[1;32m==> virtualbox-iso: Preparing to export machine...[0m
+[0;32m    virtualbox-iso: Deleting forwarded port mapping for the communicator (SSH, WinRM, etc) (host port 4436)[0m
+[1;32m==> virtualbox-iso: Exporting virtual machine...[0m
+[0;32m    virtualbox-iso: Executing: export docker-host --output output-virtualbox-iso/docker-host.ovf[0m
+[1;32m==> virtualbox-iso: Unregistering and deleting virtual machine...[0m
+[1;32mBuild 'virtualbox-iso' finished.[0m
+
+==> Builds finished. The artifacts of successful builds are:
+--> virtualbox-iso: VM files in directory: output-virtualbox-iso

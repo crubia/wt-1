@@ -1,0 +1,8 @@
+[Unit]
+Description=api_test_alfresco
+
+[Service]
+ExecStart=/home/test/api/api_test_alfresco.sh
+
+[Install]
+WantedBy=multi-user.target 

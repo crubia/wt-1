@@ -1,0 +1,773 @@
+[1;32mvirtualbox-iso output will be in this color.[0m
+
+[1;31m==> virtualbox-iso: Cannot find "Default Guest Additions ISO" in vboxmanage output (or it is empty)[0m
+[1;32m==> virtualbox-iso: Downloading or copying Guest additions checksums[0m
+[0;32m    virtualbox-iso: Downloading or copying: http://download.virtualbox.org/virtualbox/5.0.14/SHA256SUMS[0m
+[1;32m==> virtualbox-iso: Downloading or copying Guest additions[0m
+[0;32m    virtualbox-iso: Downloading or copying: http://download.virtualbox.org/virtualbox/5.0.14/VBoxGuestAdditions_5.0.14.iso[0m
+[1;32m==> virtualbox-iso: Downloading or copying ISO[0m
+[0;32m    virtualbox-iso: Downloading or copying: file:///home/jorge/plantillas-entice/ISO/CentOS-7-x86_64-Minimal-1511.iso[0m
+[1;32m==> virtualbox-iso: Starting HTTP server on port 8269[0m
+[1;32m==> virtualbox-iso: Creating virtual machine...[0m
+[1;32m==> virtualbox-iso: Creating hard drive...[0m
+[1;32m==> virtualbox-iso: Creating forwarded port mapping for communicator (SSH, WinRM, etc) (host port 2864)[0m
+[1;32m==> virtualbox-iso: Executing custom VBoxManage commands...[0m
+[0;32m    virtualbox-iso: Executing: modifyvm packer-virtualbox-iso-1463063262 --memory 2048[0m
+[0;32m    virtualbox-iso: Executing: modifyvm packer-virtualbox-iso-1463063262 --cpus 2[0m
+[1;32m==> virtualbox-iso: Starting the virtual machine...[0m
+[1;32m==> virtualbox-iso: Waiting 10s for boot...[0m
+[1;32m==> virtualbox-iso: Typing the boot command...[0m
+[1;32m==> virtualbox-iso: Waiting for SSH to become available...[0m
+[1;32m==> virtualbox-iso: Connected to SSH![0m
+[1;32m==> virtualbox-iso: Uploading VirtualBox version info (5.0.14)[0m
+[1;32m==> virtualbox-iso: Uploading VirtualBox guest additions ISO...[0m
+[1;32m==> virtualbox-iso: Provisioning with shell script: /tmp/packer-shell661238312[0m
+[0;32m    virtualbox-iso: Complementos cargados:fastestmirror[0m
+[0;32m    virtualbox-iso: Loading mirror speeds from cached hostfile[0m
+[0;32m    virtualbox-iso: * base: centos.mirror.xtratelecom.es[0m
+[0;32m    virtualbox-iso: * extras: centos.mirror.xtratelecom.es[0m
+[0;32m    virtualbox-iso: * updates: centos.mirror.xtratelecom.es[0m
+[0;32m    virtualbox-iso: Resolviendo dependencias[0m
+[0;32m    virtualbox-iso: --> Ejecutando prueba de transacción[0m
+[0;32m    virtualbox-iso: ---> Paquete wget.x86_64 0:1.14-10.el7_0.1 debe ser instalado[0m
+[0;32m    virtualbox-iso: --> Resolución de dependencias finalizada[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Dependencias resueltas[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: ========================================[0m
+[0;32m    virtualbox-iso: Package[0m
+[0;32m    virtualbox-iso: Arquitectura[0m
+[0;32m    virtualbox-iso: Versión         Repositorio[0m
+[0;32m    virtualbox-iso: Tamaño[0m
+[0;32m    virtualbox-iso: ========================================[0m
+[0;32m    virtualbox-iso: Instalando:[0m
+[0;32m    virtualbox-iso: wget x86_64 1.14-10.el7_0.1 base 545 k[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Resumen de la transacción[0m
+[0;32m    virtualbox-iso: ========================================[0m
+[0;32m    virtualbox-iso: Instalar  1 Paquete[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Tamaño total de la descarga: 545 k[0m
+[0;32m    virtualbox-iso: Tamaño instalado: 2.0 M[0m
+[0;32m    virtualbox-iso: Downloading packages:[0m
+[0;32m    virtualbox-iso: wget-1.14-10.el7_0 | 545 kB   00:00[0m
+[0;32m    virtualbox-iso: Running transaction check[0m
+[0;32m    virtualbox-iso: Running transaction test[0m
+[0;32m    virtualbox-iso: Transaction test succeeded[0m
+[0;32m    virtualbox-iso: Running transaction[0m
+[0;32m    virtualbox-iso:   Instalando    : wget-1.14-10.el   1/1[0m
+[0;32m    virtualbox-iso: Comprobando   : wget-1.14-10.el   1/1[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Instalado:[0m
+[0;32m    virtualbox-iso: wget.x86_64 0:1.14-10.el7_0.1[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: ¡Listo![0m
+[0;32m    virtualbox-iso: --2016-05-12 14:33:40--  http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm[0m
+[0;32m    virtualbox-iso: Resolviendo dl.fedoraproject.org (dl.fedoraproject.org)... 209.132.181.26, 209.132.181.25, 209.132.181.23, ...[0m
+[0;32m    virtualbox-iso: Conectando con dl.fedoraproject.org (dl.fedoraproject.org)[209.132.181.26]:80... conectado.[0m
+[0;32m    virtualbox-iso: Petición HTTP enviada, esperando respuesta... 200 OK[0m
+[0;32m    virtualbox-iso: Longitud: 14540 (14K) [application/x-rpm][0m
+[0;32m    virtualbox-iso: Grabando a: “epel-release-6-8.noarch.rpm”[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: 100% 14.540      20,3KB/s   en 0,7s[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: 2016-05-12 14:33:41 (20,3 KB/s) - “epel-release-6-8.noarch.rpm” guardado [14540/14540][0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: advertencia:epel-release-6-8.noarch.rpm: EncabezadoV3 RSA/SHA256 Signature, ID de clave 0608b895: NOKEY[0m
+[0;32m    virtualbox-iso: Preparando...                                                           (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)################################# [100%][0m
+[0;32m    virtualbox-iso: Actualizando / instalando...[0m
+[0;32m    virtualbox-iso: 1:epel-release-6-8                                                   (  8%)#                                 (  8%)##                                (  8%)###                               ( 14%)####                              ( 14%)#####                             ( 19%)######                            ( 19%)#######                           ( 99%)########                          ( 99%)#########                         ( 99%)##########                        ( 99%)###########                       ( 99%)############                      ( 99%)#############                     ( 99%)##############                    ( 99%)###############                   ( 99%)################                  ( 99%)#################                 ( 99%)##################                ( 99%)###################               ( 99%)####################              ( 99%)#####################             ( 99%)######################            ( 99%)#######################           ( 99%)########################          ( 99%)#########################         ( 99%)##########################        ( 99%)###########################       ( 99%)############################      ( 99%)#############################     ( 99%)##############################    ( 99%)###############################   ( 99%)################################  ( 99%)################################# ( 99%)################################# [100%][0m
+[0;32m    virtualbox-iso: Complementos cargados:fastestmirror[0m
+[0;32m    virtualbox-iso: epel/x86_64/meta |  21 kB     00:00[0m
+[0;32m    virtualbox-iso: epel             | 4.3 kB     00:00[0m
+[0;32m    virtualbox-iso: http://ftp.cica.es/epel/6/x86_64/repodata/repomd.xml: [Errno -1] repomd.xml does not match metalink for epel[0m
+[0;32m    virtualbox-iso: Intentando con otro espejo.[0m
+[0;32m    virtualbox-iso: epel             | 4.3 kB     00:00[0m
+[0;32m    virtualbox-iso: epel/x86_64/updateinfo         FAILED[0m
+[0;32m    virtualbox-iso: http://www.nic.funet.fi/pub/mirrors/fedora.redhat.com/pub/epel/6/x86_64/repodata/4a58f6e10aa48eb89fb72ac118f247bbbfd0976b38fbc23a224163d92174de1a-updateinfo.xml.bz2: [Errno 14] HTTP Error 404 - Not Found[0m
+[0;32m    virtualbox-iso: Intentando con otro espejo.[0m
+[0;32m    virtualbox-iso: To address this issue please refer to the below knowledge base article[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: https://access.redhat.com/articles/1320623[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: If above article doesn't help to resolve this issue please create a bug on https://bugs.centos.org/[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: (1/3): epel/x86_64 | 149 kB   00:00[0m
+[0;32m    virtualbox-iso: epel/x86_64/primary_db         FAILED[0m
+[0;32m    virtualbox-iso: ftp://ftp.funet.fi/pub/mirrors/fedora.redhat.com/pub/epel/6/x86_64/repodata/5b89f53d03d44211741f20c1e5ef2ffb1fa840087e0ab8d76f7f5345c03fe46a-primary.sqlite.bz2: [Errno 14]  Error 550 - Given file does not exist[0m
+[0;32m    virtualbox-iso: Intentando con otro espejo.[0m
+[0;32m    virtualbox-iso: (2/3): epel/x86_64 | 740 kB   00:02[0m
+[0;32m    virtualbox-iso: (3/3): epel/x86_64 | 5.9 MB   00:08[0m
+[0;32m    virtualbox-iso: Loading mirror speeds from cached hostfile[0m
+[0;32m    virtualbox-iso: * base: centos.mirror.xtratelecom.es[0m
+[0;32m    virtualbox-iso: * epel: ftp.cica.es[0m
+[0;32m    virtualbox-iso: * extras: centos.mirror.xtratelecom.es[0m
+[0;32m    virtualbox-iso: * updates: centos.mirror.xtratelecom.es[0m
+[0;32m    virtualbox-iso: Resolviendo dependencias[0m
+[0;32m    virtualbox-iso: --> Ejecutando prueba de transacción[0m
+[0;32m    virtualbox-iso: ---> Paquete unzip.x86_64 0:6.0-15.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete zip.x86_64 0:3.0-10.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: --> Resolución de dependencias finalizada[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Dependencias resueltas[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: ========================================[0m
+[0;32m    virtualbox-iso: Package[0m
+[0;32m    virtualbox-iso: Arquitectura[0m
+[0;32m    virtualbox-iso: Versión     Repositorio[0m
+[0;32m    virtualbox-iso: Tamaño[0m
+[0;32m    virtualbox-iso: ========================================[0m
+[0;32m    virtualbox-iso: Instalando:[0m
+[0;32m    virtualbox-iso: unzip  x86_64  6.0-15.el7  base  166 k[0m
+[0;32m    virtualbox-iso: zip    x86_64  3.0-10.el7  base  260 k[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Resumen de la transacción[0m
+[0;32m    virtualbox-iso: ========================================[0m
+[0;32m    virtualbox-iso: Instalar  2 Paquetes[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Tamaño total de la descarga: 426 k[0m
+[0;32m    virtualbox-iso: Tamaño instalado: 1.1 M[0m
+[0;32m    virtualbox-iso: Downloading packages:[0m
+[0;32m    virtualbox-iso: (1/2): unzip-6.0-1 | 166 kB   00:00[0m
+[0;32m    virtualbox-iso: (2/2): zip-3.0-10. | 260 kB   00:00[0m
+[0;32m    virtualbox-iso: ----------------------------------------[0m
+[0;32m    virtualbox-iso: Total      815 kB/s | 426 kB  00:00[0m
+[0;32m    virtualbox-iso: Running transaction check[0m
+[0;32m    virtualbox-iso: Running transaction test[0m
+[0;32m    virtualbox-iso: Transaction test succeeded[0m
+[0;32m    virtualbox-iso: Running transaction[0m
+[0;32m    virtualbox-iso: Advertencia: Las bases de datos (RPMDB) han sido modificadas por un elemento ajeno a yum.[0m
+[0;32m    virtualbox-iso:   Instalando    : unzip-6.0-15.el   1/2[0m
+[0;32m    virtualbox-iso:   Instalando    : zip-3.0-10.el7.   2/2[0m
+[0;32m    virtualbox-iso: Comprobando   : zip-3.0-10.el7.   1/2[0m
+[0;32m    virtualbox-iso: Comprobando   : unzip-6.0-15.el   2/2[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Instalado:[0m
+[0;32m    virtualbox-iso: unzip.x86_64 0:6.0-15.el7[0m
+[0;32m    virtualbox-iso: zip.x86_64 0:3.0-10.el7[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: ¡Listo![0m
+[1;32m==> virtualbox-iso: Provisioning with shell script: scripts/base.sh[0m
+[0;32m    virtualbox-iso: Complementos cargados:fastestmirror[0m
+[0;32m    virtualbox-iso: Loading mirror speeds from cached hostfile[0m
+[0;32m    virtualbox-iso: * base: centos.mirror.xtratelecom.es[0m
+[0;32m    virtualbox-iso: * epel: ftp.cica.es[0m
+[0;32m    virtualbox-iso: * extras: centos.mirror.xtratelecom.es[0m
+[0;32m    virtualbox-iso: * updates: centos.mirror.xtratelecom.es[0m
+[0;32m    virtualbox-iso: El paquete wget-1.14-10.el7_0.1.x86_64 ya se encuentra instalado con su versión más reciente[0m
+[0;32m    virtualbox-iso: Nada para hacer[0m
+[0;32m    virtualbox-iso: Complementos cargados:fastestmirror[0m
+[0;32m    virtualbox-iso: Loading mirror speeds from cached hostfile[0m
+[0;32m    virtualbox-iso: * base: centos.mirror.xtratelecom.es[0m
+[0;32m    virtualbox-iso: * epel: ftp.cica.es[0m
+[0;32m    virtualbox-iso: * extras: centos.mirror.xtratelecom.es[0m
+[0;32m    virtualbox-iso: * updates: centos.mirror.xtratelecom.es[0m
+[0;32m    virtualbox-iso: El paquete zip-3.0-10.el7.x86_64 ya se encuentra instalado con su versión más reciente[0m
+[0;32m    virtualbox-iso: El paquete unzip-6.0-15.el7.x86_64 ya se encuentra instalado con su versión más reciente[0m
+[0;32m    virtualbox-iso: Resolviendo dependencias[0m
+[0;32m    virtualbox-iso: --> Ejecutando prueba de transacción[0m
+[0;32m    virtualbox-iso: ---> Paquete mariadb.x86_64 1:5.5.47-1.el7_2 debe ser instalado[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: mariadb-libs(x86-64) = 1:5.5.47-1.el7_2 para el paquete: 1:mariadb-5.5.47-1.el7_2.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Sys::Hostname) para el paquete: 1:mariadb-5.5.47-1.el7_2.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(IPC::Open3) para el paquete: 1:mariadb-5.5.47-1.el7_2.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Getopt::Long) para el paquete: 1:mariadb-5.5.47-1.el7_2.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(File::Temp) para el paquete: 1:mariadb-5.5.47-1.el7_2.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Fcntl) para el paquete: 1:mariadb-5.5.47-1.el7_2.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Exporter) para el paquete: 1:mariadb-5.5.47-1.el7_2.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: /usr/bin/perl para el paquete: 1:mariadb-5.5.47-1.el7_2.x86_64[0m
+[0;32m    virtualbox-iso: --> Ejecutando prueba de transacción[0m
+[0;32m    virtualbox-iso: ---> Paquete mariadb-libs.x86_64 1:5.5.44-2.el7.centos debe ser actualizado[0m
+[0;32m    virtualbox-iso: ---> Paquete mariadb-libs.x86_64 1:5.5.47-1.el7_2 debe ser una actualización[0m
+[0;32m    virtualbox-iso: ---> Paquete perl.x86_64 4:5.16.3-286.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl-libs = 4:5.16.3-286.el7 para el paquete: 4:perl-5.16.3-286.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Socket) >= 1.3 para el paquete: 4:perl-5.16.3-286.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Scalar::Util) >= 1.10 para el paquete: 4:perl-5.16.3-286.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl-macros para el paquete: 4:perl-5.16.3-286.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl-libs para el paquete: 4:perl-5.16.3-286.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(threads::shared) para el paquete: 4:perl-5.16.3-286.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(threads) para el paquete: 4:perl-5.16.3-286.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(constant) para el paquete: 4:perl-5.16.3-286.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Time::Local) para el paquete: 4:perl-5.16.3-286.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Time::HiRes) para el paquete: 4:perl-5.16.3-286.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Storable) para el paquete: 4:perl-5.16.3-286.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Socket) para el paquete: 4:perl-5.16.3-286.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Scalar::Util) para el paquete: 4:perl-5.16.3-286.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Pod::Simple::XHTML) para el paquete: 4:perl-5.16.3-286.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Pod::Simple::Search) para el paquete: 4:perl-5.16.3-286.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Filter::Util::Call) para el paquete: 4:perl-5.16.3-286.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(File::Spec::Unix) para el paquete: 4:perl-5.16.3-286.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(File::Spec::Functions) para el paquete: 4:perl-5.16.3-286.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(File::Spec) para el paquete: 4:perl-5.16.3-286.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(File::Path) para el paquete: 4:perl-5.16.3-286.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Cwd) para el paquete: 4:perl-5.16.3-286.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Carp) para el paquete: 4:perl-5.16.3-286.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: libperl.so()(64bit) para el paquete: 4:perl-5.16.3-286.el7.x86_64[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-Exporter.noarch 0:5.68-3.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-File-Temp.noarch 0:0.23.01-3.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-Getopt-Long.noarch 0:2.40-2.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Pod::Usage) >= 1.14 para el paquete: perl-Getopt-Long-2.40-2.el7.noarch[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Text::ParseWords) para el paquete: perl-Getopt-Long-2.40-2.el7.noarch[0m
+[0;32m    virtualbox-iso: --> Ejecutando prueba de transacción[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-Carp.noarch 0:1.26-244.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-File-Path.noarch 0:2.09-2.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-Filter.x86_64 0:1.49-3.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-PathTools.x86_64 0:3.40-5.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-Pod-Simple.noarch 1:3.28-4.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Pod::Escapes) >= 1.04 para el paquete: 1:perl-Pod-Simple-3.28-4.el7.noarch[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Encode) para el paquete: 1:perl-Pod-Simple-3.28-4.el7.noarch[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-Pod-Usage.noarch 0:1.63-3.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Pod::Text) >= 3.15 para el paquete: perl-Pod-Usage-1.63-3.el7.noarch[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl-Pod-Perldoc para el paquete: perl-Pod-Usage-1.63-3.el7.noarch[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-Scalar-List-Utils.x86_64 0:1.27-248.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-Socket.x86_64 0:2.010-3.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-Storable.x86_64 0:2.45-3.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-Text-ParseWords.noarch 0:3.29-4.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-Time-HiRes.x86_64 4:1.9725-3.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-Time-Local.noarch 0:1.2300-2.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-constant.noarch 0:1.27-2.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-libs.x86_64 4:5.16.3-286.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-macros.x86_64 4:5.16.3-286.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-threads.x86_64 0:1.87-4.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-threads-shared.x86_64 0:1.43-6.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: --> Ejecutando prueba de transacción[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-Encode.x86_64 0:2.51-7.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-Pod-Escapes.noarch 1:1.04-286.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-Pod-Perldoc.noarch 0:3.20-4.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(parent) para el paquete: perl-Pod-Perldoc-3.20-4.el7.noarch[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(HTTP::Tiny) para el paquete: perl-Pod-Perldoc-3.20-4.el7.noarch[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-podlators.noarch 0:2.5.1-3.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: --> Ejecutando prueba de transacción[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-HTTP-Tiny.noarch 0:0.033-3.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-parent.noarch 1:0.225-244.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: --> Resolución de dependencias finalizada[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Dependencias resueltas[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: ========================================[0m
+[0;32m    virtualbox-iso: Package[0m
+[0;32m    virtualbox-iso: Arquitectura[0m
+[0;32m    virtualbox-iso: Versión          Repositorio[0m
+[0;32m    virtualbox-iso: Tamaño[0m
+[0;32m    virtualbox-iso: ========================================[0m
+[0;32m    virtualbox-iso: Instalando:[0m
+[0;32m    virtualbox-iso: mariadb[0m
+[0;32m    virtualbox-iso: x86_64 1:5.5.47-1.el7_2 updates[0m
+[0;32m    virtualbox-iso: 8.9 M[0m
+[0;32m    virtualbox-iso: Instalando para las dependencias:[0m
+[0;32m    virtualbox-iso: perl[0m
+[0;32m    virtualbox-iso: x86_64 4:5.16.3-286.el7 base  8.0 M[0m
+[0;32m    virtualbox-iso: perl-Carp[0m
+[0;32m    virtualbox-iso: noarch 1.26-244.el7     base   19 k[0m
+[0;32m    virtualbox-iso: perl-Encode[0m
+[0;32m    virtualbox-iso: x86_64 2.51-7.el7       base  1.5 M[0m
+[0;32m    virtualbox-iso: perl-Exporter[0m
+[0;32m    virtualbox-iso: noarch 5.68-3.el7       base   28 k[0m
+[0;32m    virtualbox-iso: perl-File-Path[0m
+[0;32m    virtualbox-iso: noarch 2.09-2.el7       base   26 k[0m
+[0;32m    virtualbox-iso: perl-File-Temp[0m
+[0;32m    virtualbox-iso: noarch 0.23.01-3.el7    base   56 k[0m
+[0;32m    virtualbox-iso: perl-Filter[0m
+[0;32m    virtualbox-iso: x86_64 1.49-3.el7       base   76 k[0m
+[0;32m    virtualbox-iso: perl-Getopt-Long[0m
+[0;32m    virtualbox-iso: noarch 2.40-2.el7       base   56 k[0m
+[0;32m    virtualbox-iso: perl-HTTP-Tiny[0m
+[0;32m    virtualbox-iso: noarch 0.033-3.el7      base   38 k[0m
+[0;32m    virtualbox-iso: perl-PathTools[0m
+[0;32m    virtualbox-iso: x86_64 3.40-5.el7       base   82 k[0m
+[0;32m    virtualbox-iso: perl-Pod-Escapes[0m
+[0;32m    virtualbox-iso: noarch 1:1.04-286.el7   base   50 k[0m
+[0;32m    virtualbox-iso: perl-Pod-Perldoc[0m
+[0;32m    virtualbox-iso: noarch 3.20-4.el7       base   87 k[0m
+[0;32m    virtualbox-iso: perl-Pod-Simple[0m
+[0;32m    virtualbox-iso: noarch 1:3.28-4.el7     base  216 k[0m
+[0;32m    virtualbox-iso: perl-Pod-Usage[0m
+[0;32m    virtualbox-iso: noarch 1.63-3.el7       base   27 k[0m
+[0;32m    virtualbox-iso: perl-Scalar-List-Utils[0m
+[0;32m    virtualbox-iso: x86_64 1.27-248.el7     base   36 k[0m
+[0;32m    virtualbox-iso: perl-Socket[0m
+[0;32m    virtualbox-iso: x86_64 2.010-3.el7      base   49 k[0m
+[0;32m    virtualbox-iso: perl-Storable[0m
+[0;32m    virtualbox-iso: x86_64 2.45-3.el7       base   77 k[0m
+[0;32m    virtualbox-iso: perl-Text-ParseWords[0m
+[0;32m    virtualbox-iso: noarch 3.29-4.el7       base   14 k[0m
+[0;32m    virtualbox-iso: perl-Time-HiRes[0m
+[0;32m    virtualbox-iso: x86_64 4:1.9725-3.el7   base   45 k[0m
+[0;32m    virtualbox-iso: perl-Time-Local[0m
+[0;32m    virtualbox-iso: noarch 1.2300-2.el7     base   24 k[0m
+[0;32m    virtualbox-iso: perl-constant[0m
+[0;32m    virtualbox-iso: noarch 1.27-2.el7       base   19 k[0m
+[0;32m    virtualbox-iso: perl-libs[0m
+[0;32m    virtualbox-iso: x86_64 4:5.16.3-286.el7 base  687 k[0m
+[0;32m    virtualbox-iso: perl-macros[0m
+[0;32m    virtualbox-iso: x86_64 4:5.16.3-286.el7 base   43 k[0m
+[0;32m    virtualbox-iso: perl-parent[0m
+[0;32m    virtualbox-iso: noarch 1:0.225-244.el7  base   12 k[0m
+[0;32m    virtualbox-iso: perl-podlators[0m
+[0;32m    virtualbox-iso: noarch 2.5.1-3.el7      base  112 k[0m
+[0;32m    virtualbox-iso: perl-threads[0m
+[0;32m    virtualbox-iso: x86_64 1.87-4.el7       base   49 k[0m
+[0;32m    virtualbox-iso: perl-threads-shared[0m
+[0;32m    virtualbox-iso: x86_64 1.43-6.el7       base   39 k[0m
+[0;32m    virtualbox-iso: Actualizando para las dependencias:[0m
+[0;32m    virtualbox-iso: mariadb-libs[0m
+[0;32m    virtualbox-iso: x86_64 1:5.5.47-1.el7_2 updates[0m
+[0;32m    virtualbox-iso: 755 k[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Resumen de la transacción[0m
+[0;32m    virtualbox-iso: ========================================[0m
+[0;32m    virtualbox-iso: Instalar    1 Paquete  (+27 Paquetes dependientes)[0m
+[0;32m    virtualbox-iso: Actualizar             (  1 Paquete dependiente)[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Tamaño total de la descarga: 21 M[0m
+[0;32m    virtualbox-iso: Downloading packages:[0m
+[0;32m    virtualbox-iso: Delta RPMs disabled because /usr/bin/applydeltarpm not installed.[0m
+[0;32m    virtualbox-iso: (1/29): perl-Carp- |  19 kB   00:00[0m
+[0;32m    virtualbox-iso: (2/29): perl-Expor |  28 kB   00:00[0m
+[0;32m    virtualbox-iso: (3/29): perl-File- |  26 kB   00:00[0m
+[0;32m    virtualbox-iso: (4/29): perl-File- |  56 kB   00:00[0m
+[0;32m    virtualbox-iso: (5/29): perl-Filte |  76 kB   00:00[0m
+[0;32m    virtualbox-iso: (6/29): perl-Getop |  56 kB   00:00[0m
+[0;32m    virtualbox-iso: (7/29): perl-HTTP- |  38 kB   00:00[0m
+[0;32m    virtualbox-iso: (8/29): perl-PathT |  82 kB   00:00[0m
+[0;32m    virtualbox-iso: (9/29): perl-Pod-E |  50 kB   00:00[0m
+[0;32m    virtualbox-iso: (10/29): mariadb-l | 755 kB   00:01[0m
+[0;32m    virtualbox-iso: (11/29): perl-Pod- |  87 kB   00:00[0m
+[0;32m    virtualbox-iso: (12/29): perl-Pod- |  27 kB   00:00[0m
+[0;32m    virtualbox-iso: (13/29): perl-Scal |  36 kB   00:00[0m
+[0;32m    virtualbox-iso: (14/29): perl-Pod- | 216 kB   00:00[0m
+[0;32m    virtualbox-iso: (15/29): perl-Sock |  49 kB   00:00[0m
+[0;32m    virtualbox-iso: (16/29): perl-Text |  14 kB   00:00[0m
+[0;32m    virtualbox-iso: (17/29): perl-Stor |  77 kB   00:00[0m
+[0;32m    virtualbox-iso: (18/29): perl-Time |  24 kB   00:00[0m
+[0;32m    virtualbox-iso: (19/29): perl-Time |  45 kB   00:00[0m
+[0;32m    virtualbox-iso: (20/29): perl-cons |  19 kB   00:00[0m
+[0;32m    virtualbox-iso: (21/29): perl-macr |  43 kB   00:01[0m
+[0;32m    virtualbox-iso: (22/29): perl-pare |  12 kB   00:00[0m
+[0;32m    virtualbox-iso: (23/29): perl-libs | 687 kB   00:02[0m
+[0;32m    virtualbox-iso: (24/29): perl-thre |  49 kB   00:00[0m
+[0;32m    virtualbox-iso: (25/29): perl-podl | 112 kB   00:00[0m
+[0;32m    virtualbox-iso: (26/29): perl-thre |  39 kB   00:00[0m
+[0;32m    virtualbox-iso: (27/29): mariadb-5 | 8.9 MB   00:14[0m
+[0;32m    virtualbox-iso: (28/29): perl-Enco | 1.5 MB   00:15[0m
+[0;32m    virtualbox-iso: (29/29): perl-5.16 | 8.0 MB   00:32[0m
+[0;32m    virtualbox-iso: ----------------------------------------[0m
+[0;32m    virtualbox-iso: Total      659 kB/s |  21 MB  00:32[0m
+[0;32m    virtualbox-iso: Running transaction check[0m
+[0;32m    virtualbox-iso: Running transaction test[0m
+[0;32m    virtualbox-iso: Transaction test succeeded[0m
+[0;32m    virtualbox-iso: Running transaction[0m
+[0;32m    virtualbox-iso:   Instalando    : 1:perl-parent    1/30[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-HTTP-Tin    2/30[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-podlator    3/30[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-Pod-Perl    4/30[0m
+[0;32m    virtualbox-iso:   Instalando    : 1:perl-Pod-Es    5/30[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-Text-Par    6/30[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-Encode-2    7/30[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-Pod-Usag    8/30[0m
+[0;32m    virtualbox-iso:   Instalando    : 4:perl-libs-5    9/30[0m
+[0;32m    virtualbox-iso:   Instalando    : 4:perl-macros   10/30[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-Storable   11/30[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-Exporter   12/30[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-constant   13/30[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-Time-Loc   14/30[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-Socket-2   15/30[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-Carp-1.2   16/30[0m
+[0;32m    virtualbox-iso:   Instalando    : 4:perl-Time-H   17/30[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-PathTool   18/30[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-Scalar-L   19/30[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-File-Tem   20/30[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-File-Pat   21/30[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-threads-   22/30[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-threads-   23/30[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-Filter-1   24/30[0m
+[0;32m    virtualbox-iso:   Instalando    : 1:perl-Pod-Si   25/30[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-Getopt-L   26/30[0m
+[0;32m    virtualbox-iso:   Instalando    : 4:perl-5.16.3   27/30[0m
+[0;32m    virtualbox-iso:   Actualizando  : 1:mariadb-lib   28/30[0m
+[0;32m    virtualbox-iso:   Instalando    : 1:mariadb-5.5   29/30[0m
+[0;32m    virtualbox-iso: Limpieza      : 1:mariadb-lib   30/30[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-HTTP-Tin    1/30[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-threads-    2/30[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-Storable    3/30[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-Exporter    4/30[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-constant    5/30[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-PathTool    6/30[0m
+[0;32m    virtualbox-iso: Comprobando   : 4:perl-libs-5    7/30[0m
+[0;32m    virtualbox-iso: Comprobando   : 4:perl-macros    8/30[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:mariadb-5.5    9/30[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:perl-parent   10/30[0m
+[0;32m    virtualbox-iso: Comprobando   : 4:perl-5.16.3   11/30[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-File-Tem   12/30[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:perl-Pod-Si   13/30[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-Time-Loc   14/30[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-Pod-Perl   15/30[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-Socket-2   16/30[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-Carp-1.2   17/30[0m
+[0;32m    virtualbox-iso: Comprobando   : 4:perl-Time-H   18/30[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-Scalar-L   19/30[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:perl-Pod-Es   20/30[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-Pod-Usag   21/30[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-Encode-2   22/30[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-podlator   23/30[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-Getopt-L   24/30[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-File-Pat   25/30[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-threads-   26/30[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-Filter-1   27/30[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-Text-Par   28/30[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:mariadb-lib   29/30[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:mariadb-lib   30/30[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Instalado:[0m
+[0;32m    virtualbox-iso: mariadb.x86_64 1:5.5.47-1.el7_2[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Dependencia(s) instalada(s):[0m
+[0;32m    virtualbox-iso: perl.x86_64 4:5.16.3-286.el7[0m
+[0;32m    virtualbox-iso: perl-Carp.noarch 0:1.26-244.el7[0m
+[0;32m    virtualbox-iso: perl-Encode.x86_64 0:2.51-7.el7[0m
+[0;32m    virtualbox-iso: perl-Exporter.noarch 0:5.68-3.el7[0m
+[0;32m    virtualbox-iso: perl-File-Path.noarch 0:2.09-2.el7[0m
+[0;32m    virtualbox-iso: perl-File-Temp.noarch 0:0.23.01-3.el7[0m
+[0;32m    virtualbox-iso: perl-Filter.x86_64 0:1.49-3.el7[0m
+[0;32m    virtualbox-iso: perl-Getopt-Long.noarch 0:2.40-2.el7[0m
+[0;32m    virtualbox-iso: perl-HTTP-Tiny.noarch 0:0.033-3.el7[0m
+[0;32m    virtualbox-iso: perl-PathTools.x86_64 0:3.40-5.el7[0m
+[0;32m    virtualbox-iso: perl-Pod-Escapes.noarch 1:1.04-286.el7[0m
+[0;32m    virtualbox-iso: perl-Pod-Perldoc.noarch 0:3.20-4.el7[0m
+[0;32m    virtualbox-iso: perl-Pod-Simple.noarch 1:3.28-4.el7[0m
+[0;32m    virtualbox-iso: perl-Pod-Usage.noarch 0:1.63-3.el7[0m
+[0;32m    virtualbox-iso: perl-Scalar-List-Utils.x86_64 0:1.27-248.el7[0m
+[0;32m    virtualbox-iso: perl-Socket.x86_64 0:2.010-3.el7[0m
+[0;32m    virtualbox-iso: perl-Storable.x86_64 0:2.45-3.el7[0m
+[0;32m    virtualbox-iso: perl-Text-ParseWords.noarch 0:3.29-4.el7[0m
+[0;32m    virtualbox-iso: perl-Time-HiRes.x86_64 4:1.9725-3.el7[0m
+[0;32m    virtualbox-iso: perl-Time-Local.noarch 0:1.2300-2.el7[0m
+[0;32m    virtualbox-iso: perl-constant.noarch 0:1.27-2.el7[0m
+[0;32m    virtualbox-iso: perl-libs.x86_64 4:5.16.3-286.el7[0m
+[0;32m    virtualbox-iso: perl-macros.x86_64 4:5.16.3-286.el7[0m
+[0;32m    virtualbox-iso: perl-parent.noarch 1:0.225-244.el7[0m
+[0;32m    virtualbox-iso: perl-podlators.noarch 0:2.5.1-3.el7[0m
+[0;32m    virtualbox-iso: perl-threads.x86_64 0:1.87-4.el7[0m
+[0;32m    virtualbox-iso: perl-threads-shared.x86_64 0:1.43-6.el7[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Dependencia(s) actualizada(s):[0m
+[0;32m    virtualbox-iso: mariadb-libs.x86_64 1:5.5.47-1.el7_2[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: ¡Listo![0m
+[0;32m    virtualbox-iso: Created symlink from /etc/systemd/system/firewalld.service to /dev/null.[0m
+[1;32m==> virtualbox-iso: Provisioning with shell script: scripts/virtualbox.sh[0m
+[0;32m    virtualbox-iso: cat: /home/admin/.vbox_version: No existe el fichero o el directorio[0m
+[0;32m    virtualbox-iso: usage: sudo [-D level] -h | -K | -k | -V[0m
+[0;32m    virtualbox-iso: usage: sudo -v [-AknS] [-D level] [-g[0m
+[0;32m    virtualbox-iso: groupname|#gid] [-p prompt][0m
+[0;32m    virtualbox-iso: [-u user name|#uid][0m
+[0;32m    virtualbox-iso: usage: sudo -l[l] [-AknS] [-D level][0m
+[0;32m    virtualbox-iso: [-g groupname|#gid] [-p[0m
+[0;32m    virtualbox-iso: prompt] [-U user name] [-u[0m
+[0;32m    virtualbox-iso: user name|#uid] [-g[0m
+[0;32m    virtualbox-iso: groupname|#gid] [command][0m
+[0;32m    virtualbox-iso: usage: sudo [-AbEHknPS] [-r role] [-t[0m
+[0;32m    virtualbox-iso: type] [-C fd] [-D level][0m
+[0;32m    virtualbox-iso: [-g groupname|#gid] [-p[0m
+[0;32m    virtualbox-iso: prompt] [-u user name|#uid][0m
+[0;32m    virtualbox-iso: [-g groupname|#gid][0m
+[0;32m    virtualbox-iso: [VAR=value] [-i|-s][0m
+[0;32m    virtualbox-iso: [<command>][0m
+[0;32m    virtualbox-iso: usage: sudo -e [-AknS] [-r role] [-t[0m
+[0;32m    virtualbox-iso: type] [-C fd] [-D level][0m
+[0;32m    virtualbox-iso: [-g groupname|#gid] [-p[0m
+[0;32m    virtualbox-iso: prompt] [-u user name|#uid][0m
+[0;32m    virtualbox-iso: file ...[0m
+[0;32m    virtualbox-iso: mount: /home/admin/VBoxGuestAdditions_.iso: failed to setup loop device: No existe el fichero o el directorio[0m
+[0;32m    virtualbox-iso: sh: /mnt/VBoxLinuxAdditions.run: No existe el fichero o el directorio[0m
+[0;32m    virtualbox-iso: umount: /mnt: not mounted[0m
+[1;32m==> virtualbox-iso: Provisioning with shell script: scripts/entice-alfresco_4.0.d.sh[0m
+[0;32m    virtualbox-iso: Complementos cargados:fastestmirror[0m
+[0;32m    virtualbox-iso: mysql-community- | 6.0 kB     00:00[0m
+[0;32m    virtualbox-iso: Examinando /var/tmp/yum-root-0hMrc5/mysql-community-release-el7-5.noarch.rpm: mysql-community-release-el7-5.noarch[0m
+[0;32m    virtualbox-iso: Marcando /var/tmp/yum-root-0hMrc5/mysql-community-release-el7-5.noarch.rpm para ser instalado[0m
+[0;32m    virtualbox-iso: Resolviendo dependencias[0m
+[0;32m    virtualbox-iso: --> Ejecutando prueba de transacción[0m
+[0;32m    virtualbox-iso: ---> Paquete mysql-community-release.noarch 0:el7-5 debe ser instalado[0m
+[0;32m    virtualbox-iso: --> Resolución de dependencias finalizada[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Dependencias resueltas[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: ========================================[0m
+[0;32m    virtualbox-iso: Package   Arquitectura[0m
+[0;32m    virtualbox-iso: Versión[0m
+[0;32m    virtualbox-iso: Repositorio[0m
+[0;32m    virtualbox-iso: Tamaño[0m
+[0;32m    virtualbox-iso: ========================================[0m
+[0;32m    virtualbox-iso: Instalando:[0m
+[0;32m    virtualbox-iso: [1mmysql-community-release(B[m[0m
+[0;32m    virtualbox-iso: noarch el7-5 /mysql-community-release-el7-5.noarch[0m
+[0;32m    virtualbox-iso: 4.3 k[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Resumen de la transacción[0m
+[0;32m    virtualbox-iso: ========================================[0m
+[0;32m    virtualbox-iso: Instalar  1 Paquete[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Tamaño total: 4.3 k[0m
+[0;32m    virtualbox-iso: Tamaño instalado: 4.3 k[0m
+[0;32m    virtualbox-iso: Downloading packages:[0m
+[0;32m    virtualbox-iso: Running transaction check[0m
+[0;32m    virtualbox-iso: Running transaction test[0m
+[0;32m    virtualbox-iso: Transaction test succeeded[0m
+[0;32m    virtualbox-iso: Running transaction[0m
+[0;32m    virtualbox-iso:   Instalando    : mysql-community   1/1[0m
+[0;32m    virtualbox-iso: Comprobando   : mysql-community   1/1[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Instalado:[0m
+[0;32m    virtualbox-iso: mysql-community-release.noarch 0:el7-5[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: ¡Listo![0m
+[0;32m    virtualbox-iso: Complementos cargados:fastestmirror[0m
+[0;32m    virtualbox-iso: mysql-connectors | 2.5 kB     00:00[0m
+[0;32m    virtualbox-iso: mysql-tools-comm | 2.5 kB     00:00[0m
+[0;32m    virtualbox-iso: mysql56-communit | 2.5 kB     00:00[0m
+[0;32m    virtualbox-iso: (1/3): mysql-tools |  25 kB   00:00[0m
+[0;32m    virtualbox-iso: (2/3): mysql56-com | 122 kB   00:00[0m
+[0;32m    virtualbox-iso: (3/3): mysql-conne | 9.8 kB   00:00[0m
+[0;32m    virtualbox-iso: Loading mirror speeds from cached hostfile[0m
+[0;32m    virtualbox-iso: * base: centos.mirror.xtratelecom.es[0m
+[0;32m    virtualbox-iso: * epel: ftp.cica.es[0m
+[0;32m    virtualbox-iso: * extras: centos.mirror.xtratelecom.es[0m
+[0;32m    virtualbox-iso: * updates: centos.mirror.xtratelecom.es[0m
+[0;32m    virtualbox-iso: El paquete wget-1.14-10.el7_0.1.x86_64 ya se encuentra instalado con su versión más reciente[0m
+[0;32m    virtualbox-iso: Resolviendo dependencias[0m
+[0;32m    virtualbox-iso: --> Ejecutando prueba de transacción[0m
+[0;32m    virtualbox-iso: ---> Paquete mysql-community-server.x86_64 0:5.6.30-2.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: mysql-community-common(x86-64) = 5.6.30-2.el7 para el paquete: mysql-community-server-5.6.30-2.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: mysql-community-client(x86-64) = 5.6.30-2.el7 para el paquete: mysql-community-server-5.6.30-2.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Data::Dumper) para el paquete: mysql-community-server-5.6.30-2.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(DBI) para el paquete: mysql-community-server-5.6.30-2.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: net-tools para el paquete: mysql-community-server-5.6.30-2.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Ejecutando prueba de transacción[0m
+[0;32m    virtualbox-iso: ---> Paquete mariadb.x86_64 1:5.5.47-1.el7_2 debe ser obsoleto[0m
+[0;32m    virtualbox-iso: ---> Paquete mysql-community-client.x86_64 0:5.6.30-2.el7 debe ser obsoleto[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: mysql-community-libs(x86-64) = 5.6.30-2.el7 para el paquete: mysql-community-client-5.6.30-2.el7.x86_64[0m
+[0;32m    virtualbox-iso: ---> Paquete mysql-community-common.x86_64 0:5.6.30-2.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete net-tools.x86_64 0:2.0-0.17.20131004git.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-DBI.x86_64 0:1.627-4.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(RPC::PlServer) >= 0.2001 para el paquete: perl-DBI-1.627-4.el7.x86_64[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(RPC::PlClient) >= 0.2000 para el paquete: perl-DBI-1.627-4.el7.x86_64[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-Data-Dumper.x86_64 0:2.145-3.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: --> Ejecutando prueba de transacción[0m
+[0;32m    virtualbox-iso: ---> Paquete mariadb-libs.x86_64 1:5.5.47-1.el7_2 debe ser obsoleto[0m
+[0;32m    virtualbox-iso: ---> Paquete mysql-community-libs.x86_64 0:5.6.30-2.el7 debe ser obsoleto[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-PlRPC.noarch 0:0.2020-14.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Net::Daemon) >= 0.13 para el paquete: perl-PlRPC-0.2020-14.el7.noarch[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Net::Daemon::Test) para el paquete: perl-PlRPC-0.2020-14.el7.noarch[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Net::Daemon::Log) para el paquete: perl-PlRPC-0.2020-14.el7.noarch[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Compress::Zlib) para el paquete: perl-PlRPC-0.2020-14.el7.noarch[0m
+[0;32m    virtualbox-iso: --> Ejecutando prueba de transacción[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-IO-Compress.noarch 0:2.061-2.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Compress::Raw::Zlib) >= 2.061 para el paquete: perl-IO-Compress-2.061-2.el7.noarch[0m
+[0;32m    virtualbox-iso: --> Procesando dependencias: perl(Compress::Raw::Bzip2) >= 2.061 para el paquete: perl-IO-Compress-2.061-2.el7.noarch[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-Net-Daemon.noarch 0:0.48-5.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: --> Ejecutando prueba de transacción[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-Compress-Raw-Bzip2.x86_64 0:2.061-3.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: ---> Paquete perl-Compress-Raw-Zlib.x86_64 1:2.061-4.el7 debe ser instalado[0m
+[0;32m    virtualbox-iso: --> Resolución de dependencias finalizada[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Dependencias resueltas[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: ========================================[0m
+[0;32m    virtualbox-iso: Package[0m
+[0;32m    virtualbox-iso: Arquitectura[0m
+[0;32m    virtualbox-iso: Versión          Repositorio[0m
+[0;32m    virtualbox-iso: Tamaño[0m
+[0;32m    virtualbox-iso: ========================================[0m
+[0;32m    virtualbox-iso: Instalando:[0m
+[0;32m    virtualbox-iso: mysql-community-client[0m
+[0;32m    virtualbox-iso: x86_64 5.6.30-2.el7     mysql56-community[0m
+[0;32m    virtualbox-iso: 19 M[0m
+[0;32m    virtualbox-iso: reemplazando  mariadb.x86_64 1:5.5.47-1.el7_2[0m
+[0;32m    virtualbox-iso: mysql-community-libs[0m
+[0;32m    virtualbox-iso: x86_64 5.6.30-2.el7     mysql56-community[0m
+[0;32m    virtualbox-iso: 2.0 M[0m
+[0;32m    virtualbox-iso: reemplazando  mariadb-libs.x86_64 1:5.5.47-1.el7_2[0m
+[0;32m    virtualbox-iso: mysql-community-server[0m
+[0;32m    virtualbox-iso: x86_64 5.6.30-2.el7     mysql56-community[0m
+[0;32m    virtualbox-iso: 59 M[0m
+[0;32m    virtualbox-iso: Instalando para las dependencias:[0m
+[0;32m    virtualbox-iso: mysql-community-common[0m
+[0;32m    virtualbox-iso: x86_64 5.6.30-2.el7     mysql56-community[0m
+[0;32m    virtualbox-iso: 256 k[0m
+[0;32m    virtualbox-iso: net-tools[0m
+[0;32m    virtualbox-iso: x86_64 2.0-0.17.20131004git.el7[0m
+[0;32m    virtualbox-iso: base  304 k[0m
+[0;32m    virtualbox-iso: perl-Compress-Raw-Bzip2[0m
+[0;32m    virtualbox-iso: x86_64 2.061-3.el7      base   32 k[0m
+[0;32m    virtualbox-iso: perl-Compress-Raw-Zlib[0m
+[0;32m    virtualbox-iso: x86_64 1:2.061-4.el7    base   57 k[0m
+[0;32m    virtualbox-iso: perl-DBI[0m
+[0;32m    virtualbox-iso: x86_64 1.627-4.el7      base  802 k[0m
+[0;32m    virtualbox-iso: perl-Data-Dumper[0m
+[0;32m    virtualbox-iso: x86_64 2.145-3.el7      base   47 k[0m
+[0;32m    virtualbox-iso: perl-IO-Compress[0m
+[0;32m    virtualbox-iso: noarch 2.061-2.el7      base  260 k[0m
+[0;32m    virtualbox-iso: perl-Net-Daemon[0m
+[0;32m    virtualbox-iso: noarch 0.48-5.el7       base   51 k[0m
+[0;32m    virtualbox-iso: perl-PlRPC[0m
+[0;32m    virtualbox-iso: noarch 0.2020-14.el7    base   36 k[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Resumen de la transacción[0m
+[0;32m    virtualbox-iso: ========================================[0m
+[0;32m    virtualbox-iso: Instalar  3 Paquetes (+9 Paquetes dependientes)[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Tamaño total de la descarga: 82 M[0m
+[0;32m    virtualbox-iso: Downloading packages:[0m
+[0;32m    virtualbox-iso: advertencia:/var/cache/yum/x86_64/7/mysql56-community/packages/mysql-community-common-5.6.30-2.el7.x86_64.rpm: EncabezadoV3 DSA/SHA1 Signature, ID de clave 5072e1f5: NOKEY[0m
+[0;32m    virtualbox-iso: No se ha instalado la llave pública de mysql-community-common-5.6.30-2.el7.x86_64.rpm[0m
+[0;32m    virtualbox-iso: (1/12): mysql-comm | 256 kB   00:01[0m
+[0;32m    virtualbox-iso: (2/12): mysql-comm | 2.0 MB   00:03[0m
+[0;32m    virtualbox-iso: (3/12): perl-Compr |  32 kB   00:00[0m
+[0;32m    virtualbox-iso: (4/12): perl-Compr |  57 kB   00:00[0m
+[0;32m    virtualbox-iso: (5/12): perl-Data- |  47 kB   00:00[0m
+[0;32m    virtualbox-iso: (6/12): net-tools- | 304 kB   00:01[0m
+[0;32m    virtualbox-iso: (7/12): perl-Net-D |  51 kB   00:00[0m
+[0;32m    virtualbox-iso: (8/12): perl-PlRPC |  36 kB   00:00[0m
+[0;32m    virtualbox-iso: (9/12): perl-IO-Co | 260 kB   00:01[0m
+[0;32m    virtualbox-iso: (10/12): perl-DBI- | 802 kB   00:04[0m
+[0;32m    virtualbox-iso: (11/12): mysql-com |  19 MB   00:40[0m
+[0;32m    virtualbox-iso: (12/12): mysql-com |  59 MB   01:10[0m
+[0;32m    virtualbox-iso: ----------------------------------------[0m
+[0;32m    virtualbox-iso: Total      1.1 MB/s |  82 MB  01:15[0m
+[0;32m    virtualbox-iso: Obteniendo clave desde file:/etc/pki/rpm-gpg/RPM-GPG-KEY-mysql[0m
+[0;32m    virtualbox-iso: Importando llave GPG 0x5072E1F5:[0m
+[0;32m    virtualbox-iso: Usuarioid  : "MySQL Release Engineering <mysql-build@oss.oracle.com>"[0m
+[0;32m    virtualbox-iso: Huella       : a4a9 4068 76fc bd3c 4567 70c8 8c71 8d3b 5072 e1f5[0m
+[0;32m    virtualbox-iso: Paquete    : mysql-community-release-el7-5.noarch (@/mysql-community-release-el7-5.noarch)[0m
+[0;32m    virtualbox-iso: Desde      : file:/etc/pki/rpm-gpg/RPM-GPG-KEY-mysql[0m
+[0;32m    virtualbox-iso: Running transaction check[0m
+[0;32m    virtualbox-iso: Running transaction test[0m
+[0;32m    virtualbox-iso: Transaction test succeeded[0m
+[0;32m    virtualbox-iso: Running transaction[0m
+[0;32m    virtualbox-iso:   Instalando    : mysql-communi    1/14[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-Data-Dum    2/14[0m
+[0;32m    virtualbox-iso:   Instalando    : mysql-communi    3/14[0m
+[0;32m    virtualbox-iso:   Instalando    : mysql-communi    4/14[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-Compress    5/14[0m
+[0;32m    virtualbox-iso:   Instalando    : 1:perl-Compre    6/14[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-IO-Compr    7/14[0m
+[0;32m    virtualbox-iso:   Instalando    : net-tools-2.0    8/14[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-Net-Daem    9/14[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-PlRPC-0.   10/14[0m
+[0;32m    virtualbox-iso:   Instalando    : perl-DBI-1.62   11/14[0m
+[0;32m    virtualbox-iso:   Instalando    : mysql-communi   12/14[0m
+[0;32m    virtualbox-iso: Eliminando    : 1:mariadb-5.5   13/14[0m
+[0;32m    virtualbox-iso: Eliminando    : 1:mariadb-lib   14/14[0m
+[0;32m    virtualbox-iso: Comprobando   : mysql-communi    1/14[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-Net-Daem    2/14[0m
+[0;32m    virtualbox-iso: Comprobando   : mysql-communi    3/14[0m
+[0;32m    virtualbox-iso: Comprobando   : net-tools-2.0    4/14[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-Data-Dum    5/14[0m
+[0;32m    virtualbox-iso: Comprobando   : mysql-communi    6/14[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:perl-Compre    7/14[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-Compress    8/14[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-DBI-1.62    9/14[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-IO-Compr   10/14[0m
+[0;32m    virtualbox-iso: Comprobando   : mysql-communi   11/14[0m
+[0;32m    virtualbox-iso: Comprobando   : perl-PlRPC-0.   12/14[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:mariadb-lib   13/14[0m
+[0;32m    virtualbox-iso: Comprobando   : 1:mariadb-5.5   14/14[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Instalado:[0m
+[0;32m    virtualbox-iso: mysql-community-client.x86_64 0:5.6.30-2.el7[0m
+[0;32m    virtualbox-iso: mysql-community-libs.x86_64 0:5.6.30-2.el7[0m
+[0;32m    virtualbox-iso: mysql-community-server.x86_64 0:5.6.30-2.el7[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Dependencia(s) instalada(s):[0m
+[0;32m    virtualbox-iso: mysql-community-common.x86_64 0:5.6.30-2.el7[0m
+[0;32m    virtualbox-iso: net-tools.x86_64 0:2.0-0.17.20131004git.el7[0m
+[0;32m    virtualbox-iso: perl-Compress-Raw-Bzip2.x86_64 0:2.061-3.el7[0m
+[0;32m    virtualbox-iso: perl-Compress-Raw-Zlib.x86_64 1:2.061-4.el7[0m
+[0;32m    virtualbox-iso: perl-DBI.x86_64 0:1.627-4.el7[0m
+[0;32m    virtualbox-iso: perl-Data-Dumper.x86_64 0:2.145-3.el7[0m
+[0;32m    virtualbox-iso: perl-IO-Compress.noarch 0:2.061-2.el7[0m
+[0;32m    virtualbox-iso: perl-Net-Daemon.noarch 0:0.48-5.el7[0m
+[0;32m    virtualbox-iso: perl-PlRPC.noarch 0:0.2020-14.el7[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Sustituido(s):[0m
+[0;32m    virtualbox-iso: mariadb.x86_64 1:5.5.47-1.el7_2[0m
+[0;32m    virtualbox-iso: mariadb-libs.x86_64 1:5.5.47-1.el7_2[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: ¡Listo![0m
+[0;32m    virtualbox-iso: --2016-05-12 15:36:28--  http://10.200.3.106:8888/server/create_alfresco_db.sql[0m
+[0;32m    virtualbox-iso: Conectando con 10.200.3.106:8888... conectado.[0m
+[0;32m    virtualbox-iso: Petición HTTP enviada, esperando respuesta... 200 OK[0m
+[0;32m    virtualbox-iso: Longitud: 29 [application/x-sql][0m
+[0;32m    virtualbox-iso: Grabando a: “/tmp/create_alfresco_db.sql”[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: 100% 29          --.-K/s   en 0s[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: 2016-05-12 15:36:28 (2,74 MB/s) - “/tmp/create_alfresco_db.sql” guardado [29/29][0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: --2016-05-12 15:36:28--  http://10.200.3.106:8888/server/grant_alfresco_user.sql[0m
+[0;32m    virtualbox-iso: Conectando con 10.200.3.106:8888... conectado.[0m
+[0;32m    virtualbox-iso: Petición HTTP enviada, esperando respuesta... 200 OK[0m
+[0;32m    virtualbox-iso: Longitud: 98 [application/x-sql][0m
+[0;32m    virtualbox-iso: Grabando a: “/tmp/grant_alfresco_user.sql”[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: 100% 98          --.-K/s   en 0s[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: 2016-05-12 15:36:28 (7,20 MB/s) - “/tmp/grant_alfresco_user.sql” guardado [98/98][0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: --2016-05-12 15:36:28--  http://10.200.3.106:8888/server/alfresco-community-4.0.d-installer-linux-x64.bin[0m
+[0;32m    virtualbox-iso: Conectando con 10.200.3.106:8888... conectado.[0m
+[0;32m    virtualbox-iso: Petición HTTP enviada, esperando respuesta... 200 OK[0m
+[0;32m    virtualbox-iso: Longitud: 548037361 (523M) [application/octet-stream][0m
+[0;32m    virtualbox-iso: Grabando a: “/tmp/alfresco-community-4.0.d-installer-linux-x64.bin”[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: 100% 548.037.361 10,7MB/s   en 72s[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: 2016-05-12 15:37:40 (7,23 MB/s) - “/tmp/alfresco-community-4.0.d-installer-linux-x64.bin” guardado [548037361/548037361][0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: --2016-05-12 15:42:35--  http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.38.tar.gz[0m
+[0;32m    virtualbox-iso: Resolviendo dev.mysql.com (dev.mysql.com)... 137.254.60.11[0m
+[0;32m    virtualbox-iso: Conectando con dev.mysql.com (dev.mysql.com)[137.254.60.11]:80... conectado.[0m
+[0;32m    virtualbox-iso: Petición HTTP enviada, esperando respuesta... 302 Found[0m
+[0;32m    virtualbox-iso: Localización: http://cdn.mysql.com//Downloads/Connector-J/mysql-connector-java-5.1.38.tar.gz [siguiendo][0m
+[0;32m    virtualbox-iso: --2016-05-12 15:42:36--  http://cdn.mysql.com//Downloads/Connector-J/mysql-connector-java-5.1.38.tar.gz[0m
+[0;32m    virtualbox-iso: Resolviendo cdn.mysql.com (cdn.mysql.com)... 23.15.133.239[0m
+[0;32m    virtualbox-iso: Conectando con cdn.mysql.com (cdn.mysql.com)[23.15.133.239]:80... conectado.[0m
+[0;32m    virtualbox-iso: Petición HTTP enviada, esperando respuesta... 200 OK[0m
+[0;32m    virtualbox-iso: Longitud: 3938241 (3,8M) [application/x-tar-gz][0m
+[0;32m    virtualbox-iso: Grabando a: “/home/alfresco/mysql-connector-java-5.1.38.tar.gz”[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: 100% 3.938.241   1,34MB/s   en 2,8s[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: 2016-05-12 15:42:39 (1,34 MB/s) - “/home/alfresco/mysql-connector-java-5.1.38.tar.gz” guardado [3938241/3938241][0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: mysql-connector-java-5.1.38/mysql-connector-java-5.1.38-bin.jar[0m
+[0;32m    virtualbox-iso: --2016-05-12 15:42:39--  http://10.200.3.106:8888/server/alfresco.service[0m
+[0;32m    virtualbox-iso: Conectando con 10.200.3.106:8888... conectado.[0m
+[0;32m    virtualbox-iso: Petición HTTP enviada, esperando respuesta... 200 OK[0m
+[0;32m    virtualbox-iso: Longitud: 283 [application/octet-stream][0m
+[0;32m    virtualbox-iso: Grabando a: “/tmp/alfresco.service”[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: 100% 283         --.-K/s   en 0s[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: 2016-05-12 15:42:39 (53,0 MB/s) - “/tmp/alfresco.service” guardado [283/283][0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Created symlink from /etc/systemd/system/multi-user.target.wants/alfresco.service to /usr/lib/systemd/system/alfresco.service.[0m
+[1;32m==> virtualbox-iso: Provisioning with shell script: scripts/cleanup.sh[0m
+[0;32m    virtualbox-iso: Complementos cargados:fastestmirror[0m
+[0;32m    virtualbox-iso: Limpiando repositorios: base epel extras[0m
+[0;32m    virtualbox-iso: ...: mysql-connectors-community[0m
+[0;32m    virtualbox-iso: ...: mysql-tools-community[0m
+[0;32m    virtualbox-iso: ...: mysql56-community updates[0m
+[0;32m    virtualbox-iso: Cleaning up everything[0m
+[0;32m    virtualbox-iso: Cleaning up list of fastest mirrors[0m
+[0;32m    virtualbox-iso: /tmp/script_3298.sh: línea 3: udo: no se encontró la orden[0m
+[1;32m==> virtualbox-iso: Gracefully halting virtual machine...[0m
+[1;32m==> virtualbox-iso: Preparing to export machine...[0m
+[0;32m    virtualbox-iso: Deleting forwarded port mapping for the communicator (SSH, WinRM, etc) (host port 2864)[0m
+[1;32m==> virtualbox-iso: Exporting virtual machine...[0m
+[0;32m    virtualbox-iso: Executing: export packer-virtualbox-iso-1463063262 --output output-virtualbox-iso/packer-virtualbox-iso-1463063262.ovf[0m
+[1;32m==> virtualbox-iso: Unregistering and deleting virtual machine...[0m
+[1;32mBuild 'virtualbox-iso' finished.[0m
+
+==> Builds finished. The artifacts of successful builds are:
+--> virtualbox-iso: VM files in directory: output-virtualbox-iso

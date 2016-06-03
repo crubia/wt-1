@@ -1,0 +1,51 @@
+{
+  "builders": [
+    {
+      "type": "virtualbox-iso",
+      "boot_command": [
+          "<wait5><tab><tab><tab><wait><enter>",
+          "<wait><enter>",
+          "<wait5><enter>",
+          "<wait10><wait5><enter>",
+          "<wait5><wait><enter>",
+          "<wait10><wait10><wait10><wait10><wait10>",
+          "<wait>n<enter><wait>",
+          "<wait>em0<enter><wait>",
+          "<wait><enter><wait>",
+          "<wait>y<enter>",
+          "<wait10><wait5>",
+          "14<enter>",
+          "<wait>y<enter>",
+          "<wait>8<enter>",
+          "<wait>pw usermod root -h 0<wait><enter>",
+          "<wait>firewall<enter>", 
+          "<wait>pw adduser firewall -m -s /usr/local/bin/bash<enter>",
+          "<wait>pw usermod firewall -h 0<enter>",
+          "<wait>firewall<enter>",
+          "<wait>pw group mod wheel -m firewall<enter>",
+          "<wait>echo '%wheel ALL=(ALL) NOPASSWD: ALL' >> /usr/local/etc/sudoers<enter>",
+          "<wait>chmod 0440 /usr/local/etc/sudoers<wait><enter>",
+          "<wait5>reboot<enter>"
+        ],
+      "boot_wait": "100s",
+      "disk_size": 20480,
+      "guest_os_type": "FreeBSD_64",
+      "iso_checksum": "b556499527e8ba146eb744f6818ecd95",
+      "iso_checksum_type": "md5",
+      "iso_url": "/home/jorge/plantillas-entice/pfsense/pfSense-CE-2.3-RELEASE-amd64.iso",
+      "ssh_username": "firewall",
+      "ssh_password": "firewall",
+      "ssh_pty" : "true",
+      "ssh_port": 22,
+      "ssh_wait_timeout": "10000s",
+      "shutdown_command": "echo '/sbin/halt -h -p' > /tmp/shutdown.sh; echo 'firewall'|sudo -S sh '/tmp/shutdown.sh'",
+      "guest_additions_mode": "disable",
+      "virtualbox_version_file": ".vbox_version",
+      "vm_name": "pfSense-prueba2",
+      "vboxmanage": [
+        [ "modifyvm", "{{.Name}}", "--memory", "512" ],
+        [ "modifyvm", "{{.Name}}", "--cpus", "1" ]
+      ]
+    }
+  ]
+}

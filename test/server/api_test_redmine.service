@@ -1,0 +1,8 @@
+[Unit]
+Description=api_test_redmine
+
+[Service]
+ExecStart=/home/test/api/api_test_redmine.sh
+
+[Install]
+WantedBy=multi-user.target 

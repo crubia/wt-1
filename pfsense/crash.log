@@ -1,0 +1,1703 @@
+2016/05/20 14:18:14 [INFO] Packer version: 0.10.1
+2016/05/20 14:18:14 Packer Target OS/Arch: linux amd64
+2016/05/20 14:18:14 Built with Go Version: go1.6.2
+2016/05/20 14:18:14 Detected home directory from env var: /home/jorge
+2016/05/20 14:18:14 Using internal plugin for amazon-chroot
+2016/05/20 14:18:14 Using internal plugin for null
+2016/05/20 14:18:14 Using internal plugin for parallels-iso
+2016/05/20 14:18:14 Using internal plugin for vmware-iso
+2016/05/20 14:18:14 Using internal plugin for digitalocean
+2016/05/20 14:18:14 Using internal plugin for file
+2016/05/20 14:18:14 Using internal plugin for googlecompute
+2016/05/20 14:18:14 Using internal plugin for parallels-pvm
+2016/05/20 14:18:14 Using internal plugin for qemu
+2016/05/20 14:18:14 Using internal plugin for virtualbox-ovf
+2016/05/20 14:18:14 Using internal plugin for amazon-instance
+2016/05/20 14:18:14 Using internal plugin for azure-arm
+2016/05/20 14:18:14 Using internal plugin for vmware-vmx
+2016/05/20 14:18:14 Using internal plugin for amazon-ebs
+2016/05/20 14:18:14 Using internal plugin for docker
+2016/05/20 14:18:14 Using internal plugin for openstack
+2016/05/20 14:18:14 Using internal plugin for virtualbox-iso
+2016/05/20 14:18:14 Using internal plugin for shell-local
+2016/05/20 14:18:14 Using internal plugin for windows-restart
+2016/05/20 14:18:14 Using internal plugin for windows-shell
+2016/05/20 14:18:14 Using internal plugin for chef-client
+2016/05/20 14:18:14 Using internal plugin for file
+2016/05/20 14:18:14 Using internal plugin for powershell
+2016/05/20 14:18:14 Using internal plugin for puppet-masterless
+2016/05/20 14:18:14 Using internal plugin for puppet-server
+2016/05/20 14:18:14 Using internal plugin for ansible
+2016/05/20 14:18:14 Using internal plugin for ansible-local
+2016/05/20 14:18:14 Using internal plugin for chef-solo
+2016/05/20 14:18:14 Using internal plugin for salt-masterless
+2016/05/20 14:18:14 Using internal plugin for shell
+2016/05/20 14:18:14 Using internal plugin for docker-tag
+2016/05/20 14:18:14 Using internal plugin for shell-local
+2016/05/20 14:18:14 Using internal plugin for vagrant
+2016/05/20 14:18:14 Using internal plugin for vsphere
+2016/05/20 14:18:14 Using internal plugin for amazon-import
+2016/05/20 14:18:14 Using internal plugin for compress
+2016/05/20 14:18:14 Using internal plugin for docker-import
+2016/05/20 14:18:14 Using internal plugin for docker-save
+2016/05/20 14:18:14 Using internal plugin for artifice
+2016/05/20 14:18:14 Using internal plugin for atlas
+2016/05/20 14:18:14 Using internal plugin for docker-push
+2016/05/20 14:18:14 Using internal plugin for vagrant-cloud
+2016/05/20 14:18:14 Detected home directory from env var: /home/jorge
+2016/05/20 14:18:14 Attempting to open config file: /home/jorge/.packerconfig
+2016/05/20 14:18:14 [WARN] Config file doesn't exist: /home/jorge/.packerconfig
+2016/05/20 14:18:14 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[parallels-pvm:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-pvm azure-arm:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-azure-arm amazon-ebs:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebs docker:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-docker amazon-chroot:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-chroot parallels-iso:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-iso googlecompute:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-googlecompute qemu:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-qemu openstack:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-openstack null:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-null vmware-iso:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-iso digitalocean:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-digitalocean file:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-file virtualbox-ovf:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-ovf amazon-instance:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-instance vmware-vmx:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-vmx virtualbox-iso:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-iso] PostProcessors:map[atlas:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-atlas vagrant-cloud:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant-cloud docker-tag:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-tag shell-local:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-shell-local vagrant:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant docker-save:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-save artifice:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-artifice vsphere:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vsphere amazon-import:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-amazon-import compress:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-compress docker-import:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-import docker-push:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-push] Provisioners:map[shell:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell shell-local:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell-local chef-client:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-client puppet-masterless:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-masterless ansible:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible chef-solo:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-solo ansible-local:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible-local salt-masterless:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-salt-masterless windows-restart:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-restart windows-shell:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-shell file:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-file powershell:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-powershell puppet-server:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-server]}
+2016/05/20 14:18:14 Setting cache directory: /home/jorge/plantillas-entice/pfsense/packer_cache
+2016/05/20 14:18:14 Detected home directory from env var: /home/jorge
+2016/05/20 14:18:14 Loading builder: virtualbox-iso
+2016/05/20 14:18:14 Plugin could not be found. Checking same directory as executable.
+2016/05/20 14:18:14 Current exe path: /usr/bin/packer
+2016/05/20 14:18:14 Creating plugin client for path: /usr/bin/packer
+2016/05/20 14:18:14 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-builder-virtualbox-iso"}
+2016/05/20 14:18:14 Waiting for RPC address for: /usr/bin/packer
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 [INFO] Packer version: 0.10.1
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Packer Target OS/Arch: linux amd64
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Built with Go Version: go1.6.2
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Detected home directory from env var: /home/jorge
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for googlecompute
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for null
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for openstack
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for qemu
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for virtualbox-ovf
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for vmware-vmx
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for amazon-chroot
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for digitalocean
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for file
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for amazon-ebs
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for amazon-instance
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for parallels-pvm
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for virtualbox-iso
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for parallels-iso
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for vmware-iso
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for azure-arm
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for docker
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for salt-masterless
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for shell
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for ansible-local
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for chef-solo
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for file
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for powershell
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for puppet-server
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for windows-shell
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for ansible
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for chef-client
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for puppet-masterless
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for shell-local
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for windows-restart
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for docker-tag
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for vagrant-cloud
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for atlas
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for compress
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for docker-push
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for docker-save
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for shell-local
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for vagrant
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for vsphere
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for amazon-import
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for artifice
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Using internal plugin for docker-import
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Detected home directory from env var: /home/jorge
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Attempting to open config file: /home/jorge/.packerconfig
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 [WARN] Config file doesn't exist: /home/jorge/.packerconfig
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[azure-arm:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-azure-arm vmware-vmx:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-vmx amazon-ebs:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebs parallels-pvm:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-pvm virtualbox-iso:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-iso parallels-iso:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-iso googlecompute:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-googlecompute qemu:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-qemu digitalocean:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-digitalocean openstack:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-openstack file:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-file vmware-iso:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-iso amazon-instance:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-instance docker:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-docker null:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-null virtualbox-ovf:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-ovf amazon-chroot:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-chroot] PostProcessors:map[artifice:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-artifice compress:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-compress docker-save:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-save shell-local:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-shell-local vagrant:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant vsphere:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vsphere amazon-import:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-amazon-import docker-import:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-import docker-tag:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-tag vagrant-cloud:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant-cloud atlas:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-atlas docker-push:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-push] Provisioners:map[ansible-local:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible-local file:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-file windows-shell:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-shell ansible:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible chef-client:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-client shell-local:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell-local windows-restart:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-restart salt-masterless:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-salt-masterless shell:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell chef-solo:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-solo powershell:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-powershell puppet-server:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-server puppet-masterless:/usr/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-masterless]}
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Setting cache directory: /home/jorge/plantillas-entice/pfsense/packer_cache
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 args: []string{"packer-builder-virtualbox-iso"}
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Plugin minimum port: 10000
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Plugin maximum port: 25000
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Plugin address: unix /tmp/packer-plugin698128950
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Waiting for connection...
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Detected home directory from env var: /home/jorge
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Serving a plugin connection...
+2016/05/20 14:18:14 ui: [1;32mvirtualbox-iso output will be in this color.[0m
+2016/05/20 14:18:14 ui: 
+2016/05/20 14:18:14 Build debug mode: false
+2016/05/20 14:18:14 Force build: false
+2016/05/20 14:18:14 Preparing build: virtualbox-iso
+2016/05/20 14:18:14 ui: [1;32mWarnings for build 'virtualbox-iso':
+[0m
+2016/05/20 14:18:14 ui: [1;32m* A shutdown_command was not specified. Without a shutdown command, Packer
+will forcibly halt the virtual machine, which may result in data loss.[0m
+2016/05/20 14:18:14 ui: [1;32m[0m
+2016/05/20 14:18:14 Waiting on builds to complete...
+2016/05/20 14:18:14 Starting build run: virtualbox-iso
+2016/05/20 14:18:14 Running builder: virtualbox-iso
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 VBoxManage path: /usr/bin/VBoxManage
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Not downloading guest additions since it is disabled.
+2016/05/20 14:18:14 ui: [1;32m==> virtualbox-iso: Downloading or copying ISO[0m
+2016/05/20 14:18:14 ui: [0;32m    virtualbox-iso: Downloading or copying: file:///home/jorge/plantillas-entice/pfsense/pfSense-CE-2.3-RELEASE-amd64.iso[0m
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Acquiring lock to download: file:///home/jorge/plantillas-entice/pfsense/pfSense-CE-2.3-RELEASE-amd64.iso
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Parsed URL: &url.URL{Scheme:"file", Opaque:"", User:(*url.Userinfo)(nil), Host:"", Path:"/home/jorge/plantillas-entice/pfsense/pfSense-CE-2.3-RELEASE-amd64.iso", RawPath:"", RawQuery:"", Fragment:""}
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 [DEBUG] Using local file: /home/jorge/plantillas-entice/pfsense/pfSense-CE-2.3-RELEASE-amd64.iso
+2016/05/20 14:18:14 packer: 2016/05/20 14:18:14 Verifying checksum of /home/jorge/plantillas-entice/pfsense/pfSense-CE-2.3-RELEASE-amd64.iso
+2016/05/20 14:18:15 ui: [1;32m==> virtualbox-iso: Starting HTTP server on port 8438[0m
+2016/05/20 14:18:15 packer: 2016/05/20 14:18:15 No floppy files specified. Floppy disk will not be made.
+2016/05/20 14:18:15 packer: 2016/05/20 14:18:15 Trying port: 8438
+2016/05/20 14:18:15 packer: 2016/05/20 14:18:15 Suppressing annoying messages in VirtualBox
+2016/05/20 14:18:15 packer: 2016/05/20 14:18:15 Executing VBoxManage: []string{"setextradata", "global", "GUI/RegistrationData", "triesLeft=0"}
+2016/05/20 14:18:15 packer: 2016/05/20 14:18:15 stdout:
+2016/05/20 14:18:15 packer: 2016/05/20 14:18:15 stderr:
+2016/05/20 14:18:15 packer: 2016/05/20 14:18:15 Executing VBoxManage: []string{"setextradata", "global", "GUI/SuppressMessages", "confirmInputCapture,remindAboutAutoCapture,remindAboutMouseIntegrationOff,remindAboutMouseIntegrationOn,remindAboutWrongColorDepth"}
+2016/05/20 14:18:15 packer: 2016/05/20 14:18:15 stdout:
+2016/05/20 14:18:15 packer: 2016/05/20 14:18:15 stderr:
+2016/05/20 14:18:15 packer: 2016/05/20 14:18:15 Executing VBoxManage: []string{"setextradata", "global", "GUI/UpdateCheckCount", "60"}
+2016/05/20 14:18:15 packer: 2016/05/20 14:18:15 stdout:
+2016/05/20 14:18:15 packer: 2016/05/20 14:18:15 stderr:
+2016/05/20 14:18:15 packer: 2016/05/20 14:18:15 Executing VBoxManage: []string{"setextradata", "global", "GUI/UpdateDate", "1 d, 2017-01-01, stable"}
+2016/05/20 14:18:15 packer: 2016/05/20 14:18:15 stdout:
+2016/05/20 14:18:15 packer: 2016/05/20 14:18:15 stderr:
+2016/05/20 14:18:15 ui: [1;32m==> virtualbox-iso: Creating virtual machine...[0m
+2016/05/20 14:18:15 packer: 2016/05/20 14:18:15 Executing VBoxManage: []string{"createvm", "--name", "pfSense-Stefan", "--ostype", "FreeBSD_64", "--register"}
+2016/05/20 14:18:15 packer: 2016/05/20 14:18:15 stdout: Virtual machine 'pfSense-Stefan' is created and registered.
+2016/05/20 14:18:15 packer: UUID: b504dab4-7efc-4671-aebb-2f2bba0b50b5
+2016/05/20 14:18:15 packer: Settings file: '/home/jorge/VirtualBox VMs/pfSense-Stefan/pfSense-Stefan.vbox'
+2016/05/20 14:18:15 packer: 2016/05/20 14:18:15 stderr:
+2016/05/20 14:18:15 packer: 2016/05/20 14:18:15 Executing VBoxManage: []string{"modifyvm", "pfSense-Stefan", "--boot1", "disk", "--boot2", "dvd", "--boot3", "none", "--boot4", "none"}
+2016/05/20 14:18:15 packer: 2016/05/20 14:18:15 stdout:
+2016/05/20 14:18:15 packer: 2016/05/20 14:18:15 stderr:
+2016/05/20 14:18:15 packer: 2016/05/20 14:18:15 Executing VBoxManage: []string{"modifyvm", "pfSense-Stefan", "--cpus", "1"}
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stdout:
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stderr:
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 Executing VBoxManage: []string{"modifyvm", "pfSense-Stefan", "--memory", "512"}
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stdout:
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stderr:
+2016/05/20 14:18:16 ui: [1;32m==> virtualbox-iso: Creating hard drive...[0m
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 Executing VBoxManage: []string{"createhd", "--filename", "output-virtualbox-iso/pfSense-Stefan.vdi", "--size", "8192", "--format", "VDI", "--variant", "Standard"}
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stdout: Medium created. UUID: af5e52eb-ed41-4561-ae34-fbafb98355d3
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stderr: 0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 Executing VBoxManage: []string{"storagectl", "pfSense-Stefan", "--name", "IDE Controller", "--add", "ide"}
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stdout:
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stderr:
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 Executing VBoxManage: []string{"storageattach", "pfSense-Stefan", "--storagectl", "IDE Controller", "--port", "0", "--device", "0", "--type", "hdd", "--medium", "output-virtualbox-iso/pfSense-Stefan.vdi"}
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stdout:
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stderr:
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 Executing VBoxManage: []string{"storageattach", "pfSense-Stefan", "--storagectl", "IDE Controller", "--port", "0", "--device", "1", "--type", "dvddrive", "--medium", "/home/jorge/plantillas-entice/pfsense/pfSense-CE-2.3-RELEASE-amd64.iso"}
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stdout:
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stderr:
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 Not attaching guest additions since we're uploading.
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 Looking for available port between 5900 and 6000
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 Trying port: 5968
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 Executing VBoxManage: []string{"modifyvm", "pfSense-Stefan", "--vrdeaddress", "127.0.0.1", "--vrdeauthtype", "null", "--vrde", "on", "--vrdeport", "5968"}
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stdout:
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stderr:
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 No floppy disk, not attaching.
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 Looking for available communicator (SSH, WinRM, etc) port between 2222 and 4444
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 Trying port: 4201
+2016/05/20 14:18:16 ui: [1;32m==> virtualbox-iso: Creating forwarded port mapping for communicator (SSH, WinRM, etc) (host port 4201)[0m
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 Executing VBoxManage: []string{"modifyvm", "pfSense-Stefan", "--natpf1", "packercomm,tcp,127.0.0.1,4201,,0"}
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stdout:
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stderr:
+2016/05/20 14:18:16 ui: [1;32m==> virtualbox-iso: Executing custom VBoxManage commands...[0m
+2016/05/20 14:18:16 ui: [0;32m    virtualbox-iso: Executing: modifyvm pfSense-Stefan --memory 512[0m
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 Executing VBoxManage: []string{"modifyvm", "pfSense-Stefan", "--memory", "512"}
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stdout:
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stderr:
+2016/05/20 14:18:16 ui: [0;32m    virtualbox-iso: Executing: modifyvm pfSense-Stefan --cpus 1[0m
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 Executing VBoxManage: []string{"modifyvm", "pfSense-Stefan", "--cpus", "1"}
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stdout:
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stderr:
+2016/05/20 14:18:16 ui: [0;32m    virtualbox-iso: Executing: modifyvm pfSense-Stefan --nic1 intnet[0m
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 Executing VBoxManage: []string{"modifyvm", "pfSense-Stefan", "--nic1", "intnet"}
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stdout:
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stderr:
+2016/05/20 14:18:16 ui: [0;32m    virtualbox-iso: Executing: modifyvm pfSense-Stefan --nic2 bridged[0m
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 Executing VBoxManage: []string{"modifyvm", "pfSense-Stefan", "--nic2", "bridged"}
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stdout:
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stderr:
+2016/05/20 14:18:16 ui: [0;32m    virtualbox-iso: Executing: modifyvm pfSense-Stefan --nictype2 82540EM[0m
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 Executing VBoxManage: []string{"modifyvm", "pfSense-Stefan", "--nictype2", "82540EM"}
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stdout:
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stderr:
+2016/05/20 14:18:16 ui: [0;32m    virtualbox-iso: Executing: modifyvm pfSense-Stefan --bridgeadapter2 enp3s0f2[0m
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 Executing VBoxManage: []string{"modifyvm", "pfSense-Stefan", "--bridgeadapter2", "enp3s0f2"}
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stdout:
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 stderr:
+2016/05/20 14:18:16 ui: [1;32m==> virtualbox-iso: Starting the virtual machine...[0m
+2016/05/20 14:18:16 packer: 2016/05/20 14:18:16 Executing VBoxManage: []string{"startvm", "pfSense-Stefan", "--type", "gui"}
+2016/05/20 14:18:17 packer: 2016/05/20 14:18:17 stdout: Waiting for VM "pfSense-Stefan" to power on...
+2016/05/20 14:18:17 packer: VM "pfSense-Stefan" has been successfully started.
+2016/05/20 14:18:17 packer: 2016/05/20 14:18:17 stderr:
+2016/05/20 14:18:17 ui: [1;32m==> virtualbox-iso: Waiting 7s for boot...[0m
+2016/05/20 14:18:24 ui: [1;32m==> virtualbox-iso: Typing the boot command...[0m
+2016/05/20 14:18:24 packer: 2016/05/20 14:18:24 Special code <wait> found, will sleep 1 second at this point.
+2016/05/20 14:18:24 packer: 2016/05/20 14:18:24 Sending char '1', code '[02 82]', shift false
+2016/05/20 14:18:25 packer: 2016/05/20 14:18:25 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "02"}
+2016/05/20 14:18:25 packer: 2016/05/20 14:18:25 stdout:
+2016/05/20 14:18:25 packer: 2016/05/20 14:18:25 stderr:
+2016/05/20 14:18:25 packer: 2016/05/20 14:18:25 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "82"}
+2016/05/20 14:18:25 packer: 2016/05/20 14:18:25 stdout:
+2016/05/20 14:18:25 packer: 2016/05/20 14:18:25 stderr:
+2016/05/20 14:18:25 packer: 2016/05/20 14:18:25 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:18:25 packer: 2016/05/20 14:18:25 Special code <wait> found, will sleep 1 second at this point.
+2016/05/20 14:18:25 packer: 2016/05/20 14:18:25 Special code <wait> found, will sleep 1 second at this point.
+2016/05/20 14:18:25 packer: 2016/05/20 14:18:25 Sending char 'I', code '[2a 17 aa 97]', shift true
+2016/05/20 14:18:37 packer: 2016/05/20 14:18:37 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2a"}
+2016/05/20 14:18:37 packer: 2016/05/20 14:18:37 stdout:
+2016/05/20 14:18:37 packer: 2016/05/20 14:18:37 stderr:
+2016/05/20 14:18:37 packer: 2016/05/20 14:18:37 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "17"}
+2016/05/20 14:18:37 packer: 2016/05/20 14:18:37 stdout:
+2016/05/20 14:18:37 packer: 2016/05/20 14:18:37 stderr:
+2016/05/20 14:18:37 packer: 2016/05/20 14:18:37 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "aa"}
+2016/05/20 14:18:37 packer: 2016/05/20 14:18:37 stdout:
+2016/05/20 14:18:37 packer: 2016/05/20 14:18:37 stderr:
+2016/05/20 14:18:37 packer: 2016/05/20 14:18:37 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "97"}
+2016/05/20 14:18:38 packer: 2016/05/20 14:18:38 stdout:
+2016/05/20 14:18:38 packer: 2016/05/20 14:18:38 stderr:
+2016/05/20 14:18:38 packer: 2016/05/20 14:18:38 Special code <wait5> found, will sleep 5 seconds at this point.
+2016/05/20 14:18:38 packer: 2016/05/20 14:18:38 Special code '<tab>' found, replacing with: [0f 8f]
+2016/05/20 14:18:38 packer: 2016/05/20 14:18:38 Special code '<tab>' found, replacing with: [0f 8f]
+2016/05/20 14:18:38 packer: 2016/05/20 14:18:38 Special code '<tab>' found, replacing with: [0f 8f]
+2016/05/20 14:18:38 packer: 2016/05/20 14:18:38 Special code <wait> found, will sleep 1 second at this point.
+2016/05/20 14:18:38 packer: 2016/05/20 14:18:38 Special code '<enter>' found, replacing with: [1c 9c]
+2016/05/20 14:18:43 packer: 2016/05/20 14:18:43 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "0f"}
+2016/05/20 14:18:43 packer: 2016/05/20 14:18:43 stdout:
+2016/05/20 14:18:43 packer: 2016/05/20 14:18:43 stderr:
+2016/05/20 14:18:43 packer: 2016/05/20 14:18:43 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "8f"}
+2016/05/20 14:18:43 packer: 2016/05/20 14:18:43 stdout:
+2016/05/20 14:18:43 packer: 2016/05/20 14:18:43 stderr:
+2016/05/20 14:18:43 packer: 2016/05/20 14:18:43 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "0f"}
+2016/05/20 14:18:43 packer: 2016/05/20 14:18:43 stdout:
+2016/05/20 14:18:43 packer: 2016/05/20 14:18:43 stderr:
+2016/05/20 14:18:43 packer: 2016/05/20 14:18:43 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "8f"}
+2016/05/20 14:18:43 packer: 2016/05/20 14:18:43 stdout:
+2016/05/20 14:18:43 packer: 2016/05/20 14:18:43 stderr:
+2016/05/20 14:18:43 packer: 2016/05/20 14:18:43 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "0f"}
+2016/05/20 14:18:43 packer: 2016/05/20 14:18:43 stdout:
+2016/05/20 14:18:43 packer: 2016/05/20 14:18:43 stderr:
+2016/05/20 14:18:43 packer: 2016/05/20 14:18:43 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "8f"}
+2016/05/20 14:18:43 packer: 2016/05/20 14:18:43 stdout:
+2016/05/20 14:18:43 packer: 2016/05/20 14:18:43 stderr:
+2016/05/20 14:18:44 packer: 2016/05/20 14:18:44 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "1c"}
+2016/05/20 14:18:44 packer: 2016/05/20 14:18:44 stdout:
+2016/05/20 14:18:44 packer: 2016/05/20 14:18:44 stderr:
+2016/05/20 14:18:44 packer: 2016/05/20 14:18:44 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "9c"}
+2016/05/20 14:18:44 packer: 2016/05/20 14:18:44 stdout:
+2016/05/20 14:18:44 packer: 2016/05/20 14:18:44 stderr:
+2016/05/20 14:18:44 packer: 2016/05/20 14:18:44 Special code <wait> found, will sleep 1 second at this point.
+2016/05/20 14:18:44 packer: 2016/05/20 14:18:44 Special code '<enter>' found, replacing with: [1c 9c]
+2016/05/20 14:18:45 packer: 2016/05/20 14:18:45 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "1c"}
+2016/05/20 14:18:45 packer: 2016/05/20 14:18:45 stdout:
+2016/05/20 14:18:45 packer: 2016/05/20 14:18:45 stderr:
+2016/05/20 14:18:45 packer: 2016/05/20 14:18:45 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "9c"}
+2016/05/20 14:18:45 packer: 2016/05/20 14:18:45 stdout:
+2016/05/20 14:18:45 packer: 2016/05/20 14:18:45 stderr:
+2016/05/20 14:18:45 packer: 2016/05/20 14:18:45 Special code <wait5> found, will sleep 5 seconds at this point.
+2016/05/20 14:18:45 packer: 2016/05/20 14:18:45 Special code '<enter>' found, replacing with: [1c 9c]
+2016/05/20 14:18:50 packer: 2016/05/20 14:18:50 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "1c"}
+2016/05/20 14:18:50 packer: 2016/05/20 14:18:50 stdout:
+2016/05/20 14:18:50 packer: 2016/05/20 14:18:50 stderr:
+2016/05/20 14:18:50 packer: 2016/05/20 14:18:50 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "9c"}
+2016/05/20 14:18:50 packer: 2016/05/20 14:18:50 stdout:
+2016/05/20 14:18:50 packer: 2016/05/20 14:18:50 stderr:
+2016/05/20 14:18:50 packer: 2016/05/20 14:18:50 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:18:50 packer: 2016/05/20 14:18:50 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:18:50 packer: 2016/05/20 14:18:50 Special code '<enter>' found, replacing with: [1c 9c]
+2016/05/20 14:19:10 packer: 2016/05/20 14:19:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "1c"}
+2016/05/20 14:19:10 packer: 2016/05/20 14:19:10 stdout:
+2016/05/20 14:19:10 packer: 2016/05/20 14:19:10 stderr:
+2016/05/20 14:19:10 packer: 2016/05/20 14:19:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "9c"}
+2016/05/20 14:19:10 packer: 2016/05/20 14:19:10 stdout:
+2016/05/20 14:19:10 packer: 2016/05/20 14:19:10 stderr:
+2016/05/20 14:19:10 packer: 2016/05/20 14:19:10 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:19:10 packer: 2016/05/20 14:19:10 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:19:10 packer: 2016/05/20 14:19:10 Special code '<enter>' found, replacing with: [1c 9c]
+2016/05/20 14:19:30 packer: 2016/05/20 14:19:30 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "1c"}
+2016/05/20 14:19:30 packer: 2016/05/20 14:19:30 stdout:
+2016/05/20 14:19:30 packer: 2016/05/20 14:19:30 stderr:
+2016/05/20 14:19:30 packer: 2016/05/20 14:19:30 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "9c"}
+2016/05/20 14:19:30 packer: 2016/05/20 14:19:30 stdout:
+2016/05/20 14:19:30 packer: 2016/05/20 14:19:30 stderr:
+2016/05/20 14:19:30 packer: 2016/05/20 14:19:30 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:19:30 packer: 2016/05/20 14:19:30 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:19:30 packer: 2016/05/20 14:19:30 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:19:30 packer: 2016/05/20 14:19:30 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:19:30 packer: 2016/05/20 14:19:30 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:19:30 packer: 2016/05/20 14:19:30 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:19:30 packer: 2016/05/20 14:19:30 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:19:30 packer: 2016/05/20 14:19:30 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:19:30 packer: 2016/05/20 14:19:30 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:19:30 packer: 2016/05/20 14:19:30 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:19:30 packer: 2016/05/20 14:19:30 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:19:30 packer: 2016/05/20 14:19:30 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:19:30 packer: 2016/05/20 14:19:30 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:19:30 packer: 2016/05/20 14:19:30 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:21:50 packer: 2016/05/20 14:21:50 Special code <wait> found, will sleep 1 second at this point.
+2016/05/20 14:21:50 packer: 2016/05/20 14:21:50 Sending char '1', code '[02 82]', shift false
+2016/05/20 14:21:50 packer: 2016/05/20 14:21:50 Special code '<enter>' found, replacing with: [1c 9c]
+2016/05/20 14:21:50 packer: 2016/05/20 14:21:50 Special code <wait> found, will sleep 1 second at this point.
+2016/05/20 14:21:51 packer: 2016/05/20 14:21:51 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "02"}
+2016/05/20 14:21:52 packer: 2016/05/20 14:21:52 stdout:
+2016/05/20 14:21:52 packer: 2016/05/20 14:21:52 stderr:
+2016/05/20 14:21:52 packer: 2016/05/20 14:21:52 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "82"}
+2016/05/20 14:21:52 packer: 2016/05/20 14:21:52 stdout:
+2016/05/20 14:21:52 packer: 2016/05/20 14:21:52 stderr:
+2016/05/20 14:21:52 packer: 2016/05/20 14:21:52 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "1c"}
+2016/05/20 14:21:52 packer: 2016/05/20 14:21:52 stdout:
+2016/05/20 14:21:52 packer: 2016/05/20 14:21:52 stderr:
+2016/05/20 14:21:52 packer: 2016/05/20 14:21:52 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "9c"}
+2016/05/20 14:21:52 packer: 2016/05/20 14:21:52 stdout:
+2016/05/20 14:21:52 packer: 2016/05/20 14:21:52 stderr:
+2016/05/20 14:21:53 packer: 2016/05/20 14:21:53 Special code <wait> found, will sleep 1 second at this point.
+2016/05/20 14:21:53 packer: 2016/05/20 14:21:53 Sending char 'n', code '[31 b1]', shift false
+2016/05/20 14:21:53 packer: 2016/05/20 14:21:53 Special code '<enter>' found, replacing with: [1c 9c]
+2016/05/20 14:21:53 packer: 2016/05/20 14:21:53 Special code <wait> found, will sleep 1 second at this point.
+2016/05/20 14:21:54 packer: 2016/05/20 14:21:54 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "31"}
+2016/05/20 14:21:54 packer: 2016/05/20 14:21:54 stdout:
+2016/05/20 14:21:54 packer: 2016/05/20 14:21:54 stderr:
+2016/05/20 14:21:54 packer: 2016/05/20 14:21:54 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b1"}
+2016/05/20 14:21:54 packer: 2016/05/20 14:21:54 stdout:
+2016/05/20 14:21:54 packer: 2016/05/20 14:21:54 stderr:
+2016/05/20 14:21:54 packer: 2016/05/20 14:21:54 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "1c"}
+2016/05/20 14:21:54 packer: 2016/05/20 14:21:54 stdout:
+2016/05/20 14:21:54 packer: 2016/05/20 14:21:54 stderr:
+2016/05/20 14:21:54 packer: 2016/05/20 14:21:54 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "9c"}
+2016/05/20 14:21:54 packer: 2016/05/20 14:21:54 stdout:
+2016/05/20 14:21:54 packer: 2016/05/20 14:21:54 stderr:
+2016/05/20 14:21:55 packer: 2016/05/20 14:21:55 Special code <wait> found, will sleep 1 second at this point.
+2016/05/20 14:21:55 packer: 2016/05/20 14:21:55 Sending char 'e', code '[12 92]', shift false
+2016/05/20 14:21:55 packer: 2016/05/20 14:21:55 Sending char 'm', code '[32 b2]', shift false
+2016/05/20 14:21:55 packer: 2016/05/20 14:21:55 Sending char '1', code '[02 82]', shift false
+2016/05/20 14:21:55 packer: 2016/05/20 14:21:55 Special code '<enter>' found, replacing with: [1c 9c]
+2016/05/20 14:21:55 packer: 2016/05/20 14:21:55 Special code <wait> found, will sleep 1 second at this point.
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "12"}
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 stdout:
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 stderr:
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "92"}
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 stdout:
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 stderr:
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "32"}
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 stdout:
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 stderr:
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b2"}
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 stdout:
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 stderr:
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "02"}
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 stdout:
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 stderr:
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "82"}
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 stdout:
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 stderr:
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "1c"}
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 stdout:
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 stderr:
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "9c"}
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 stdout:
+2016/05/20 14:21:56 packer: 2016/05/20 14:21:56 stderr:
+2016/05/20 14:21:57 packer: 2016/05/20 14:21:57 Special code <wait> found, will sleep 1 second at this point.
+2016/05/20 14:21:57 packer: 2016/05/20 14:21:57 Sending char 'e', code '[12 92]', shift false
+2016/05/20 14:21:57 packer: 2016/05/20 14:21:57 Sending char 'm', code '[32 b2]', shift false
+2016/05/20 14:21:57 packer: 2016/05/20 14:21:57 Sending char '0', code '[0b 8b]', shift false
+2016/05/20 14:21:57 packer: 2016/05/20 14:21:57 Special code '<enter>' found, replacing with: [1c 9c]
+2016/05/20 14:21:57 packer: 2016/05/20 14:21:57 Special code <wait> found, will sleep 1 second at this point.
+2016/05/20 14:21:58 packer: 2016/05/20 14:21:58 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "12"}
+2016/05/20 14:21:58 packer: 2016/05/20 14:21:58 stdout:
+2016/05/20 14:21:58 packer: 2016/05/20 14:21:58 stderr:
+2016/05/20 14:21:58 packer: 2016/05/20 14:21:58 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "92"}
+2016/05/20 14:21:58 packer: 2016/05/20 14:21:58 stdout:
+2016/05/20 14:21:58 packer: 2016/05/20 14:21:58 stderr:
+2016/05/20 14:21:58 packer: 2016/05/20 14:21:58 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "32"}
+2016/05/20 14:21:58 packer: 2016/05/20 14:21:58 stdout:
+2016/05/20 14:21:58 packer: 2016/05/20 14:21:58 stderr:
+2016/05/20 14:21:58 packer: 2016/05/20 14:21:58 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b2"}
+2016/05/20 14:21:58 packer: 2016/05/20 14:21:58 stdout:
+2016/05/20 14:21:58 packer: 2016/05/20 14:21:58 stderr:
+2016/05/20 14:21:58 packer: 2016/05/20 14:21:58 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "0b"}
+2016/05/20 14:21:58 packer: 2016/05/20 14:21:58 stdout:
+2016/05/20 14:21:58 packer: 2016/05/20 14:21:58 stderr:
+2016/05/20 14:21:58 packer: 2016/05/20 14:21:58 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "8b"}
+2016/05/20 14:21:58 packer: 2016/05/20 14:21:58 stdout:
+2016/05/20 14:21:58 packer: 2016/05/20 14:21:58 stderr:
+2016/05/20 14:21:58 packer: 2016/05/20 14:21:58 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "1c"}
+2016/05/20 14:21:59 packer: 2016/05/20 14:21:59 stdout:
+2016/05/20 14:21:59 packer: 2016/05/20 14:21:59 stderr:
+2016/05/20 14:21:59 packer: 2016/05/20 14:21:59 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "9c"}
+2016/05/20 14:21:59 packer: 2016/05/20 14:21:59 stdout:
+2016/05/20 14:21:59 packer: 2016/05/20 14:21:59 stderr:
+2016/05/20 14:22:00 packer: 2016/05/20 14:22:00 Special code <wait> found, will sleep 1 second at this point.
+2016/05/20 14:22:00 packer: 2016/05/20 14:22:00 Special code '<enter>' found, replacing with: [1c 9c]
+2016/05/20 14:22:00 packer: 2016/05/20 14:22:00 Special code <wait> found, will sleep 1 second at this point.
+2016/05/20 14:22:01 packer: 2016/05/20 14:22:01 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "1c"}
+2016/05/20 14:22:01 packer: 2016/05/20 14:22:01 stdout:
+2016/05/20 14:22:01 packer: 2016/05/20 14:22:01 stderr:
+2016/05/20 14:22:01 packer: 2016/05/20 14:22:01 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "9c"}
+2016/05/20 14:22:01 packer: 2016/05/20 14:22:01 stdout:
+2016/05/20 14:22:01 packer: 2016/05/20 14:22:01 stderr:
+2016/05/20 14:22:02 packer: 2016/05/20 14:22:02 Special code <wait> found, will sleep 1 second at this point.
+2016/05/20 14:22:02 packer: 2016/05/20 14:22:02 Sending char 'y', code '[15 95]', shift false
+2016/05/20 14:22:02 packer: 2016/05/20 14:22:02 Special code '<enter>' found, replacing with: [1c 9c]
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "15"}
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 stdout:
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 stderr:
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "95"}
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 stdout:
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 stderr:
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "1c"}
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 stdout:
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 stderr:
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "9c"}
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 stdout:
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 stderr:
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:22:03 packer: 2016/05/20 14:22:03 Special code <wait10> found, will sleep 10 seconds at this point.
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 Sending char '1', code '[02 82]', shift false
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 Sending char '4', code '[05 85]', shift false
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 Special code '<enter>' found, replacing with: [1c 9c]
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "02"}
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 stdout:
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 stderr:
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "82"}
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 stdout:
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 stderr:
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "05"}
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 stdout:
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 stderr:
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "85"}
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 stdout:
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 stderr:
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "1c"}
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 stdout:
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 stderr:
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "9c"}
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 stdout:
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 stderr:
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 Special code <wait> found, will sleep 1 second at this point.
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 Sending char 'y', code '[15 95]', shift false
+2016/05/20 14:26:03 packer: 2016/05/20 14:26:03 Special code '<enter>' found, replacing with: [1c 9c]
+2016/05/20 14:26:04 packer: 2016/05/20 14:26:04 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "15"}
+2016/05/20 14:26:04 packer: 2016/05/20 14:26:04 stdout:
+2016/05/20 14:26:04 packer: 2016/05/20 14:26:04 stderr:
+2016/05/20 14:26:04 packer: 2016/05/20 14:26:04 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "95"}
+2016/05/20 14:26:04 packer: 2016/05/20 14:26:04 stdout:
+2016/05/20 14:26:04 packer: 2016/05/20 14:26:04 stderr:
+2016/05/20 14:26:04 packer: 2016/05/20 14:26:04 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "1c"}
+2016/05/20 14:26:04 packer: 2016/05/20 14:26:04 stdout:
+2016/05/20 14:26:04 packer: 2016/05/20 14:26:04 stderr:
+2016/05/20 14:26:04 packer: 2016/05/20 14:26:04 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "9c"}
+2016/05/20 14:26:04 packer: 2016/05/20 14:26:04 stdout:
+2016/05/20 14:26:04 packer: 2016/05/20 14:26:04 stderr:
+2016/05/20 14:26:04 packer: 2016/05/20 14:26:04 Sending char '8', code '[09 89]', shift false
+2016/05/20 14:26:04 packer: 2016/05/20 14:26:04 Special code '<enter>' found, replacing with: [1c 9c]
+2016/05/20 14:26:04 packer: 2016/05/20 14:26:04 Special code <wait> found, will sleep 1 second at this point.
+2016/05/20 14:26:04 packer: 2016/05/20 14:26:04 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "09"}
+2016/05/20 14:26:05 packer: 2016/05/20 14:26:05 stdout:
+2016/05/20 14:26:05 packer: 2016/05/20 14:26:05 stderr:
+2016/05/20 14:26:05 packer: 2016/05/20 14:26:05 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "89"}
+2016/05/20 14:26:05 packer: 2016/05/20 14:26:05 stdout:
+2016/05/20 14:26:05 packer: 2016/05/20 14:26:05 stderr:
+2016/05/20 14:26:05 packer: 2016/05/20 14:26:05 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "1c"}
+2016/05/20 14:26:05 packer: 2016/05/20 14:26:05 stdout:
+2016/05/20 14:26:05 packer: 2016/05/20 14:26:05 stderr:
+2016/05/20 14:26:05 packer: 2016/05/20 14:26:05 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "9c"}
+2016/05/20 14:26:05 packer: 2016/05/20 14:26:05 stdout:
+2016/05/20 14:26:05 packer: 2016/05/20 14:26:05 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'm', code '[32 b2]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'v', code '[2f af]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char ' ', code '[39 b9]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char '/', code '[35 b5]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'c', code '[2e ae]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'o', code '[18 98]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'n', code '[31 b1]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'f', code '[21 a1]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char '/', code '[35 b5]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'c', code '[2e ae]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'o', code '[18 98]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'n', code '[31 b1]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'f', code '[21 a1]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'i', code '[17 97]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'g', code '[22 a2]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char '.', code '[34 b4]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'x', code '[2d ad]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'm', code '[32 b2]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'l', code '[26 a6]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char ' ', code '[39 b9]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char '/', code '[35 b5]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'c', code '[2e ae]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'o', code '[18 98]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'n', code '[31 b1]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'f', code '[21 a1]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char '/', code '[35 b5]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'c', code '[2e ae]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'o', code '[18 98]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'n', code '[31 b1]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'f', code '[21 a1]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'i', code '[17 97]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'g', code '[22 a2]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char '.', code '[34 b4]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'x', code '[2d ad]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'm', code '[32 b2]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'l', code '[26 a6]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char '.', code '[34 b4]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'o', code '[18 98]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'r', code '[13 93]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Sending char 'g', code '[22 a2]', shift false
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Special code <wait> found, will sleep 1 second at this point.
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Special code '<enter>' found, replacing with: [1c 9c]
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "32"}
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stdout:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b2"}
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stdout:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2f"}
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stdout:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "af"}
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stdout:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "39"}
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stdout:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b9"}
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stdout:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "35"}
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stdout:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b5"}
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stdout:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2e"}
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stdout:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "ae"}
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stdout:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "18"}
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stdout:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "98"}
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stdout:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "31"}
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stdout:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b1"}
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stdout:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "21"}
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stdout:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a1"}
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stdout:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "35"}
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stdout:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b5"}
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stdout:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2e"}
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stdout:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "ae"}
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stdout:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "18"}
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stdout:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "98"}
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stdout:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "31"}
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stdout:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 stderr:
+2016/05/20 14:26:06 packer: 2016/05/20 14:26:06 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b1"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "21"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a1"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "17"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "97"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "22"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a2"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "34"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b4"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2d"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "ad"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "32"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b2"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "26"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a6"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "39"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b9"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "35"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b5"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2e"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "ae"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "18"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "98"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "31"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b1"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "21"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a1"}
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stdout:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 stderr:
+2016/05/20 14:26:07 packer: 2016/05/20 14:26:07 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "35"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b5"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2e"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "ae"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "18"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "98"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "31"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b1"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "21"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a1"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "17"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "97"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "22"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a2"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "34"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b4"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2d"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "ad"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "32"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b2"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "26"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a6"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "34"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b4"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "18"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "98"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "13"}
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stdout:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 stderr:
+2016/05/20 14:26:08 packer: 2016/05/20 14:26:08 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "93"}
+2016/05/20 14:26:09 packer: 2016/05/20 14:26:09 stdout:
+2016/05/20 14:26:09 packer: 2016/05/20 14:26:09 stderr:
+2016/05/20 14:26:09 packer: 2016/05/20 14:26:09 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "22"}
+2016/05/20 14:26:09 packer: 2016/05/20 14:26:09 stdout:
+2016/05/20 14:26:09 packer: 2016/05/20 14:26:09 stderr:
+2016/05/20 14:26:09 packer: 2016/05/20 14:26:09 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a2"}
+2016/05/20 14:26:09 packer: 2016/05/20 14:26:09 stdout:
+2016/05/20 14:26:09 packer: 2016/05/20 14:26:09 stderr:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "1c"}
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stdout:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stderr:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "9c"}
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stdout:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stderr:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char 't', code '[14 94]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char 'e', code '[12 92]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char 'l', code '[26 a6]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char 'n', code '[31 b1]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char 'e', code '[12 92]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char 't', code '[14 94]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char ' ', code '[39 b9]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '1', code '[02 82]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '0', code '[0b 8b]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '.', code '[34 b4]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '2', code '[03 83]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '0', code '[0b 8b]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '0', code '[0b 8b]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '.', code '[34 b4]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '2', code '[03 83]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '.', code '[34 b4]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '4', code '[05 85]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '0', code '[0b 8b]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char ' ', code '[39 b9]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '8', code '[09 89]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '8', code '[09 89]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '8', code '[09 89]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '8', code '[09 89]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char ' ', code '[39 b9]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '|', code '[2a 2b aa ab]', shift true
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char ' ', code '[39 b9]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char 's', code '[1f 9f]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char 'e', code '[12 92]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char 'd', code '[20 a0]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char ' ', code '[39 b9]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char ''', code '[28 a8]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '1', code '[02 82]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char ',', code '[33 b3]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '/', code '[35 b5]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '^', code '[2a 07 aa 87]', shift true
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '$', code '[2a 05 aa 85]', shift true
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '/', code '[35 b5]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char 'd', code '[20 a0]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char ''', code '[28 a8]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char ' ', code '[39 b9]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '>', code '[2a 34 aa b4]', shift true
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char ' ', code '[39 b9]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '/', code '[35 b5]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char 'c', code '[2e ae]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char 'o', code '[18 98]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char 'n', code '[31 b1]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char 'f', code '[21 a1]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '/', code '[35 b5]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char 'c', code '[2e ae]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char 'o', code '[18 98]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char 'n', code '[31 b1]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char 'f', code '[21 a1]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char 'i', code '[17 97]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char 'g', code '[22 a2]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char '.', code '[34 b4]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char 'x', code '[2d ad]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char 'm', code '[32 b2]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Sending char 'l', code '[26 a6]', shift false
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Special code <wait> found, will sleep 1 second at this point.
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Special code '<enter>' found, replacing with: [1c 9c]
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "14"}
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stdout:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stderr:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "94"}
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stdout:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stderr:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "12"}
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stdout:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stderr:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "92"}
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stdout:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stderr:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "26"}
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stdout:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stderr:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a6"}
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stdout:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stderr:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "31"}
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stdout:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stderr:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b1"}
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stdout:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stderr:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "12"}
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stdout:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stderr:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "92"}
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stdout:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stderr:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "14"}
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stdout:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stderr:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "94"}
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stdout:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stderr:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "39"}
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stdout:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stderr:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b9"}
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stdout:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stderr:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "02"}
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stdout:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stderr:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "82"}
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stdout:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stderr:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "0b"}
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stdout:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stderr:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "8b"}
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stdout:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stderr:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "34"}
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stdout:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stderr:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b4"}
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stdout:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 stderr:
+2016/05/20 14:26:10 packer: 2016/05/20 14:26:10 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "03"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "83"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "0b"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "8b"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "0b"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "8b"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "34"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b4"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "03"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "83"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "34"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b4"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "05"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "85"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "0b"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "8b"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "39"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b9"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "09"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "89"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "09"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "89"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "09"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "89"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "09"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "89"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "39"}
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stdout:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 stderr:
+2016/05/20 14:26:11 packer: 2016/05/20 14:26:11 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b9"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2a"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2b"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "aa"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "ab"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "39"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b9"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "1f"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "9f"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "12"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "92"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "20"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a0"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "39"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b9"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "28"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a8"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "02"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "82"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "33"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b3"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "35"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b5"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2a"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "07"}
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stdout:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 stderr:
+2016/05/20 14:26:12 packer: 2016/05/20 14:26:12 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "aa"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "87"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2a"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "05"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "aa"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "85"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "35"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b5"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "20"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a0"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "28"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a8"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "39"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b9"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2a"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "34"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "aa"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b4"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "39"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b9"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "35"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b5"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2e"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "ae"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "18"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "98"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "31"}
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stdout:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 stderr:
+2016/05/20 14:26:13 packer: 2016/05/20 14:26:13 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b1"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "21"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a1"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "35"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b5"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2e"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "ae"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "18"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "98"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "31"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b1"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "21"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a1"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "17"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "97"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "22"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a2"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "34"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b4"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2d"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "ad"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "32"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b2"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "26"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a6"}
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stdout:
+2016/05/20 14:26:14 packer: 2016/05/20 14:26:14 stderr:
+2016/05/20 14:26:15 packer: 2016/05/20 14:26:15 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "1c"}
+2016/05/20 14:26:15 packer: 2016/05/20 14:26:15 stdout:
+2016/05/20 14:26:15 packer: 2016/05/20 14:26:15 stderr:
+2016/05/20 14:26:15 packer: 2016/05/20 14:26:15 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "9c"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Sending char 'G', code '[2a 22 aa a2]', shift true
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Sending char 'E', code '[2a 12 aa 92]', shift true
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Sending char 'T', code '[2a 14 aa 94]', shift true
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Sending char ' ', code '[39 b9]', shift false
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Sending char 'c', code '[2e ae]', shift false
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Sending char 'o', code '[18 98]', shift false
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Sending char 'n', code '[31 b1]', shift false
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Sending char 'f', code '[21 a1]', shift false
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Sending char 'i', code '[17 97]', shift false
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Sending char 'g', code '[22 a2]', shift false
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Sending char '.', code '[34 b4]', shift false
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Sending char 'x', code '[2d ad]', shift false
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Sending char 'm', code '[32 b2]', shift false
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Sending char 'l', code '[26 a6]', shift false
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Sending char ' ', code '[39 b9]', shift false
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Sending char 'H', code '[2a 23 aa a3]', shift true
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Sending char 'T', code '[2a 14 aa 94]', shift true
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Sending char 'T', code '[2a 14 aa 94]', shift true
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Sending char 'P', code '[2a 19 aa 99]', shift true
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Sending char '/', code '[35 b5]', shift false
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Sending char '1', code '[02 82]', shift false
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Sending char '.', code '[34 b4]', shift false
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Sending char '0', code '[0b 8b]', shift false
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Special code '<enter>' found, replacing with: [1c 9c]
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Special code <wait5> found, will sleep 5 seconds at this point.
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Special code '<enter>' found, replacing with: [1c 9c]
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2a"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "22"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "aa"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a2"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2a"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "12"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "aa"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "92"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2a"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "14"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "aa"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "94"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "39"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b9"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2e"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "ae"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "18"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "98"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "31"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b1"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "21"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a1"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "17"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "97"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "22"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a2"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "34"}
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stdout:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 stderr:
+2016/05/20 14:26:16 packer: 2016/05/20 14:26:16 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b4"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2d"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "ad"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "32"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b2"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "26"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a6"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "39"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b9"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2a"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "23"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "aa"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a3"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2a"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "14"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "aa"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "94"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2a"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "14"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "aa"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "94"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2a"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "19"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "aa"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "99"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "35"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b5"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "02"}
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stdout:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 stderr:
+2016/05/20 14:26:17 packer: 2016/05/20 14:26:17 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "82"}
+2016/05/20 14:26:18 packer: 2016/05/20 14:26:18 stdout:
+2016/05/20 14:26:18 packer: 2016/05/20 14:26:18 stderr:
+2016/05/20 14:26:18 packer: 2016/05/20 14:26:18 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "34"}
+2016/05/20 14:26:18 packer: 2016/05/20 14:26:18 stdout:
+2016/05/20 14:26:18 packer: 2016/05/20 14:26:18 stderr:
+2016/05/20 14:26:18 packer: 2016/05/20 14:26:18 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b4"}
+2016/05/20 14:26:18 packer: 2016/05/20 14:26:18 stdout:
+2016/05/20 14:26:18 packer: 2016/05/20 14:26:18 stderr:
+2016/05/20 14:26:18 packer: 2016/05/20 14:26:18 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "0b"}
+2016/05/20 14:26:18 packer: 2016/05/20 14:26:18 stdout:
+2016/05/20 14:26:18 packer: 2016/05/20 14:26:18 stderr:
+2016/05/20 14:26:18 packer: 2016/05/20 14:26:18 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "8b"}
+2016/05/20 14:26:18 packer: 2016/05/20 14:26:18 stdout:
+2016/05/20 14:26:18 packer: 2016/05/20 14:26:18 stderr:
+2016/05/20 14:26:18 packer: 2016/05/20 14:26:18 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "1c"}
+2016/05/20 14:26:18 packer: 2016/05/20 14:26:18 stdout:
+2016/05/20 14:26:18 packer: 2016/05/20 14:26:18 stderr:
+2016/05/20 14:26:18 packer: 2016/05/20 14:26:18 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "9c"}
+2016/05/20 14:26:18 packer: 2016/05/20 14:26:18 stdout:
+2016/05/20 14:26:18 packer: 2016/05/20 14:26:18 stderr:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "1c"}
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stdout:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stderr:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "9c"}
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stdout:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stderr:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Sending char 'c', code '[2e ae]', shift false
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Sending char 'a', code '[1e 9e]', shift false
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Sending char 't', code '[14 94]', shift false
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Sending char ' ', code '[39 b9]', shift false
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Sending char '/', code '[35 b5]', shift false
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Sending char 'c', code '[2e ae]', shift false
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Sending char 'o', code '[18 98]', shift false
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Sending char 'n', code '[31 b1]', shift false
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Sending char 'f', code '[21 a1]', shift false
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Sending char '/', code '[35 b5]', shift false
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Sending char 'c', code '[2e ae]', shift false
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Sending char 'o', code '[18 98]', shift false
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Sending char 'n', code '[31 b1]', shift false
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Sending char 'f', code '[21 a1]', shift false
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Sending char 'i', code '[17 97]', shift false
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Sending char 'g', code '[22 a2]', shift false
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Sending char '.', code '[34 b4]', shift false
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Sending char 'x', code '[2d ad]', shift false
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Sending char 'm', code '[32 b2]', shift false
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Sending char 'l', code '[26 a6]', shift false
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Special code '<enter>' found, replacing with: [1c 9c]
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2e"}
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stdout:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stderr:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "ae"}
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stdout:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stderr:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "1e"}
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stdout:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stderr:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "9e"}
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stdout:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stderr:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "14"}
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stdout:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stderr:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "94"}
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stdout:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stderr:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "39"}
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stdout:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stderr:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b9"}
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stdout:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stderr:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "35"}
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stdout:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stderr:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b5"}
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stdout:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stderr:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2e"}
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stdout:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stderr:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "ae"}
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stdout:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stderr:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "18"}
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stdout:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stderr:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "98"}
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stdout:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stderr:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "31"}
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stdout:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stderr:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b1"}
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stdout:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stderr:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "21"}
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stdout:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 stderr:
+2016/05/20 14:26:23 packer: 2016/05/20 14:26:23 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a1"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "35"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b5"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2e"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "ae"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "18"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "98"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "31"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b1"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "21"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a1"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "17"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "97"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "22"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a2"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "34"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b4"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "2d"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "ad"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "32"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b2"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "26"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "a6"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "1c"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "9c"}
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stdout:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 stderr:
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Special code <wait5> found, will sleep 5 seconds at this point.
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Sending char 'r', code '[13 93]', shift false
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Sending char 'e', code '[12 92]', shift false
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Sending char 'b', code '[30 b0]', shift false
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Sending char 'o', code '[18 98]', shift false
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Sending char 'o', code '[18 98]', shift false
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Sending char 't', code '[14 94]', shift false
+2016/05/20 14:26:24 packer: 2016/05/20 14:26:24 Special code '<enter>' found, replacing with: [1c 9c]
+2016/05/20 14:26:29 packer: 2016/05/20 14:26:29 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "13"}
+2016/05/20 14:26:29 packer: 2016/05/20 14:26:29 stdout:
+2016/05/20 14:26:29 packer: 2016/05/20 14:26:29 stderr:
+2016/05/20 14:26:29 packer: 2016/05/20 14:26:29 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "93"}
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stdout:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stderr:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "12"}
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stdout:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stderr:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "92"}
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stdout:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stderr:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "30"}
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stdout:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stderr:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "b0"}
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stdout:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stderr:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "18"}
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stdout:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stderr:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "98"}
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stdout:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stderr:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "18"}
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stdout:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stderr:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "98"}
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stdout:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stderr:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "14"}
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stdout:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stderr:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "94"}
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stdout:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stderr:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "1c"}
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stdout:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stderr:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "keyboardputscancode", "9c"}
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stdout:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stderr:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 [INFO] communicator disabled, will not connect
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 Executing VBoxManage: []string{"controlvm", "pfSense-Stefan", "poweroff"}
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stdout:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stderr: 0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 Executing VBoxManage: []string{"storageattach", "pfSense-Stefan", "--storagectl", "IDE Controller", "--port", "0", "--device", "1", "--medium", "none"}
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stdout:
+2016/05/20 14:26:30 packer: 2016/05/20 14:26:30 stderr:
+2016/05/20 14:26:30 ui: [1;32m==> virtualbox-iso: Unregistering and deleting virtual machine...[0m
+2016/05/20 14:26:31 packer: 2016/05/20 14:26:31 Executing VBoxManage: []string{"unregistervm", "pfSense-Stefan", "--delete"}
+2016/05/20 14:26:31 packer: 2016/05/20 14:26:31 stdout:
+2016/05/20 14:26:31 packer: 2016/05/20 14:26:31 stderr: 0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+2016/05/20 14:26:31 packer: panic: interface conversion: *none.comm is not packer.Communicator: missing method DownloadDir
+2016/05/20 14:26:31 packer: 
+2016/05/20 14:26:31 packer: goroutine 129 [running]:
+2016/05/20 14:26:31 packer: panic(0x12d6880, 0xc820012640)
+2016/05/20 14:26:31 packer: 	/usr/local/go/src/runtime/panic.go:481 +0x3e6
+2016/05/20 14:26:31 packer: github.com/mitchellh/packer/builder/virtualbox/common.(*StepUploadVersion).Run(0xc8203b0960, 0x7fcf5c569c10, 0xc820391e30, 0x0)
+2016/05/20 14:26:31 packer: 	/Users/cbednarski/go/src/github.com/mitchellh/packer/builder/virtualbox/common/step_upload_version.go:18 +0xa4
+2016/05/20 14:26:31 packer: github.com/mitchellh/packer/vendor/github.com/mitchellh/multistep.(*BasicRunner).Run(0xc820385600, 0x7fcf5c569c10, 0xc820391e30)
+2016/05/20 14:26:31 packer: 	/Users/cbednarski/go/src/github.com/mitchellh/packer/vendor/github.com/mitchellh/multistep/basic_runner.go:70 +0x330
+2016/05/20 14:26:31 packer: github.com/mitchellh/packer/builder/virtualbox/iso.(*Builder).Run(0xc82020b400, 0x7fcf5c569660, 0xc8203a5800, 0x7fcf5c5696a8, 0xc8203b08e0, 0x7fcf5c5696d8, 0xc82008a1f8, 0x0, 0x0, 0x0, ...)
+2016/05/20 14:26:31 packer: 	/Users/cbednarski/go/src/github.com/mitchellh/packer/builder/virtualbox/iso/builder.go:285 +0x19ae
+2016/05/20 14:26:31 packer: github.com/mitchellh/packer/packer/rpc.(*BuilderServer).Run(0xc8202b2d60, 0x1, 0xc82030e050, 0x0, 0x0)
+2016/05/20 14:26:31 packer: 	/Users/cbednarski/go/src/github.com/mitchellh/packer/packer/rpc/builder.go:93 +0x3b9
+2016/05/20 14:26:31 packer: reflect.Value.call(0x11c2ca0, 0x1338f78, 0x13, 0x1511260, 0x4, 0xc8200efed8, 0x3, 0x3, 0x0, 0x0, ...)
+2016/05/20 14:26:31 packer: 	/usr/local/go/src/reflect/value.go:435 +0x120d
+2016/05/20 14:26:31 packer: reflect.Value.Call(0x11c2ca0, 0x1338f78, 0x13, 0xc8200efed8, 0x3, 0x3, 0x0, 0x0, 0x0)
+2016/05/20 14:26:31 packer: 	/usr/local/go/src/reflect/value.go:303 +0xb1
+2016/05/20 14:26:31 packer: net/rpc.(*service).call(0xc820224b40, 0xc820224b00, 0xc82030e010, 0xc820248680, 0xc82017b520, 0x1019300, 0xc82030e01c, 0x18a, 0xfe1ca0, 0xc82030e050, ...)
+2016/05/20 14:26:31 packer: 	/usr/local/go/src/net/rpc/server.go:383 +0x1c2
+2016/05/20 14:26:31 packer: created by net/rpc.(*Server).ServeCodec
+2016/05/20 14:26:31 packer: 	/usr/local/go/src/net/rpc/server.go:477 +0x49d
+2016/05/20 14:26:31 /usr/bin/packer: plugin process exited
+2016/05/20 14:26:31 ui error: [1;31mBuild 'virtualbox-iso' errored: unexpected EOF[0m
+2016/05/20 14:26:31 Builds completed. Waiting on interrupt barrier...
+2016/05/20 14:26:31 machine readable: error-count []string{"1"}
+2016/05/20 14:26:31 ui error: 
+==> Some builds didn't complete successfully and had errors:
+2016/05/20 14:26:31 machine readable: virtualbox-iso,error []string{"unexpected EOF"}
+2016/05/20 14:26:31 ui error: --> virtualbox-iso: unexpected EOF
+2016/05/20 14:26:31 ui: 
+==> Builds finished but no artifacts were created.
+2016/05/20 14:26:31 waiting for all plugin processes to complete...

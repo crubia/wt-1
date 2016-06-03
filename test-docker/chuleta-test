@@ -1,0 +1,62 @@
+docker daemon de docker-host
+/usr/local/bin/docker daemon -D -g /var/lib/docker -H unix:// -H tcp://0.0.0.0:2375 
+
+ejecutando desde docker-test a docker-host
+
+docker -H 192.168.1.108:2375 run -d --name=consul -p "8500:8500" -h "consul" progrium/consul -server -bootstrap
+# debería añadirle un volumen al consul, o no, porque no tiene porque ser persistente, se anuncian ellos
+
+swarm join --advertise=<node_ip:2375> consul://<consul_addr>/<optional path prefix>
+
+#######################################################################################
+## swarm join --advertise=<node_ip:2375> consul://<consul_addr>/<optional path prefix>
+##
+## docker run -d swarm join --addr=<node_ip:2375> token://<cluster_id>
+#######################################################################################
+
+
+docker -H 192.168.1.108:2375 run -d --name=swarm-agent swarm join --advertise=192.168.1.108:2375 consul://192.168.1.108:8500
+
+#######################################################################################
+## docker run -t -p <swarm_port>:2375 -t swarm manage token://<cluster_id>
+##
+## swarm manage -H tcp://<swarm_ip:swarm_port> consul://<consul_addr>/<optional path prefix>
+#######################################################################################
+
+
+docker -H 192.168.1.108:2375 run -dt --name=swarm-agent-master -P -p 3375:3375 -t swarm manage -H tcp://0.0.0.0:3375 "nodes://192.168.1.108:2375,192.168.1.117:2375"
+
+
+
+######################################
+configuracion de docker-machine
+
+docker daemon para consul:
+/usr/local/bin/docker daemon -D -g /var/lib/docker -H unix:// -H tcp://0.0.0.0:2376 --label provider=virtualbox --tlsverify --tlscacert=/var/lib/boot2docker/ca.pem --tlscert=/var/lib/boot2docker/server.pem --tlskey=/var/lib/boot2docker/server-key.pem -s aufs
+
+docker daemon para resto cluster:
+/usr/local/bin/docker daemon -D -g /var/lib/docker -H unix:// -H tcp://0.0.0.0:2376 --label provider=virtualbox --cluster-store=consul://192.168.99.100:8500 --cluster-advertise=eth1:2376 --tlsverify --tlscacert=/var/lib/boot2docker/ca.pem --tlscert=/var/lib/boot2docker/server.pem --tlskey=/var/lib/boot2docker/server-key.pem -s aufs
+
+===>eth1 es una interfaz tipo Adaptador solo-anfitrion de nombre vboxnet0
+
+
+cmd para swarm-agent
+            "join",
+            "--advertise",
+            "192.168.99.101:2376",
+            "consul://192.168.99.100:8500"
+
+cmd para swarm-agent-master
+
+            "manage",
+            "--tlsverify",
+            "--tlscacert=/var/lib/boot2docker/ca.pem",
+            "--tlscert=/var/lib/boot2docker/server.pem",
+            "--tlskey=/var/lib/boot2docker/server-key.pem",
+            "-H",
+            "tcp://0.0.0.0:3376",
+            "--strategy",
+            "spread",
+            "--advertise",
+            "192.168.99.101:3376",
+            "consul://192.168.99.100:8500"

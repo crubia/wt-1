@@ -1,0 +1,29 @@
+##############################################################################
+#######                       MAQUINA CONSUL                             #####
+##############################################################################
+
+/usr/local/bin/docker daemon -D -g /var/lib/docker -H unix:// -H tcp://0.0.0.0:2375 -s aufs
+
+##############################################################################
+#######                       MAQUINA SWARM                              #####
+##############################################################################
+
+/usr/local/bin/docker daemon -D -g /var/lib/docker -H unix:// -H tcp://0.0.0.0:2375 --cluster-store=consul://10.128.19.62:8500 --cluster-advertise=ens160:2375 -s aufs
+
+################
+# SWARM MASTER #
+################
+
+docker run -itd --name=swarm-agent-master --expose=2375 --expose=3375 -p 3375:3375 --restart=always -e SWARM_HOST=:2375 swarm manage -H tcp://0.0.0.0:3375 --strategy spread --advertise 10.128.19.60:3375 consul://10.128.19.62:8500
+
+#################
+# SWARM AGENT 1 #
+#################
+
+docker run -itd --name=swarm-agent --expose=2375 --restart=always -e SWARM_HOST=:2375 swarm join --advertise 10.128.19.60:2375 consul://10.128.19.62:8500
+
+#################
+# SWARM AGENT 2 #
+#################
+
+docker run -itd --name=swarm-agent --expose=2375 --restart=always -e SWARM_HOST=:2375 swarm join --advertise 10.128.19.61:2375 consul://10.128.19.62:8500

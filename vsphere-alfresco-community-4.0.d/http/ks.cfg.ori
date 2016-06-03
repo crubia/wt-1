@@ -1,0 +1,66 @@
+#Install OS instead of upgrade
+install
+
+#Use CDROM installation media
+cdrom
+lang es_ES.UTF-8
+keyboard es 
+
+network --onboot yes --device eth0 --bootproto dhcp --noipv6
+
+rootpw --plaintext vagrant
+firewall --enabled --service=ssh
+authconfig --enableshadow --passalgo=sha512
+selinux --disabled
+timezone Europe/London
+
+#System bootloader configuration
+bootloader --location=mbr --append="crashkernel=auto rhgb quiet"
+
+text
+
+#Do not configure the X window
+skipx
+
+#Partition clearing information
+zerombr
+#clearpart --all --initlabel
+clearpart --all --drives=sda 
+
+
+# Disk partitioning information
+part /boot --fstype="ext4" --size=500
+part pv.008002 --grow --size=1
+volgroup vg_centos --pesize=4096 pv.008002
+logvol / --fstype=ext4 --name=lv_root --vgname=vg_centos --grow --size=1024 --maxsize=51200
+logvol swap --name=lv_swap --vgname=vg_centos --grow --size=3072 --maxsize=3072
+#autopart
+
+auth  --useshadow  --enablemd5
+firstboot --disabled
+reboot
+
+%packages --ignoremissing
+@core
+bzip2
+kernel-devel
+kernel-headers
+-ipw2100-firmware
+-ipw2200-firmware
+-ivtv-firmware
+%end
+
+%post
+/usr/bin/yum -y install sudo
+/usr/sbin/groupadd -g 501 admin 
+/usr/sbin/useradd admin -u 501 -g admin -G wheel
+echo "admin"|passwd --stdin admin 
+echo "admin        ALL=(ALL)       NOPASSWD: ALL" >> /etc/sudoers.d/admin
+chmod 0440 /etc/sudoers.d/admin
+
+/usr/sbin/groupadd -g 502 alfresco
+/usr/sbin/useradd alfresco -u 502 -g alfresco -G wheel
+echo "alfresco"|passwd --stdin alfresco
+echo "alfresco        ALL=(ALL)       NOPASSWD: ALL" >> /etc/sudoers.d/alfresco
+chmod 0440 /etc/sudoers.d/alfresco
+%end

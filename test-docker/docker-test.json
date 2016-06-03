@@ -1,0 +1,78 @@
+{
+  "provisioners": [
+    {
+      "type": "shell",
+      "execute_command": "echo 'test'|sudo -S sh '{{.Path}}'",
+      "override": {
+        "virtualbox-iso": {
+          "scripts": [
+            "scripts/base.sh",
+            "scripts/docker-install.sh",
+            "scripts/cleanup.sh"
+          ]
+        }
+      }
+    }
+  ],
+  "builders": [
+    {
+      "type": "virtualbox-iso",
+      "boot_command": [
+        "<tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/ks.cfg<enter><wait>"
+      ],
+      "boot_wait": "10s",
+      "disk_size": 10240,
+      "guest_os_type": "RedHat_64",
+      "http_directory": "http",
+      "iso_checksum": "88c0437f0a14c6e2c94426df9d43cd67",
+      "iso_checksum_type": "md5",
+      "iso_url": "/home/jorge/proyectos/plantillas-entice/ISO/CentOS-7-x86_64-Minimal-1511.iso",
+      "ssh_username": "test",
+      "ssh_password": "test",
+      "ssh_pty" : "true",
+      "ssh_port": 22,
+      "ssh_wait_timeout": "15m",
+      "shutdown_command": "echo '/sbin/halt -h -p' > /tmp/shutdown.sh; echo 'test'|sudo -S sh '/tmp/shutdown.sh'",
+      "guest_additions_mode": "disable",
+      "vm_name": "docker-test",
+      "vboxmanage": [
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--memory",
+          "512"
+        ],
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--cpus",
+          "1"
+        ],
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--nic1",
+          "nat"
+        ],
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--nic2",
+          "bridged"
+        ],
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--nictype2",
+          "82540EM"
+        ],
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--bridgeadapter2",
+          "wlan0"
+        ]
+      ]
+    }
+  ]
+}

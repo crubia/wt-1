@@ -1,0 +1,231 @@
+[
+    {
+        "Id": "d56c8abc4905d9329fc415325ed8a4053916511b8e34e73c9e118d139c4a143a",
+        "Created": "2016-05-28T15:59:55.7601954Z",
+        "Path": "/swarm",
+        "Args": [
+            "manage",
+            "--tlsverify",
+            "--tlscacert=/var/lib/boot2docker/ca.pem",
+            "--tlscert=/var/lib/boot2docker/server.pem",
+            "--tlskey=/var/lib/boot2docker/server-key.pem",
+            "-H",
+            "tcp://0.0.0.0:3376",
+            "--strategy",
+            "spread",
+            "--advertise",
+            "192.168.99.101:3376",
+            "consul://192.168.99.100:8500"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1507,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2016-05-30T15:27:06.112250886Z",
+            "FinishedAt": "2016-05-30T15:27:05.903954181Z"
+        },
+        "Image": "sha256:c54bba0461581bfb6dd9ed47d49f8e9f2af1d841546524ea4a02f31e410eb20c",
+        "ResolvConfPath": "/mnt/sda1/var/lib/docker/containers/d56c8abc4905d9329fc415325ed8a4053916511b8e34e73c9e118d139c4a143a/resolv.conf",
+        "HostnamePath": "/mnt/sda1/var/lib/docker/containers/d56c8abc4905d9329fc415325ed8a4053916511b8e34e73c9e118d139c4a143a/hostname",
+        "HostsPath": "/mnt/sda1/var/lib/docker/containers/d56c8abc4905d9329fc415325ed8a4053916511b8e34e73c9e118d139c4a143a/hosts",
+        "LogPath": "/mnt/sda1/var/lib/docker/containers/d56c8abc4905d9329fc415325ed8a4053916511b8e34e73c9e118d139c4a143a/d56c8abc4905d9329fc415325ed8a4053916511b8e34e73c9e118d139c4a143a-json.log",
+        "Name": "/swarm-agent-master",
+        "RestartCount": 0,
+        "Driver": "aufs",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/var/lib/boot2docker:/var/lib/boot2docker"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": {
+                "3376/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "3376"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "always",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "StorageOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DiskQuota": 0,
+            "KernelMemory": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": 0,
+            "OomKillDisable": false,
+            "PidsLimit": 0,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "BlkioIOps": 0,
+            "BlkioBps": 0,
+            "SandboxSize": 0
+        },
+        "GraphDriver": {
+            "Name": "aufs",
+            "Data": null
+        },
+        "Mounts": [
+            {
+                "Name": "3e59e5244f056b253e581caa8a5c9e7d3b8b5dc39983481103c4917aaf56b965",
+                "Source": "/mnt/sda1/var/lib/docker/volumes/3e59e5244f056b253e581caa8a5c9e7d3b8b5dc39983481103c4917aaf56b965/_data",
+                "Destination": "/.swarm",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Source": "/var/lib/boot2docker",
+                "Destination": "/var/lib/boot2docker",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "d56c8abc4905",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "2375/tcp": {},
+                "3376/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "SWARM_HOST=:2375"
+            ],
+            "Cmd": [
+                "manage",
+                "--tlsverify",
+                "--tlscacert=/var/lib/boot2docker/ca.pem",
+                "--tlscert=/var/lib/boot2docker/server.pem",
+                "--tlskey=/var/lib/boot2docker/server-key.pem",
+                "-H",
+                "tcp://0.0.0.0:3376",
+                "--strategy",
+                "spread",
+                "--advertise",
+                "192.168.99.101:3376",
+                "consul://192.168.99.100:8500"
+            ],
+            "Image": "swarm:latest",
+            "Volumes": {
+                "/.swarm": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/swarm"
+            ],
+            "OnBuild": null,
+            "Labels": {}
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "154886f86e30af465fc393d7844712046ec435f822a153817d22c6a56dfc7ca9",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "2375/tcp": null,
+                "3376/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "3376"
+                    }
+                ]
+            },
+            "SandboxKey": "/var/run/docker/netns/154886f86e30",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "678cdab960de0043685f7c4234a2f5be92c9cc46ace8c778e7ab5b909151c786",
+            "Gateway": "172.17.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "172.17.0.2",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "MacAddress": "02:42:ac:11:00:02",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "NetworkID": "e7bf4e7e2a778d4d9fc757d026a2fc83fe3dfd10aebaea9f138eedb1796f6a42",
+                    "EndpointID": "678cdab960de0043685f7c4234a2f5be92c9cc46ace8c778e7ab5b909151c786",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:11:00:02"
+                }
+            }
+        }
+    }
+]

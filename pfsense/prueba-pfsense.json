@@ -1,0 +1,75 @@
+{
+  "builders": [
+    {
+      "http_directory": "http",
+      "http_port_min": "8100",
+      "boot_wait": "7s",
+      "boot_command": [
+        "<wait>1",
+        "<wait10><wait><wait>I",
+        "<wait5><tab><tab><tab><wait><enter>",
+        "<wait><enter>",
+        "<wait5><enter>",
+        "<wait10><wait10><enter>",
+        "<wait10><wait10><enter>",
+        "<wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10>",
+        "<wait>1<enter><wait>",
+        "<wait>n<enter><wait>",
+        "<wait>em1<enter><wait>",
+        "<wait>em0<enter><wait>",
+        "<wait><enter><wait>",
+        "<wait>y<enter>",
+        "<wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10>",
+        "14<enter>",
+        "<wait>y<enter>",
+        "8<enter><wait>",
+        "mv /conf/config.xml /conf/config.xml.org<wait><enter>",
+        "telnet 10.200.2.35 8888 | sed '1,/^$/d' > /conf/config.xml<wait><enter>",
+        "GET config-redmine.xml HTTP/1.0<enter><wait5><enter>",
+        "cat /conf/config.xml<enter>",
+        "<wait5>reboot<enter>"
+      ],
+      "disk_size": 8192,
+      "guest_additions_mode": "disable",
+      "guest_os_type": "FreeBSD_64",
+      "iso_checksum": "b556499527e8ba146eb744f6818ecd95",
+      "iso_checksum_type": "md5",
+      "iso_url": "/home/jorge/proyectos/plantillas-entice/pfsense/pfSense-CE-2.3-RELEASE-amd64.iso",
+      "shutdown_command": "6<enter>y<enter>",
+      "ssh_port": 22,
+      "ssh_username": "admin",
+      "ssh_password": "pfsense",
+      "ssh_timeout": "10m",
+      "type": "virtualbox-iso",
+      "vboxmanage": [
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--memory",
+          "512"
+        ],
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--cpus",
+          "1"
+        ],
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--nic1",
+          "intnet"
+        ],
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--nic2",
+          "nat"
+        ]
+      ],
+      "virtualbox_version_file": ".vbox_version",
+      "vm_name": "pfSense2-redmine"
+    }
+  ]
+}
+

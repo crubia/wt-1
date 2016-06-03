@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=python /home/test/api/api_test_alfresco.py
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[es_ES]=api_test_alfresco
+Name=api_test_alfresco
+Comment[es_ES]=api para testear alfresco
+Comment=api test for alfresco

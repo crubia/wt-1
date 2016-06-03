@@ -1,0 +1,73 @@
+lfresco Benchmark Server
+#
+. /etc/rc.d/init.d/functions
+
+prog="Alfresco Benchmark Server"
+BENCHMARK_SERVER_DIR=/opt/alfresco-benchmark-server
+pidfile=/var/run/benchmark-server.pid
+RETVAL=0
+STOP_TIMEOUT=${STOP_TIMEOUT-10}
+
+start() {
+	echo -n $"Starting $prog: "
+	# See if it's already running. Look *only* at the pid file.
+	if [ -f ${pidfile} ]; then
+		failure "PID file exists in $pidfile"
+		RETVAL=1
+	else
+		# Run as process
+		cd ${BENCHMARK_SERVER_DIR}/sample
+                /usr/local/maven/bin/mvn tomcat7:run -Dmongo.config.host=localhost &>$BENCHMARK_SERVER_DIR/alfresco-benchmark-load-driver.log &
+		cd ${BENCHMARK_SERVER_DIR}/server 
+                /usr/local/maven/bin/mvn tomcat7:run -Dmongo.config.host=localhost &>$BENCHMARK_SERVER_DIR/alfresco-benchmark-server.log &
+		RETVAL=$?
+	
+		# Store PID
+		echo $! > ${pidfile}
+
+		# Success
+		[ $RETVAL = 0 ] && success "Alfresco Benchmark Server started"
+
+
+	fi
+
+	echo
+	return $RETVAL
+}
+
+stop() {
+	echo -n $"Stopping $prog: "
+	killproc -p ${pidfile}
+	RETVAL=$?
+	echo
+	[ $RETVAL = 0 ] && rm -f ${pidfile}
+}
+
+# See how we were called.
+case "$1" in
+  start)
+	start
+	;;
+  stop)
+	stop
+	;;
+  status)
+	status -p ${pidfile} ${prog}
+	RETVAL=$?
+	;;
+  restart)
+	stop
+	start
+	;;
+  condrestart)
+	if [ -f ${pidfile} ] ; then
+		stop
+		start
+	fi
+	;;
+  *)
+	echo $"Usage: $prog {start|stop|restart|condrestart|status}"
+	exit 1
+esac
+
+exit $RETVAL

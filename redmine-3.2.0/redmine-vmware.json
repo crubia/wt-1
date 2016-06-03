@@ -1,0 +1,75 @@
+{
+  "provisioners": [
+    {
+      "type": "shell",
+      "inline": [
+      "sudo -S yum -y install wget",
+      "wget http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm",
+      "sudo -S rpm -Uvh epel-release-6*.rpm",
+      "cd /tmp",
+      "sudo -S yum -y install zip unzip bzip2"
+      ]
+    },
+    {
+      "type": "shell",
+      "execute_command": "echo 'redmine'|sh '{{ .Path }}'",
+      "override": {
+        "vmware-iso": {
+          "scripts": [
+            "scripts/base.sh",
+            "scripts/virtualbox.sh",
+            "scripts/entice-redmine-3.2.0.sh",
+            "scripts/cleanup.sh"
+          ]
+        }
+      }
+    }
+  ],
+ "builders": [
+    {
+      "type": "vmware-iso",
+      "iso_url": "http://10.128.19.55:8888/server/CentOS-7-x86_64-Minimal-1511.iso",
+      "iso_checksum": "88c0437f0a14c6e2c94426df9d43cd67",
+      "iso_checksum_type": "md5",
+      "disk_size": "10000",
+      "disk_type_id": "thin",
+      "http_directory": "http",
+      "remote_host": "10.128.19.56",
+      "remote_datastore": "datastore1",
+      "remote_username": "root",
+      "remote_password": "w4nk1ng",
+      "remote_type": "esx5",
+      "format": "ovf",
+      "output_directory": "ovf-template",
+      "ssh_username": "redmine",
+      "ssh_password": "redmine",
+      "ssh_port": 22,
+      "ssh_pty" : "true",
+      "ssh_wait_timeout": "600s",
+      "shutdown_command": "echo '/sbin/halt -h -p' > /tmp/shutdown.sh; echo 'redmine'|sudo -S sh '/tmp/shutdown.sh'",
+      "headless": "false",
+      "boot_command": [
+        "<tab> text ks=http://10.128.19.55:8888/http/ks.cfg ksdevice=ens33 ip=10.128.19.57 netmask=255.255.255.0 gateway=10.128.19.1<enter><wait>"
+      ],
+      "boot_wait": "20s",
+      "vm_name": "redmine",
+      "vmx_data": {
+        "ethernet0.networkName": "VM Network",
+        "memsize": "512",
+        "numvcpus": "2",
+        "cpuid.coresPerSocket": "1",
+        "ide0:0.fileName": "disk.vmdk",
+        "ide0:0.present": "TRUE",
+        "ide0:0.redo": "",
+        "scsi0:0.present": "FALSE"
+      }
+    }
+  ],
+ "post-processors": [
+    {
+      "type": "shell-local",
+      "inline": ["mv /opt/entice-packer/redmine-3.2.0/redmine/* /opt/entice-packer/ovf-template/"]
+    }
+  ]
+}
+

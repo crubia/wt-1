@@ -1,0 +1,96 @@
+{
+  "builders": [
+    {
+      "type": "virtualbox-iso",
+        "http_directory": "http",
+        "http_port_min": "8100",
+        "boot_wait": "7s",
+        "boot_command": [
+          "<wait>1",
+          "<wait10><wait><wait>I",
+          "<wait5><tab><tab><tab><wait><enter>",
+          "<wait><enter>",
+          "<wait5><enter>",
+          "<wait10><wait10><enter>",
+          "<wait10><wait10><enter>",
+          "<wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10>",
+          "<wait>1<enter><wait>",
+          "<wait>n<enter><wait>",
+          "<wait>em1<enter><wait>",
+          "<wait>em0<enter><wait>",
+          "<wait>a<enter><wait>",
+          "<wait><enter><wait>",
+          "<wait><enter><wait>",
+          "<wait>y<enter>",
+          "<wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10><wait10>",
+          "14<enter>",
+          "<wait>y<enter>",
+          "<wait>8<enter>",
+          "<wait>pkg_add -r sudo<wait><enter><wait5>",
+          "<wait>pkg_add -r bash<wait><enter><wait5>",
+          "<wait>pkg_add -r virtualbox-ose-additions<wait><enter>",
+          "<wait>rehash<enter>",
+          "<wait>pw usermod root -h 0<wait><enter>",
+          "<wait>firewall<enter>", 
+          "<wait>pw adduser firewall -m -s /usr/local/bin/bash<enter>",
+          "<wait>pw usermod firewall -h 0<enter>",
+          "<wait>firewall<enter>",
+          "<wait>pw group mod wheel -m firewall<enter>",
+          "<wait>echo '%wheel ALL=(ALL) NOPASSWD: ALL' >> /usr/local/etc/sudoers<enter>",
+          "<wait>chmod 0440 /usr/local/etc/sudoers<wait><enter>",
+          "<wait5>reboot<enter>"
+        ],
+      "disk_size": 8192,
+      "guest_additions_mode": "disable",
+      "guest_os_type": "FreeBSD_64",
+      "iso_checksum": "b556499527e8ba146eb744f6818ecd95",
+      "iso_checksum_type": "md5",
+      "iso_url": "/home/jorge/plantillas-entice/pfsense/pfSense-CE-2.3-RELEASE-amd64.iso",
+      "shutdown_command": "sudo shutdown -p now",
+      "ssh_port": 22,
+      "ssh_username": "admin",
+      "ssh_password": "pfsense",
+      "ssh_timeout": "10m",
+      "vboxmanage": [
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--memory",
+          "512"
+        ],
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--cpus",
+          "1"
+        ],
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--nic1",
+          "intnet"
+        ],
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--nic2",
+          "bridged"
+        ],
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--nictype2",
+          "82540EM"
+        ],
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--bridgeadapter2",
+          "enp3s0f2"
+        ]
+      ],
+      "virtualbox_version_file": ".vbox_version",
+      "vm_name": "pfSense-prueba2"
+    }
+  ]
+}

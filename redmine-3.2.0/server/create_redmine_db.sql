@@ -1,0 +1,1 @@
+CREATE DATABASE redmine_db CHARACTER SET utf8;
